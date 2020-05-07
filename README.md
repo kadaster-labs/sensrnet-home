@@ -1,2 +1,4 @@
-# sensrnet-home
-Home of the SensRNet - The Dutch National Sensor Registry Network
+# Home of the SensRNet
+
+SensRNet - The Dutch National Sensor Registry Network
+
