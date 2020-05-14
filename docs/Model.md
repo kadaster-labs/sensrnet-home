@@ -30,7 +30,7 @@ There are differences between the events in the Registry (_'Beheer van Sensoren'
 | public and private data | public data _only_ (and keys of private data) |
 | -                       | extra fields: `NodeID`                        |
 
-The fields in both events are the same (for a start and maintained as far as possible). 
+The fields in both events are the same (for a start and maintained as such as far as possible). 
 At this stage there's no code to point to yet, so events are only documented for now:
 
 **Owner aggregate**
