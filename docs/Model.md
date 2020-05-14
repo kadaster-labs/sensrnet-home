@@ -1,6 +1,10 @@
 # Model
 
-About the modeling of the information, the data you could have many discussions. At this stage we would like to set up a system which has the capability to be changed and extended. That's the first 'must have'. Secondly, we try to start with a most sensible model to have a decent start without the need to change this many times from the start. Therefor we take into account several official and de facto standards:
+About the modeling of the information, the data you could have many discussions. 
+At this stage we would like to set up a system which has the capability to be changed and extended. 
+That's the first 'must have'. 
+Secondly, we try to start with a most sensible model to have a decent start without the need to change this many times from the start. 
+Therefor we take into account several official and de facto standards:
 
 - [SensorThingAPI](https://en.wikipedia.org/wiki/SensorThings_API)
 - [Open Urban Platform]()
@@ -8,20 +12,26 @@ About the modeling of the information, the data you could have many discussions.
 - [Slimme apparaten van Amsterdam](https://slimmeapparaten.amsterdam.nl/) (sources: [frontend](https://github.com/Amsterdam/register-slimme-apparaten-frontend) and [backend](https://github.com/Amsterdam/iot-api))
 - [SensorPilot](https://www.binnenlandsbestuur.nl/ruimte-en-milieu/kennispartners/kadaster/wat-kan-en-mag-met-sensoren-in-de-openbare-ruimte.9601501.lynkx)
 
-The **SensorPilot** of 2018 was already a start with these in mind. So we take this as a quick start as a summary. Missing in all models are the actions or so called 'Commands' and the Events. What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
+The **SensorPilot** of 2018 was already a start with these in mind. 
+So we take this as a quick start. 
+Missing in all models are the actions or so called 'Commands' and the Events. 
+What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? 
+In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
 
 <img src="../images/SensRNet-event-modeling.png">
 
 ## Events
 
-Events are the 'core APIs' of the system, of SensRNet. There are differences between the events in the Registry (_'Beheer van Sensoren'_) and in the Network (Sync).
+Events are the 'core APIs' of the system, of SensRNet. 
+There are differences between the events in the Registry (_'Beheer van Sensoren'_) and in the Network (Sync).
 
 | Registry events         | Network events                                |
 |-------------------------|-----------------------------------------------|
 | public and private data | public data _only_ (and keys of private data) |
 | -                       | extra fields: `NodeID`                        |
 
-The fields in both events are the same (for a start and maintained as far as possible). At this stage there's no code to point to yet, so events are only documented for now:
+The fields in both events are the same (for a start and maintained as far as possible). 
+At this stage there's no code to point to yet, so events are only documented for now:
 
 **Owner aggregate**
 
