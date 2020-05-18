@@ -12,7 +12,7 @@ Therefor we take into account several official and de facto standards:
 - [Slimme apparaten van Amsterdam](https://slimmeapparaten.amsterdam.nl/) (sources: [frontend](https://github.com/Amsterdam/register-slimme-apparaten-frontend) and [backend](https://github.com/Amsterdam/iot-api))
 - [SensorPilot](https://www.binnenlandsbestuur.nl/ruimte-en-milieu/kennispartners/kadaster/wat-kan-en-mag-met-sensoren-in-de-openbare-ruimte.9601501.lynkx)
 
-The **SensorPilot** of 2018 was already a start with these in mind. 
+The [**SensorPilot**](SensorPilot.md) of 2018 was already a start with these in mind. 
 So we take this as a quick start. 
 Missing in all models are the actions or so called 'Commands' and the Events. 
 What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? 
