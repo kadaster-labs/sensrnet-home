@@ -1,7 +1,11 @@
 # Home of the SensRNet
 
+<img src="images/SensRNet-logo.png" width="300" align="right">
+
 SensRNet - The Dutch National Sensor Registry Network
 
-<img src="images/SensRNet-logo.png">
+Read more:
 
-See [Architecture](docs/Architecture.md) for more details.
+- [Product Vision](docs/ProductVision.md)
+- [Architecture](docs/Architecture.md)
+- [Model](docs/Model.md)
