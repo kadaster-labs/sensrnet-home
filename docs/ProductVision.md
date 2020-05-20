@@ -80,6 +80,8 @@ sensors on the map and their properties. This will be hosted at Kadaster as a
 partner in SensRNet without responsibilities on the registration of sensors
 itself.
 
+Read more in [Architecture](Architecture.md).
+
 ## Future product
 
 The future National Sensor Registry product is owned by consortium. In the
