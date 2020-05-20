@@ -4,11 +4,11 @@
 
 De architectuur van SensRNet heeft een holistische benadering van het beheer van sensoren op nationaal niveau:
 
-<img src="../images/SensRNet-holistische-benadering.png">
+![Holistische benadering](../images/SensRNet-holistische-benadering.png)
 
 De 'solution' is dan ook een netwerk van deelnemers, nodes in een netwerk, waarin elk bevoegd gezag een node is met eigen applicatie en infrastructuur om het beheer van sensoren uit te voeren. Onderdeel van die infrastructuur is het standaard [Component Sync](#component-sync) dat er voor zorgt dat data gedeeld wordt in het netwerk, met alle andere nodes.
 
-<img src="../images/SensRNet-solution.png">
+![Solution](../images/SensRNet-solution.png)
 
 ## Walking skeleton
 
@@ -16,7 +16,7 @@ De realisatie van het SensRNet, het Nederlandse nationale sensorenregister, word
 
 ## Componenten
 
-<img src="../images/SensRNet-componenten.png">
+![Components](../images/SensRNet-componenten.png)
 
 SensRNet bestaat uit een aantal componenten:
 
@@ -25,20 +25,29 @@ SensRNet bestaat uit een aantal componenten:
 1. Sync
 1. Centrale voorziening van alle sensoren op de kaart / centrale viewer
 
+In een 'Registry Node' worden de componenten 1 en 2 uitgevoerd en component 4 bevindt zich alleen in de centrale voorziening. Component 3 draait in elke node en voorziet in de synchronisatie van data en directe koppelingen tussen alle nodes.
+
 ### Component Registry
 
-Het beheer van sensoren, de 'registry', bestaat uit twee componenten die nauw samenwerken. Hier kunnen meerdere varianten van bestaan voor de verschillende behoeftes van de diverse bevoegde gezagen.
+Het beheer van sensoren, de 'registry', bestaat uit twee componenten die nauw samenwerken: een frontend en backend. De backend biedt APIs aan de frontend. Voor de (geo-services) WMS/WFS is een aparte server aan dezelfde database gekoppeld.
+
+![SensRNet Registry Components](../images/SensRNet-Registry-components.png)
+
+Er kunnen meerdere varianten bestaan voor de verschillende componenten voor de verschillende behoeftes van de diverse bevoegde gezagen.
 
 Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken naar:
 
 1. [Slimme apparaten](https://slimmeapparaten.amsterdam.nl/) van [Gemeente Amsterdam](https://www.amsterdam.nl/) (en ook [Persoonsgegevensverwerking in de openbare ruimte](https://maps.amsterdam.nl/privacy/))
 1. [SensorPilot](https://www.binnenlandsbestuur.nl/ruimte-en-milieu/kennispartners/kadaster/wat-kan-en-mag-met-sensoren-in-de-openbare-ruimte.9601501.lynkx), uitgevoerd PoC in 2018 door [Gemeente Eindhoven](https://www.eindhoven.nl/) en [Kadaster](https://www.kadaster.nl/)
 
+
 ### Component Sync
 
-<img src="../images/SensRNet-component-sync.png">
+![SensRNet Sync](../images/SensRNet-component-sync.png)
 
 **Sync** is de synchronisatie van alle 'shared data' in het netwerk. Daarnaast biedt deze component APIs voor directe calls tussen specifieke nodes.
+
+![SensRNet Sync](../images/SensRNet-Sync-component.png)
 
 1. **Synchronisatie van events van elke node met alle nodes**
    
