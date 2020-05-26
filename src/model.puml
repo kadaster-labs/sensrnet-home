@@ -1,0 +1,94 @@
+@startuml "SensRNet-UML-Model"
+
+package owner <<Rectangle>> {
+    together {
+        class Owner {
+            id: SensRNet.OwnerId
+            organisationName: String
+            website: URL
+        }
+
+        class ContactDetails {
+            name: String
+            email: String
+            phone: String
+        }
+
+        Owner *- ContactDetails : contactPerson
+        Owner *- ContactDetails : publicContactDetails
+    }
+
+    class User {
+        id: SensRNet.UserId
+        socialId: String
+        username: String
+        email: String
+        // rights connected to role
+        role: String
+    }
+
+    note right
+        <size:10>Owners are the 'real' objects</size>
+        <size:10>but will be represented by</size>
+        <size:10>users. Users will connect</size>
+        <size:10>with a social account</size>
+        <size:10>(e.g. Google, Azure, </size>
+        <size:10>Facebook)</size>
+    end note
+
+    Owner o-- "*" User : users
+}
+
+package sensor <<Rectangle>> {
+    class Sensor {
+        id: SensRNet.SensorId
+        name: String
+        aim: String
+        description: String
+        manufacturer: String
+        // whole sensor or per dataStream?
+        active: Boolean 
+        observationArea: GML
+        // or only on dataStream?
+        documentation: URL
+        .. variants are in seperate lists ..
+        category: String
+        theme: String
+        type: String
+        // per type details
+        typeDetails: jsonObject
+    }
+
+    class Location {
+        lat: Float
+        lon: Float
+        height: Float
+        // reference to external Id
+        // e.g. IMGEO+ objectId
+        baseObjectId: String
+    }
+
+    class DataStream {
+        id: SensRNet.DataStreamId
+        name: String
+        description: String
+        unitOfMeasurement: String
+        isPublic: Boolean
+        isOpenData: Boolean
+        isReusable: Boolean
+        documentation: URL
+        dataLink: URL
+        // per minute?
+        dataFrequency: Float
+        // quality in zero to 1 ?
+        dataQuality: Float
+    }
+
+    Sensor "1" *- "1" Location : location
+    Sensor "1" *-- "*" DataStream : dataStreams
+
+}
+
+Owner "1" *-- "*" Sensor : has
+
+@enduml

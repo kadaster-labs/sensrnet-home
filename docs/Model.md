@@ -18,7 +18,14 @@ Missing in all models are the actions or so called 'Commands' and the Events.
 What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? 
 In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
 
-<img src="../images/SensRNet-event-modeling.png">
+![Event Modeling](../images/SensRNet-event-modeling.png)
+
+## Views
+
+The views in the event modeling above contains of two main parts: Owner and Sensor.
+The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model and the [SensorThingAPI](https://en.wikipedia.org/wiki/SensorThings_API)
+
+![UML Model](../images/SensRNet-UML-Model.png)
 
 ## Events
 
