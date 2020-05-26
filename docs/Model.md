@@ -27,6 +27,9 @@ The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model
 
 ![UML Model](../images/SensRNet-UML-Model.png)
 
+
+This needs to be complemented with 'recipies' of sensible and possible combinations of values. For example, a temperature data stream has options for _unitOfMeasurement_ between `Degree Celcius` and `Degree Farenheit`, not `percentage CO2`.
+
 ## Events
 
 Events are the 'core APIs' of the system, of SensRNet. 
