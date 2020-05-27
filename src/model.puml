@@ -110,9 +110,10 @@ package sensor <<Rectangle>> {
     }
 
     class Location {
-        lat: Float
-        lon: Float
-        height: Float
+        x: Float
+        y: Float
+        z: Float
+        epsgCode: Int
         // reference to external Id
         // e.g. IMGEO+ objectId
         baseObjectId: String
@@ -131,9 +132,9 @@ package sensor <<Rectangle>> {
         isReusable: Boolean
         documentation: URL
         dataLink: URL
-        // per minute?
-        dataFrequency: Float
-        // quality in zero to 1 ?
+        // in seconds
+        dataFrequency: Int
+        // 0.0 - 1.0
         dataQuality: Float
     }
 
