@@ -51,18 +51,69 @@ package sensor <<Rectangle>> {
         observationArea: GML
         // or only on dataStream?
         documentation: URL
-        .. variants are in seperate lists ..
-        category: String
-        theme: String
-        type: String
+        .. variants are in seperate lists/enums ..
+        theme: List<Themes>
+        type: Type
         // per type details
         typeDetails: jsonObject
     }
 
+    interface Type
+
+    note left
+        Category can be derived from
+        specific type
+    end note
+
+    enum Category {
+        SENSOR,
+        CAMERA,
+        BEACON
+    }
+
+    enum Themes {
+        Weather,
+        NatureAndEnvironment,
+        Waste,
+        Safety,
+        Mobility,
+        SoilAndUnderground,
+        Other
+    }
+
+    enum TypeSensor {
+        WeatherStation,
+        WindGauge,
+        WasteContainers,
+        FineDustSensor,
+        UVSensor,
+        LightCell,
+        MotionSensor,
+        FireDetector,
+        WaterLevelMeter,
+        MicrophoneOrSoundMeter,
+        PedometerCounters,
+        RadarDetector,
+        GMSSensor,
+        DetectionLoop,
+        HeightDetectionDevice
+    }
+
+    enum TypeCamera {
+        EnvironmentalZoneCameras,
+        SecurityCamera,
+        TraphicFlashlight,
+    }
+
+    enum TypeBeacon {
+        NavigationBeacon
+    }
+
     class Location {
-        lat: Float
-        lon: Float
-        height: Float
+        x: Float
+        y: Float
+        z: Float
+        epsgCode: Int
         // reference to external Id
         // e.g. IMGEO+ objectId
         baseObjectId: String
@@ -71,22 +122,30 @@ package sensor <<Rectangle>> {
     class DataStream {
         id: SensRNet.DataStreamId
         name: String
+        reason: String
         description: String
+        // physicalElement
+        observedProperty: String
         unitOfMeasurement: String
         isPublic: Boolean
         isOpenData: Boolean
         isReusable: Boolean
         documentation: URL
         dataLink: URL
-        // per minute?
-        dataFrequency: Float
-        // quality in zero to 1 ?
+        // in seconds
+        dataFrequency: Int
+        // 0.0 - 1.0
         dataQuality: Float
     }
 
     Sensor "1" *- "1" Location : location
-    Sensor "1" *-- "*" DataStream : dataStreams
+    Sensor "1" *- "*" DataStream : dataStreams
 
+    Sensor "1" o-- "*" Themes
+    Sensor "1" o-- "1" Type
+    Type <-- TypeSensor
+    Type <-- TypeBeacon
+    Type <-- TypeCamera
 }
 
 Owner "1" *-- "*" Sensor : has
