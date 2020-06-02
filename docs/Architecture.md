@@ -58,3 +58,13 @@ Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken n
 1. **Directe API calls voor specifieke acties voor of data van een specifieke node**
 
    Voor extra informatie over een bepaalde sensor of eigenaar, kan een specifieke API aangeroepen worden op de node waar die sensor of eigenaar geregistreerd is. Voor de functionaliteit ‘_contact opnemen met eigenaar_’ wordt het bericht naar de node gestuurd – via een API call op die node – waar meer (private) details bekend zijn van de eigenaar van de betreffende sensor.
+
+## Environments
+
+// TODO Environment description
+
+### Test environments
+
+Voor het testen wordt gebruik gemaakt van Kadaster infrastructuur in Azure/KadasterLabs. Daarin worden twee 'Registry nodes' opgezet die twee verschillende gemeenten simuleren. Daarnaast natuurlijk de 'Publishing node' die standaard bij Kadaster blijft draaien.
+
+![SensRNet Test Environments](../images/SensRNet-TestEnvs.png)
