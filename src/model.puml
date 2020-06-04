@@ -47,12 +47,17 @@ package sensor <<Rectangle>> {
         description: String
         manufacturer: String
         // whole sensor or per dataStream?
+        // don't know: one physical package can haven more components, generating different dataStream
+        // for exmaple: Aireas Airbox can provide (ambiant) temperature and humidity, PPM fine dust particals, Ozone, NOx, COx....
+        // use recursive partent -child sensor relation?
+        // or physical case with 1:1 Location and 1:N Sensors?
         active: Boolean 
         observationArea: GML
         // or only on dataStream?
         documentation: URL
         .. variants are in seperate lists/enums ..
         theme: List<Themes>
+        quality: List<Qualitygrades>
         type: Type
         // per type details
         typeDetails: jsonObject
@@ -81,6 +86,18 @@ package sensor <<Rectangle>> {
         Other
     }
 
+    // Added quality grade
+    enum Qualitygrades {
+        Professional
+        // f.e. RIVM luchtmeetstations
+        Intermediate
+        // f.e. Aireas airboxes
+        Basic
+        // f.e. Intemo josine
+        Personal
+        // f.e. cell/mobile phone thingies
+    }
+    
     enum TypeSensor {
         WeatherStation,
         WindGauge,
@@ -140,6 +157,7 @@ package sensor <<Rectangle>> {
 
     Sensor "1" *- "1" Location : location
     Sensor "1" *- "*" DataStream : dataStreams
+    Sensor "1" *- "1" Qualitygrades : Qualifiction
 
     Sensor "1" o-- "*" Themes
     Sensor "1" o-- "1" Type
