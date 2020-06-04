@@ -86,7 +86,7 @@ package sensor <<Rectangle>> {
         Other
     }
 
-    // Added quality grade
+ 
     enum Qualitygrades {
         Professional
         // f.e. RIVM luchtmeetstations
@@ -157,7 +157,7 @@ package sensor <<Rectangle>> {
 
     Sensor "1" *- "1" Location : location
     Sensor "1" *- "*" DataStream : dataStreams
-    Sensor "1" *- "1" Qualitygrades : Qualifiction
+    Sensor "1" o-- "1" Qualitygrades : Qualifiction
 
     Sensor "1" o-- "*" Themes
     Sensor "1" o-- "1" Type
