@@ -2,7 +2,7 @@
 
 ## UC1.01 Eigenaar kan zich registeren
 
-_must have_
+![must have](../images/prio-badge-must.svg)
 
 Als sensoreigenaar (bijv. gemeente) kan ik mijzelf registreren, inloggen in mijn 'Registry Node App'.
 
@@ -12,7 +12,7 @@ maar kiezen we voor 'hard coded' tokens voor elke gebruiker
 
 ## UC1.02 Eigenaar kan een sensor registeren
 
-_must have_
+![must have](../images/prio-badge-must.svg)
 
 Als sensoreigenaar kan ik een sensor registreren.
 Deze wordt direct in mijn scherm zichtbaar op de kaart.
@@ -25,36 +25,46 @@ Bij de registratie behoren een aantal zaken te worden vastgelegd:
 
 ## UC1.03 Eigenaar kan een sensor verwijderen
 
-_must have_
+![must have](../images/prio-badge-must.svg)
 
 Als sensoreigenaar kan ik mijn sensoren zien op de kaart en daarvan een kiezen om te verwijderen.
 
 ## UC2.01 Burger krijgt inzicht in sensoren op de kaart
 
-_must have_
+![must have](../images/prio-badge-must.svg)
 
 Als burger / inwoner kan ik op de kaart zien welke sensoren er zijn en wat deze doen / meten.
 
 ## UC2.02 Burger kan meer informatie opvragen van een sensor
 
-_must have_
+![must have](../images/prio-badge-must.svg)
 
 Als burger / inwoner kan ik een sensor selecteren en meer informatie opvragen / te zien krijgen.
 
 ## UC2.03 Burger kan op basis van GPS sensoren 'zien'
 
-_nice to have_
+![could have](../images/prio-badge-could.svg)
 
 Als burger / inwoner kan ik met mijn mobiele device mbv GPS locatie zien welke sensoren er op die locatie aanwezig zijn.
 
 ## UC2.04 Burger kan het doel van een sensor opvragen
 
-_should have_
+![should have](../images/prio-badge-should.svg)
 
 Als burger / inwoner kan ik in de detail informatie van de applicatie zien wat het doel is van een sensor en de reden deze daar aanwezig is (korte samenvatting / vermelding). Daar kan ik verwijzingen vinden naar meer informatie en de grondslag.
 
 ## UC2.05 Burger kan fouten terugmelden
 
-_nice to have_
+![could have](../images/prio-badge-could.svg)
 
 Als burger kan ik terugmelden als er een sensor ontbreekt of als er informatie onjuist is.
+
+----
+
+MoSCow:
+
+![must have](../images/prio-badge-must.svg)
+![should have](../images/prio-badge-should.svg)
+![could have](../images/prio-badge-could.svg)
+![won't have](../images/prio-badge-wont.svg)
+
