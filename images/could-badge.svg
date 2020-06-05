@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="20.173367mm"
+   height="5.2916665mm"
+   viewBox="0 0 20.173367 5.2916665"
+   version="1.1"
+   id="svg5961"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="could-badge.svg">
+  <defs
+     id="defs5955" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="28.047755"
+     inkscape:cy="-4.2312357"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showborder="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5958">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-9.5680786,-10.872024)">
+    <g
+       id="g4699"
+       inkscape:label="could"
+       transform="matrix(0.26458333,0,0,0.26458333,9.5680786,10.872024)">
+      <rect
+         id="rect4685"
+         height="20"
+         width="76.245796"
+         rx="3.5653763"
+         x="0"
+         y="0"
+         style="fill:#555555;stroke-width:0.77789807"
+         ry="3.5653763" />
+      <rect
+         id="rect4687"
+         height="20"
+         width="45.875"
+         x="30.370796"
+         rx="3.6217105"
+         y="0"
+         style="fill:#44cc11;stroke-width:1.09874332"
+         ry="3.6217105" />
+      <path
+         id="path4689"
+         d="m 30.370797,0 h 4 v 20 h -4 z"
+         inkscape:connector-curvature="0"
+         style="fill:#44cc11" />
+      <text
+         style="font-size:11px;font-family:'DejaVu Sans', Verdana, Geneva, sans-serif;text-anchor:middle;fill:#010101;fill-opacity:0.3"
+         x="15.301515"
+         y="15"
+         id="text4691">prio</text>
+      <text
+         style="font-size:11px;font-family:'DejaVu Sans', Verdana, Geneva, sans-serif;text-anchor:middle;fill:#ffffff"
+         x="15.301515"
+         y="14"
+         id="text4693">prio</text>
+      <text
+         style="font-size:11px;font-family:'DejaVu Sans', Verdana, Geneva, sans-serif;text-anchor:middle;fill:#010101;fill-opacity:0.3"
+         x="51.995796"
+         y="15"
+         id="text4695">could</text>
+      <text
+         style="font-size:11px;font-family:'DejaVu Sans', Verdana, Geneva, sans-serif;text-anchor:middle;fill:#ffffff"
+         x="51.995796"
+         y="14"
+         id="text4697">could</text>
+    </g>
+  </g>
+</svg>
