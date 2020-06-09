@@ -1,6 +1,6 @@
-# The SenRNet Code of Conduct
+# The SensRNet Code of Conduct
 
-The Code of Conduct in the SenRNet project is adapted from the [Contributor Covenant, version 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
+The Code of Conduct in the SensRNet project is adapted from the [Contributor Covenant, version 1.4](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html)
 
 ## Our pledge
 In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
