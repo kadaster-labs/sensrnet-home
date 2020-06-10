@@ -15,3 +15,7 @@ The [test-network](https://hyperledger-fabric.readthedocs.io/en/latest/test_netw
 As SensRNet is built upon the NodeJS stack, the [Fabric NodeJS SDK](https://hyperledger.github.io/fabric-sdk-node/master/module-fabric-network.html) is used to develop any SensRNet specific details like the [chaincode](https://hyperledger-fabric.readthedocs.io/en/latest/smartcontract/smartcontract.html) (smart contract) to add event to the ledger.
 
 Following the [Fabric production network guide](https://hyperledger-fabric.readthedocs.io/en/latest/deployment_guide_overview.html) the [state database](https://hyperledger-fabric.readthedocs.io/en/latest/couchdb_as_state_database.html) chosen for SensRNet is [CouchDB](https://couchdb.apache.org/).
+
+---
+
+See this template as well on [how to deploy HyperLedger Fabric on Azure Kubernetes Service (AKS)](https://docs.microsoft.com/en-us/azure/blockchain/templates/hyperledger-fabric-consortium-azure-kubernetes-service).
