@@ -32,5 +32,15 @@ If your documentation and code have passed human review, it is merged.
 ### 4. Celebrate
 Your ideas, documentation and code are very much appreciated and will become an integral part of this project. You are the open source hero we need!
 
+## Code of Conduct Guidelines <a name="conduct"></a>
+
+See our [Code of Conduct Guidelines](./CODE_OF_CONDUCT.md).
+
+## Maintainers <a name="maintainers"></a>
+
+Should you have any questions or concerns, please reach out to one of the project's [Maintainers](./MAINTAINERS.md).
+
+This work is licensed under a [EUPL v1.2 license](./LICENSE.md).
+
 ## Attribution
 This Contribution Guide is an adapted version from the [Foundation for Public Code](https://publiccode.net/)’s Contributing Guide available at https://standard.publiccode.net/CONTRIBUTING.html
