@@ -12,7 +12,7 @@ This channel is called `sensrnet-main` channel.
 Secondly for SensRNet (test network) we use the [Fabric CA](https://hyperledger-fabric-ca.readthedocs.io/en/latest/operations_guide.html).
 The [test-network](https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html) manual has this option described in [with Certificate Authorities](https://hyperledger-fabric.readthedocs.io/en/latest/test_network.html#bring-up-the-network-with-certificate-authorities).
 
-As SensRNet is built upon the NodeJS stack, the [Fabric NodeJS SDK](https://hyperledger.github.io/fabric-sdk-node/master/module-fabric-network.html) is used to develop any SensRNet specific details like the [chaincode](https://hyperledger-fabric.readthedocs.io/en/latest/smartcontract/smartcontract.html) (smart contract) to add event to the ledger.
+As SensRNet is built upon the NodeJS stack so the [Fabric NodeJS SDK](https://hyperledger.github.io/fabric-sdk-node/master/module-fabric-network.html) is used to develop the default SensRNet integration with the ledger, the [bridge](https://github.com/kadaster-labs/sensrnet-sync/tree/master/bridge), and the [chaincode](https://github.com/kadaster-labs/sensrnet-sync/tree/master/chaincode) ([smart contract](https://hyperledger-fabric.readthedocs.io/en/latest/smartcontract/smartcontract.html)) to add event to the ledger is build on the [Fabric ChainCode NodeJS](https://hyperledger.github.io/fabric-chaincode-node/master/api/).
 
 Following the [Fabric production network guide](https://hyperledger-fabric.readthedocs.io/en/latest/deployment_guide_overview.html) the [state database](https://hyperledger-fabric.readthedocs.io/en/latest/couchdb_as_state_database.html) chosen for SensRNet is [CouchDB](https://couchdb.apache.org/).
 
