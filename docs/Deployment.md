@@ -8,6 +8,11 @@ This is building on the [test environment](Architecture.md#test-environments) de
 
 The architecture is build upon one or more containers for each component.
 
+## HyperLedger Fabric implementation
+
+> _This is the target implementation because this has a real decentralized concept in mind._
+> _For the walking skeleton demo we'll use a central implementation: [Kafka](#kafka)_
+
 ![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers.png)
 
 The [HyperLedger Fabric](SyncFabricEN.md) (HL Fabric) infrastructure is using the [HL Fabric CA](https://hyperledger-fabric.readthedocs.io/en/latest/glossary.html#hyperledger-fabric-ca) as 'enrollment CA' but TLS is enabled by the infrastructure platform a.k.a. existing 'PKI Overheid' standards and routing.
@@ -33,3 +38,12 @@ HL Fabric is also build upon containers and fits in the architecture quite well.
    1. Deploy Sync-Bridge
    1. Deploy Registry Frontend
 
+
+## Kafka implementation
+
+> _This is only a temporary implementation to provide 'decentralized networking' simulation for the time being_
+
+![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers-Kafka.png)
+
+Each Registry Node is connected to a central available Kafka cluster.
+This is deployed in its own Kubernetes cluster.
