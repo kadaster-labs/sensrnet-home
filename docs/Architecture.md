@@ -8,7 +8,7 @@ De architectuur van SensRNet heeft een holistische benadering van het beheer van
 
 De 'solution' is dan ook een netwerk van deelnemers, nodes in een netwerk, waarin elk bevoegd gezag een node is met eigen applicatie en infrastructuur om het beheer van sensoren uit te voeren. Onderdeel van die infrastructuur is het standaard [Component Sync](#component-sync) dat er voor zorgt dat data gedeeld wordt in het netwerk, met alle andere nodes.
 
-![Solution](../images/SensRNet-solution.png)
+![Solution](../images/SensRNet-Solution.png)
 
 ## Walking skeleton
 
