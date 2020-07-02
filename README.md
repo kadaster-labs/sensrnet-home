@@ -12,6 +12,7 @@ Read more:
 - [Model](docs/Model.md)
 - [Use Cases (NL)](docs/UseCasesNL.md)
 - [Test Scenario's (NL)](docs/TestScenariosNL.md)
+- [Deployment (EN)](docs/Deployment.md)
 
 ---
 

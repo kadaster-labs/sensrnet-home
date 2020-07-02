@@ -64,7 +64,13 @@ Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken n
 
 ## Environments
 
-// TODO Environment description
+Een omgeving (environment) bestaat uit meerdere containers die samen een node vormen.
+Om deze in samenhang te kunnen draaien en om de operatie (Operations) gemakkelijk te maken, is gebruik van [Kubernetes](https://kubernetes.io/) als uitgangspunt genomen voor SensRNet en omgevingen (environments).
+
+![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers.png)
+
+
+Details van de [deployment](Deployment.md) (uitrollen) van de componenten is apart beschreven.
 
 ### Test environments
 
