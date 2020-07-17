@@ -11,7 +11,7 @@ The design and architecture of SensRNet, the Dutch National Registry of Sensors,
 ## Decentralization
 
 Wikipedia has a general description of [decentralization](https://en.wikipedia.org/wiki/Decentralization).
-This might be to general although it can be recognized in the world of today that we're living in a connected world which becomes digital more and more.
+This might be too general although it can be recognized in the world of today that we're living in a connected world which becomes digital more and more.
 For SensRNet this is taken as a fact.
 
 SensRNet is by definition a collaboration with multiple local and central governmental departments and institutes.
@@ -29,10 +29,10 @@ On wikipedia there's a good description of [Event-driven architecture](https://e
 > 
 > An event can be defined as "a significant change in state".
 
-This idea of describing changes of state as events and designing the system based on production, detection and consumption of reaction to events is taken as base for the design of SensRNet.
+This idea of describing changes of state as events and designing the system based on production, detection and consumption of and reaction to events is taken as base for the design of SensRNet.
 This works quite well with the concept of decentralization.
 
-The production of events can event be utilized even more by using the events as the only 'source of truth'.
+The production of events can be utilized even more by using the events as the only 'source of truth'.
 The only really trusted stored data are the events.
 This is the concept of Event Sourcing.
 Before a next command can be validated and processed the current state is loaded from the stack of events produced earlier.
@@ -41,19 +41,18 @@ This guarantees that the events for downstream are integral complete and the rea
 
 ## Data at the source
 
-Within the Dutch government there is a trend towards 'Data bij de bron', Data at the source.
-SensRNet is following this principle ... although with an extra point of view about what 'source' exaclty means.
-We interpret this principle as we should respect the source where data is originated and the definition of this genesis data is described as events.
-In addition to this we apply the key concept of [event-driven](#event-driven) and superlative Event Sourcing.
-Especially this last concept states that changes to a system are described as Events.
+Within the Dutch government there is a trend towards 'data bij de bron', data at the source.
+SensRNet is following this principle ... although with an extra point of view about what 'source' and 'data' exaclty means.
+In combination with the key concept of [event-driven](#event-driven) and superlative Event Sourcing stating that changes to a system are described as Events.
 Therefore events are the origin of data.
+We interpret these principles as we respect the source where data is originated and the definition of this genesis data is described as events.
 
-Events are immutable and will be deleted.
-Events will be appended to the the ever growing collection of events.
+Events are immutable and will never be deleted.
+Events will be appended to the ever growing collection of events.
 To analyse a current state (at any point in time) one can simply process all events.
 This is a repeatable action and so the data at the source is not the eventual state but the events (and only the events).
 Because of the nature of events copying and distribution of events is still respecting its origin, its source without prohibiting it.
-On the contrary events produced at a source might be a trigger for other actions 'somewhere' (see [decentralization](#decentralization)).
+On the contrary: events produced at a source might be a trigger for other actions 'somewhere' (see [decentralization](#decentralization)).
 
 ## Privacy by design
 
