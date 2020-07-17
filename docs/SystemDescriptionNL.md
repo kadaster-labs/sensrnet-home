@@ -38,5 +38,6 @@ Op deze manier blijft private data bij de node waar deze is vastgelegd en is wel
 Voor meer informatie lees onze [documentatie](https://github.com/kadaster-labs/sensrnet-home):
 
 - [Product Vision (EN)](ProductVision.md)
+- [Key Concepts (EN)](KeyConcepts.md)
 - [Architecture (EN)](Architecture.md)
 - [Use Cases (NL)](UseCasesNL.md)
