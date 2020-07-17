@@ -2,6 +2,8 @@
 
 > _Deze pagina beschrijft de architectuur van SensRNet zoals deze is ontworpen en wordt uitgedacht. Dit is nog steeds aan wijzigingen onderhevig, hoewel de grote lijn wel duidelijk wordt._
 
+Deze architectuur is gebaseerd op een aantal [Key Concepts](KeyConcepts.md).
+
 De architectuur van SensRNet heeft een holistische benadering van het beheer van sensoren op nationaal niveau:
 
 ![Holistische benadering](../images/SensRNet-holistische-benadering.png)
