@@ -11,13 +11,13 @@ The design and architecture of SensRNet, the Dutch National Registry of Sensors,
 ## Decentralization
 
 Wikipedia has a general description of [decentralization](https://en.wikipedia.org/wiki/Decentralization).
-This might be too general although it can be recognized in the world of today that we're living in a connected world which becomes digital more and more.
+This might be too general although it can be recognized in the world of today that we're living in a distributed and connected world which becomes digital more and more.
 For SensRNet this is taken as a fact.
 
 SensRNet is by definition a collaboration with multiple local and central governmental departments and institutes.
-The subject of sensors has many different potential interactions and collaborations with citizens, commercial companies, sensors themselves, [IoT](https://en.wikipedia.org/wiki/Internet_of_things).
+The subject of sensors has even more potential interactions and collaborations with citizens, commercial companies, sensors themselves, [IoT](https://en.wikipedia.org/wiki/Internet_of_things).
 Although a central set up is less complex it will be very hard to adopt to a decentralised set up later.
-It is easier to think of it as a decentralized world from the start with many connections and connected organisations as well as devices.
+It is easier to think of it as a decentralised world from the start with many connections and connected organisations as well as devices.
 
 Decentralised as a fact means thinking of it as a network topology, connected participants, nodes in a network.
 
@@ -77,6 +77,7 @@ It is better to follow existing rules instead of defining and developing own rul
 
 - article: [Paradigm Shift from Single Model to Commands, Events, and Queries](https://levelup.gitconnected.com/paradigm-shift-from-single-model-to-commands-events-and-queries-ee68a97de9aa?source=friends_link&sk=df5dcf092d31eb2da5f6a95940cbd74f)
 - article: [Events are the origin of Data in a distributed world](https://medium.com/@marc.van.andel/events-are-the-origin-of-data-in-a-distributed-world-afd0269679d3?source=friends_link&sk=c929e5206344eed9b30d99c607f4503f)
+- article: [Decentralisation: the next big step for the world wide web](https://www.theguardian.com/technology/2018/sep/08/decentralisation-next-big-step-for-the-world-wide-web-dweb-data-internet-censorship-brewster-kahle)
 - wikipedia: [Decentralization](https://en.wikipedia.org/wiki/Decentralization)
 - wikipedia: [Decentralised system](https://en.wikipedia.org/wiki/Decentralised_system)
 - wikipedia: [Distributed computing](https://en.wikipedia.org/wiki/Distributed_computing)
