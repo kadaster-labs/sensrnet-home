@@ -1,21 +1,25 @@
 @startuml "SensRNet-UML-Model"
 
-package owner <<Rectangle>> {
+package organisation <<Rectangle>> {
     together {
-        class Owner {
-            id: SensRNet.OwnerId
-            organisationName: String
-            website: URL
-        }
-
         class ContactDetails {
             name: String
             email: String
             phone: String
         }
 
-        Owner *- ContactDetails : contactPerson
-        Owner *- ContactDetails : publicContactDetails
+        class Organisation {
+            id: SensRNet.OrganisationId
+            website: URL
+        }
+
+        Organisation *- ContactDetails : contactPerson
+        Organisation *- ContactDetails : publicContactDetails
+    }
+
+    enum Role {
+        DEVICE_OWNER,
+        DATA_ADMINISTRATOR
     }
 
     class User {
@@ -28,34 +32,58 @@ package owner <<Rectangle>> {
     }
 
     note right
-        <size:10>Owners are the 'real' objects</size>
-        <size:10>but will be represented by</size>
-        <size:10>users. Users will connect</size>
-        <size:10>with a social account</size>
+        <size:10>Organisations are the 'real'</size>
+        <size:10>objects but will be</size>
+        <size:10>represented by users. Users</size>
+        <size:10>will connect with a social</size>
+        <size:10>or business account</size>
         <size:10>(e.g. Google, Azure, </size>
         <size:10>Facebook)</size>
     end note
 
-    Owner o-- "*" User : users
+    Organisation o-- "*" User : users
+    Organisation o- "*" Role : roles
 }
 
 package sensor <<Rectangle>> {
-    class Sensor {
-        id: SensRNet.SensorId
-        name: String
-        aim: String
-        description: String
-        manufacturer: String
-        // whole sensor or per dataStream?
-        active: Boolean 
-        observationArea: GML
-        // or only on dataStream?
-        documentation: URL
-        .. variants are in seperate lists/enums ..
-        theme: List<Themes>
-        type: Type
-        // per type details
-        typeDetails: jsonObject
+    together {
+        class Sensor {
+            id: SensRNet.SensorId
+            name: String
+            aim: String
+            description: String
+            manufacturer: String
+            // whole sensor or per dataStream?
+            active: Boolean 
+            observationArea: GML
+            // or only on dataStream?
+            documentation: URL
+            .. variants are in seperate lists/enums ..
+            theme: List<Themes>
+            type: Type
+            // per type details
+            typeDetails: jsonObject
+        }
+
+        class DataStream {
+            id: SensRNet.DataStreamId
+            name: String
+            reason: String
+            description: String
+            // physicalElement
+            observedProperty: String
+            unitOfMeasurement: String
+            isPublic: Boolean
+            isOpenData: Boolean
+            isReusable: Boolean
+            documentation: URL
+            dataLink: URL
+            // in seconds
+            dataFrequency: Int
+            // 0.0 - 1.0
+            dataQuality: Float
+        }
+
     }
 
     interface Type
@@ -119,25 +147,6 @@ package sensor <<Rectangle>> {
         baseObjectId: String
     }
 
-    class DataStream {
-        id: SensRNet.DataStreamId
-        name: String
-        reason: String
-        description: String
-        // physicalElement
-        observedProperty: String
-        unitOfMeasurement: String
-        isPublic: Boolean
-        isOpenData: Boolean
-        isReusable: Boolean
-        documentation: URL
-        dataLink: URL
-        // in seconds
-        dataFrequency: Int
-        // 0.0 - 1.0
-        dataQuality: Float
-    }
-
     Sensor "1" *- "1" Location : location
     Sensor "1" *- "*" DataStream : dataStreams
 
@@ -148,6 +157,7 @@ package sensor <<Rectangle>> {
     Type <-- TypeCamera
 }
 
-Owner "1" *-- "*" Sensor : has
+Organisation "1" *-- "*" Sensor : has <as device-owner>
+Organisation "1" *-- "*" DataStream : manages <as data-administrator>
 
 @enduml
