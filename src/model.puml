@@ -18,8 +18,16 @@ package organisation <<Rectangle>> {
     }
 
     enum Role {
+        // device eigenaar
         DEVICE_OWNER,
-        DATA_ADMINISTRATOR
+        // sensor eigenaar + SensRNet data verantwoordelijke
+        SENSOR_OWNER,
+        // technisch verantwoordelijke
+        TECHNICAL_STEWARD,
+        // juridisch verantwoordelijke
+        LEGAL_STEWARD,
+        // data verantwoordelijke
+        DATA_STEWARD
     }
 
     class User {
@@ -47,9 +55,16 @@ package organisation <<Rectangle>> {
 
 package sensor <<Rectangle>> {
     together {
+
+        class Device {
+            id: SensRNet.DeviceId
+            description: String
+        }
+
         class Sensor {
             id: SensRNet.SensorId
             name: String
+            // de vergunning of verordening
             aim: String
             description: String
             manufacturer: String
@@ -147,7 +162,8 @@ package sensor <<Rectangle>> {
         baseObjectId: String
     }
 
-    Sensor "1" *- "1" Location : location
+    Device "1" *-- "1" Location : location
+    Device "1" *- "*" Sensor : sensors
     Sensor "1" *- "*" DataStream : dataStreams
 
     Sensor "1" o-- "*" Themes
@@ -157,7 +173,9 @@ package sensor <<Rectangle>> {
     Type <-- TypeCamera
 }
 
-Organisation "1" *-- "*" Sensor : has <as device-owner>
-Organisation "1" *-- "*" DataStream : manages <as data-administrator>
+Organisation "1" *-- "*" Device : has <as device-owner>
+Organisation "1" *-- "*" Sensor : has <as sensor-owner>
+Organisation "1" *-- "*" Sensor : has <as legal-steward>
+Organisation "1" *-- "*" DataStream : manages <as data-steward>
 
 @enduml
