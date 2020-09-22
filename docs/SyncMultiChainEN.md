@@ -15,4 +15,4 @@ For SensRNet we'll use multiple streams for the [shared data](https://github.com
 Stream examples are `owner` and `sensor` streams which contain owner en sensor events respectively.
 
 The SensRNet sync component is built upon the NodeJS stack, and uses the [Multichain RPC Interface](https://www.multichain.com/developers/json-rpc-api/) to communicate with the MultiChain node.
-The sync [bridge](https://github.com/kadaster-labs/sensrnet-sync/tree/master/bridge) retrieves and pushes events from and to the MultiChain network.
+The sync [bridge](https://github.com/kadaster-labs/sensrnet-sync/tree/master/src/sync) retrieves and pushes events from and to the MultiChain network.
