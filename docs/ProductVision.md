@@ -44,6 +44,11 @@ Citynetwork G40 Theme group Smart Cities and Kadaster who would like to use this
 Sensor Register product and support it with their own innovation budget or
 knowledge.
 
+Also have a look at:
+
+- [Rapport Geonovum - Op weg naar een Sensorverordening 2018](Rapport-Op-weg-naar-een-Sensorverordening-eindversie-201218.pdf) (pdf)
+- [Verkenning Making Sense for Society (MS4S) - Sensoren en Semantiek 2.0](Verkenning-MS4S-SensorenEnSemantiek-2.0.pdf) (pdf)
+
 ## SensRNet – first steps
 
 The supporting partners (community) want to deliver a first version of the
