@@ -12,6 +12,11 @@ Therefor we take into account several official and de facto standards:
 - [Slimme apparaten van Amsterdam](https://slimmeapparaten.amsterdam.nl/) (sources: [frontend](https://github.com/Amsterdam/register-slimme-apparaten-frontend) and [backend](https://github.com/Amsterdam/iot-api))
 - [SensorPilot](https://www.binnenlandsbestuur.nl/ruimte-en-milieu/kennispartners/kadaster/wat-kan-en-mag-met-sensoren-in-de-openbare-ruimte.9601501.lynkx)
 
+Also have a look at:
+
+- [Rapport Geonovum - Op weg naar een Sensorverordening 2018](Rapport-Op-weg-naar-een-Sensorverordening-eindversie-201218.pdf) (pdf)
+- [Verkenning Making Sense for Society (MS4S) - Sensoren en Semantiek 2.0](Verkenning-MS4S-SensorenEnSemantiek-2.0.pdf) (pdf)
+
 The [**SensorPilot**](SensorPilot.md) of 2018 was already a start with these in mind. 
 So we take this as a quick start. 
 Missing in all models are the actions or so called 'Commands' and the Events. 
@@ -19,6 +24,15 @@ What kind of actions, commands can be executed (called) at a resource like Owner
 In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
 
 ![Event Modeling](../images/SensRNet-event-modeling.png)
+
+
+## Definitions
+
+| Term   | Defition (EN) | Defitie (NL) |
+|--------|---------------|--------------|
+| Sensor | ..            | Een sensor is een kunstmatig zintuig dat de omgeving waarneemt en de kenmerken daarvan meet. Ze bestaan in verschillende verschijningsvormen: een thermometer die temperatuur meet, een camera die passanten op een brug telt of een infraroodsensor die kan detecteren of een parkeerplaats bezet is of niet. Via een internetverbinding sturen deze sensoren data door die vervolgens gebruikt kunnen worden om analyses uit te voeren, real time dashboards te maken, of (geautomatiseerde) acties te laten volgen. 
+|
+
 
 ## Views
 
@@ -29,6 +43,7 @@ The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model
 
 
 This needs to be complemented with 'recipies' of sensible and possible combinations of values. For example, a temperature data stream has options for _unitOfMeasurement_ between `Degree Celcius` and `Degree Farenheit`, not `percentage CO2`.
+
 
 ## Events
 
