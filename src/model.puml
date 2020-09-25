@@ -173,9 +173,9 @@ package sensor <<Rectangle>> {
     Type <-- TypeCamera
 }
 
-Organisation "1" *-- "*" Device : has <as device-owner>
-Organisation "1" *-- "*" Sensor : has <as sensor-owner>
-Organisation "1" *-- "*" Sensor : has <as legal-steward>
-Organisation "1" *-- "*" DataStream : manages <as data-steward>
+Organisation "1" *-- "*" Device : has <a device-owner>
+Organisation "1" *-- "*" Sensor : has <a sensor-owner>
+Organisation "0" *-- "*" Sensor : has <a legal-steward>
+Organisation "0" *-- "*" DataStream : has <a data-steward>
 
 @enduml
