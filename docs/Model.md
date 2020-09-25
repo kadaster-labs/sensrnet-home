@@ -28,11 +28,17 @@ In our first event-storming session we came up with this [event modeling](https:
 
 ## Definitions
 
-| Term   | Defition (EN) | Defitie (NL) |
-|--------|---------------|--------------|
-| Sensor | ..            | Een sensor is een kunstmatig zintuig dat de omgeving waarneemt en de kenmerken daarvan meet. Ze bestaan in verschillende verschijningsvormen: een thermometer die temperatuur meet, een camera die passanten op een brug telt of een infraroodsensor die kan detecteren of een parkeerplaats bezet is of niet. Via een internetverbinding sturen deze sensoren data door die vervolgens gebruikt kunnen worden om analyses uit te voeren, real time dashboards te maken, of (geautomatiseerde) acties te laten volgen. 
-|
+- **Sensor**
+  
+  > EN: ..
 
+  > NL: Een sensor is een kunstmatig zintuig dat de omgeving waarneemt en de kenmerken daarvan meet. Ze bestaan in verschillende verschijningsvormen: een thermometer die temperatuur meet, een camera die passanten op een brug telt of een infraroodsensor die kan detecteren of een parkeerplaats bezet is of niet. Via een internetverbinding sturen deze sensoren data door die vervolgens gebruikt kunnen worden om analyses uit te voeren, real time dashboards te maken, of (geautomatiseerde) acties te laten volgen.
+
+- **Datastream**
+  
+  > EN: ..
+
+  > NL: ..
 
 ## Views
 
