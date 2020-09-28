@@ -58,7 +58,7 @@ Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken n
    Events zijn (oa) `EigenaarGeregistreerd`, `SensorToegevoegd`, `SensorVerwijderd`, `SensorInfoGewijzigd`, `SensorVerplaatst` (geo-locatie) voor de sensorenregistratie, maar mogelijk ook ‘netwerk administratie’ events als `NodeToegevoegd`, `NodeVerwijderd`, `NodeAdresGewijzigd`.
 
 
-   **implementatie**: [HyperLedger Fabric](SyncFabricEN.md)
+   **implementatie**: [MultiChain](SyncMultiChainEN.md)
 
 1. **Directe API calls voor specifieke acties voor of data van een specifieke node**
 

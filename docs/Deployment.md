@@ -12,7 +12,7 @@ The architecture is built upon one or more containers for each component.
 
 ![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers.png)
 
-The [MultiChain](SyncFabricEN.md) infrastructure is based on the Bitcoin Core architecture, which it extends by supplying support for permissions, assets and streams.
+The [MultiChain](SyncMultiChainEN.md) infrastructure is based on the Bitcoin Core architecture, which it extends by supplying support for permissions, assets and streams.
 For Kadaster this is deployed on [Microsoft Azure](https://azure.microsoft.com/en-us/overview/).
 Our MultiChain deployment has been containerized, and fits the architecture well.
 This permissioned blockchain network is very resillient, as it keeps functioning and synchronizing when any individual node goes offline.
@@ -22,11 +22,11 @@ This permissioned blockchain network is very resillient, as it keeps functioning
 1. Set up Viewer Node
    1. Request AKS (e.g. `sensrnet-viewer-1`)
    1. Deploy MultiChain
-   1. Join / Initiate SensRNet `sensrnet-main`
+   1. Initiate SensRNet chain
 1. Set up Registry Node (repeat for each node)
    1. Request AKS (e.g. `sensrnet-registry-1`)
    1. Deploy MultiChain
-   1. Join / Initiate SensRNet `sensrnet-main`
+   1. Join SensRNet chain
    1. Deploy Registry Backend:
       1. Deploy Mongo
       1. Deploy Eventstore
