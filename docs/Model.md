@@ -23,7 +23,13 @@ Missing in all models are the actions or so called 'Commands' and the Events.
 What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? 
 In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
 
+'Walking skeleton' version:
+
 ![Event Modeling](../images/SensRNet-event-modeling.png)
+
+Latest version (dd 2020, Nov 2nd):
+
+![Event Modeling](../images/SensRNet-Event-Modeling-v20201102.jpg)
 
 
 ## Definitions
