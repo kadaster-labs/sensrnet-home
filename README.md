@@ -18,6 +18,7 @@ Read more:
 ---
 
 - [Project Board](https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true)
+- [Functional Advisory Board](docs/FAB.md) ([notes](notes/))
 
 ## Find Us
 
