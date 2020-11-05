@@ -21,7 +21,7 @@ _(in alfabetische volgorde)_
 
 Deze eerste sessie was nog redelijk voorbereid en gestuurd vanuit het Product Development Team vanuit Kadaster. Daarin werd wel duidelijk de opening naar participatie neergelegd in de groep.
 
-![Presentatie](attachments/2020-11-04-FAB-v3.pdf)
+[Presentatie](attachments/2020-11-04-FAB-v3.pdf)
 
 ### Verwachtingen
 

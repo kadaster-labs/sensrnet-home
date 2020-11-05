@@ -1,6 +1,6 @@
 # Functional Advisory Board
 
-_(Dutch only for now)_
+_(Dutch only for now)_ | [link to notes / notulen](../notes)
 
 De Functional Advisory Board bestaat uit een vertegenwoordiging van de stakeholders (community) en houdt zich bezig met het maken van functionele, juridische en data modelleringkeuzes gedurende de looptijd van het project. De ProductOwner (PO) treedt op als voorzitter (indien noodzakelijk met assistentie) en agendeert de inhoud van de komende sprint. Indien opportuun participeren leden van het realisatieteam. De FAB komt 2-wekelijks samen.  
 
