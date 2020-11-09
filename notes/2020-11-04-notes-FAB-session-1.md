@@ -43,7 +43,7 @@ Er zijn verschillende verwachtingen en behoeftes vanuit de verschillende stakeho
   
   ## Samenvatting project
   
-  De snelle en grote toename van sensoren en meetapparatuur in de openbare ruimte heeft bij veel gemeenten de dringende behoefte aan een sensorenregister opgeroepen. De gemeente is namelijk de hoeder van de openbare ruimte, verantwoordelijk voor de openbare orde en veiligheid en waakt voor zo ver dat binnen haar vermogen ligt over het waarborgen van publieke waarden als privacy en zelfbeschikking.
+De snelle en grote toename van sensoren en meetapparatuur in de openbare ruimte heeft bij veel gemeenten de dringende behoefte aan een sensorenregister opgeroepen. De gemeente is namelijk de hoeder van de openbare ruimte, verantwoordelijk voor de openbare orde en veiligheid en waakt voor zo ver dat binnen haar vermogen ligt over het waarborgen van publieke waarden als privacy en zelfbeschikking.
   
 Dataverzameling en datagebruik in de openbare ruimte moet ten dienste staan van het maatschappelijk belang en bijdragen aan de leefbaarheid van dorpen en steden (VNG Principes voor de digitale samenleving). Daarom hebben we als overheid de taak om instrumenten te ontwikkelen om dit maatschappelijk belang te waarborgen. Om inzicht te verkrijgen in de sensoren die in onze openbare ruimte data verzamelen is registratie van deze sensoren een essentiële stap.
 Diverse steden zijn al gestart met pilots om dit te realiseren, zij het met verschillen in toegankelijkheid, veiligheid en eisen ten aanzien van de toepassingen.
