@@ -40,3 +40,17 @@ Er zijn verschillende verwachtingen en behoeftes vanuit de verschillende stakeho
 - verschillende views voor verschillende doelgroepen
   - bijv. welke sensoren bevinden zich om mij heen die persoonsgegevens verwerken?
   - nu nog erg gericht op registreren van sensoren en nog niet zoveel op publiceren, beschikbaar maken voor de verschillende doelgroepen
+  
+  ## Samenvatting project
+  
+  De snelle en grote toename van sensoren en meetapparatuur in de openbare ruimte heeft bij veel gemeenten de dringende behoefte aan een sensorenregister opgeroepen. De gemeente is namelijk de hoeder van de openbare ruimte, verantwoordelijk voor de openbare orde en veiligheid en waakt voor zo ver dat binnen haar vermogen ligt over het waarborgen van publieke waarden als privacy en zelfbeschikking.
+  
+Dataverzameling en datagebruik in de openbare ruimte moet ten dienste staan van het maatschappelijk belang en bijdragen aan de leefbaarheid van dorpen en steden (VNG Principes voor de digitale samenleving). Daarom hebben we als overheid de taak om instrumenten te ontwikkelen om dit maatschappelijk belang te waarborgen. Om inzicht te verkrijgen in de sensoren die in onze openbare ruimte data verzamelen is registratie van deze sensoren een essentiële stap.
+Diverse steden zijn al gestart met pilots om dit te realiseren, zij het met verschillen in toegankelijkheid, veiligheid en eisen ten aanzien van de toepassingen.
+Doelstelling:
+1. Middels een digitaal te raadplegen gestandaardiseerd en gebruikersvriendelijk register overzicht en inzicht bieden in waar sensoren in de openbare ruimte zijn geplaatst in Nederland;
+2. Transparantie bieden in wat de sensoren verzamelen aan data en toegankelijkheid van informatie daarover voor bewoners en bezoekers, met de mogelijkheid digitaal vragen te stellen c.q. contact op te nemen met de partij die aangemerkt is als eigenaar van de betreffende sensor;
+3. De gemeente als beheerder van de openbare ruimte mogelijkheden bieden toe te zien op privacy, informatieveiligheid en evt. andere relevante aspecten m.b.t. data inwinning door sensoren;
+4. Samenwerking met ondernemers, bedrijven, onderwijs en kennisinstellingen en overheidsinstanties om data te delen en innovatie te stimuleren en “verrommeling” van openbare plaatsen te voorkomen;
+5. Het bieden van mogelijkheden tot efficiëntie en beheersing van de digitale infrastructuur en data uit de publieke ruimte voor maatschappelijke taken en relevante instanties.
+Dit project is bedoeld om de test omgeving (prototype) van het sensorregister op te schalen naar de product omgeving en voldoende draagvlak te creëren onder gemeenten, sensoreigenaren, burgers, bedrijven en andere gebruikers. We verbeteren 1e basisversie door het te laten testen door deze partijen, verbeteringen aan te brengen en de functionaliteit uitbouwen en gebruiksvriendelijker te maken.
