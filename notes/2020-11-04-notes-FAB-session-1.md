@@ -41,7 +41,7 @@ Er zijn verschillende verwachtingen en behoeftes vanuit de verschillende stakeho
   - bijv. welke sensoren bevinden zich om mij heen die persoonsgegevens verwerken?
   - nu nog erg gericht op registreren van sensoren en nog niet zoveel op publiceren, beschikbaar maken voor de verschillende doelgroepen
   
-  ## Samenvatting project
+## Samenvatting project
   
 De snelle en grote toename van sensoren en meetapparatuur in de openbare ruimte heeft bij veel gemeenten de dringende behoefte aan een sensorenregister opgeroepen. De gemeente is namelijk de hoeder van de openbare ruimte, verantwoordelijk voor de openbare orde en veiligheid en waakt voor zo ver dat binnen haar vermogen ligt over het waarborgen van publieke waarden als privacy en zelfbeschikking.
   
