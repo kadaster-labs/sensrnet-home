@@ -48,6 +48,7 @@ De snelle en grote toename van sensoren en meetapparatuur in de openbare ruimte 
 Dataverzameling en datagebruik in de openbare ruimte moet ten dienste staan van het maatschappelijk belang en bijdragen aan de leefbaarheid van dorpen en steden (VNG Principes voor de digitale samenleving). Daarom hebben we als overheid de taak om instrumenten te ontwikkelen om dit maatschappelijk belang te waarborgen. Om inzicht te verkrijgen in de sensoren die in onze openbare ruimte data verzamelen is registratie van deze sensoren een essentiële stap.
 Diverse steden zijn al gestart met pilots om dit te realiseren, zij het met verschillen in toegankelijkheid, veiligheid en eisen ten aanzien van de toepassingen.
 Doelstelling:
+
 1. Middels een digitaal te raadplegen gestandaardiseerd en gebruikersvriendelijk register overzicht en inzicht bieden in waar sensoren in de openbare ruimte zijn geplaatst in Nederland;
 2. Transparantie bieden in wat de sensoren verzamelen aan data en toegankelijkheid van informatie daarover voor bewoners en bezoekers, met de mogelijkheid digitaal vragen te stellen c.q. contact op te nemen met de partij die aangemerkt is als eigenaar van de betreffende sensor;
 3. De gemeente als beheerder van de openbare ruimte mogelijkheden bieden toe te zien op privacy, informatieveiligheid en evt. andere relevante aspecten m.b.t. data inwinning door sensoren;
