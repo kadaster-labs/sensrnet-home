@@ -1,0 +1,666 @@
+[
+    {
+        "SensrNet Entiteit": "Device",
+        "STA Entiteit": "Thing",
+        "Nederlands": "Apparaat",
+        "Definitie (EN)": "An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks",
+        "Definitie (NL)": "Een fysiek of virtueel ding dat verbonden en geïdentificeerd kan worden in communicatienetwerken.",
+        "Voorbeeld": "Meetstation, Citybeacon"
+    },
+    {
+        "SensrNet Entiteit": "Id",
+        "STA Entiteit": "",
+        "Nederlands": "Identificatienummer",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "SensRnet.DeviceId"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for Thing entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Temperature Monitoring System"
+    },
+    {
+        "SensrNet Entiteit": "Description",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "This is a short description of the corresponding Thing entity.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Sensor system monitoring area temperature"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Properties",
+        "Nederlands": "nvt",
+        "Definitie (EN)": "A JSON Object containing user-annotated properties as key-value pairs.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Case Used",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Radiation shield"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Deployment Condition",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Deployed in a third floor balcony"
+    },
+    {
+        "SensrNet Entiteit": "Location",
+        "STA Entiteit": "Location",
+        "Nederlands": "Locatie",
+        "Definitie (EN)": "The last known location of the Thing.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "x",
+        "STA Entiteit": "",
+        "Nederlands": "X-coördinaat",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "y",
+        "STA Entiteit": "",
+        "Nederlands": "Y-coördinaat",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "z",
+        "STA Entiteit": "",
+        "Nederlands": "Z-coördinaat",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "EpsgCode",
+        "STA Entiteit": "",
+        "Nederlands": "Epsg Code",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "BaseObjectid",
+        "STA Entiteit": "",
+        "Nederlands": "Extern object-id",
+        "Definitie (EN)": "Reference to external id",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for Location entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "UofC CCIT"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "The description about the Location.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "University of Calgary, CCIT building"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "EncodingType",
+        "Nederlands": "Uitwisselingsformaat",
+        "Definitie (EN)": "The encoding type of the Location property. Its value is one of the ValueCode enumeration",
+        "Definitie (NL)": "",
+        "Voorbeeld": "application/vnd.geo+json"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Location",
+        "Nederlands": "Locatietype",
+        "Definitie (EN)": "The location type is defined by encodingType.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "type",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Point"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "coordinates",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "-114.133, 51.08"
+    },
+    {
+        "SensrNet Entiteit": "Sensor",
+        "STA Entiteit": "Sensor",
+        "Nederlands": "Sensor",
+        "Definitie (EN)": "An instrument that observes a property or phenomenon with the goal of producing an estimate of the value of the property",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Id",
+        "STA Entiteit": "",
+        "Nederlands": "Identificatienummer",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "SensRNet.Sensorid"
+    },
+    {
+        "SensrNet Entiteit": "Name",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for Sensor entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "DHT22"
+    },
+    {
+        "SensrNet Entiteit": "Aim",
+        "STA Entiteit": "",
+        "Nederlands": "Doel/grondslag?",
+        "Definitie (EN)": "De vergunning of verordening",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Description",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "The description of the Sensor entity.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "DHT22 temperature sensor"
+    },
+    {
+        "SensrNet Entiteit": "Manufacturer",
+        "STA Entiteit": "",
+        "Nederlands": "Producent",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Active",
+        "STA Entiteit": "",
+        "Nederlands": "Actief",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "ObservationArea",
+        "STA Entiteit": "",
+        "Nederlands": "Meetobject of -gebied",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "EncodingType",
+        "Nederlands": "Uitwisselingsformaat",
+        "Definitie (EN)": "The encoding type of the metadata property. Its value is one of the ValueCode enumeration",
+        "Definitie (NL)": "",
+        "Voorbeeld": "application/pdf"
+    },
+    {
+        "SensrNet Entiteit": "Documentation",
+        "STA Entiteit": "Metadata",
+        "Nederlands": "Documentatie",
+        "Definitie (EN)": "The detailed description of the Sensor or system. The metadata type is defined by encodingType.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "https://cdn-shop.adafruit.com/datasheets/DHT22.pdf"
+    },
+    {
+        "SensrNet Entiteit": "Theme",
+        "STA Entiteit": "",
+        "Nederlands": "Onderwerp",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Zie Lijst Themes"
+    },
+    {
+        "SensrNet Entiteit": "Type",
+        "STA Entiteit": "",
+        "Nederlands": "Type",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Zie Lijst Category"
+    },
+    {
+        "SensrNet Entiteit": "TypeDetails",
+        "STA Entiteit": "",
+        "Nederlands": "Subtype",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Zie Lijst TypeSensor, TypeCamera, TypeBeacon. Afhankelijk van keuze Type"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ObservedProperty",
+        "Nederlands": "Waarneming",
+        "Definitie (EN)": "Specification of the phenomenon of an Observation.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for ObservedProperty entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Area Temperature"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Definition",
+        "Nederlands": "Definitie",
+        "Definitie (EN)": "The URI of the ObservedProperty. Dereferencing this URI SHOULD result in a representation of the definition of the ObservedProperty.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "The degree or intensity of heat present in the area"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "A description about the ObservedProperty.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "http://www.qudt.org/qudt/owl/1.0.0/quantity/Instances.html#AreaTemperature"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Observation",
+        "Nederlands": "Meting",
+        "Definitie (EN)": "The act of measuring or otherwise determining the value of a property",
+        "Definitie (NL)": "",
+        "Voorbeeld": "42 ug/m3"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "PhenomenonTime",
+        "Nederlands": "Observatietijdstip",
+        "Definitie (EN)": "The time instant or period of when the Observation happens.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "1-8-2018 13:42"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Result",
+        "Nederlands": "Resultaat",
+        "Definitie (EN)": "The estimated value of an ObservedProperty from the Observation.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ResultTime",
+        "Nederlands": "Resultaattijdstip",
+        "Definitie (EN)": "The time of the Observation's result was generated.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ResultQuality",
+        "Nederlands": "Kwaliteit",
+        "Definitie (EN)": "Describes the quality of the result.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ValidTime",
+        "Nederlands": "Geldigheidsduur",
+        "Definitie (EN)": "The time period during which the result may be used.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Parameters",
+        "Nederlands": "Parameters",
+        "Definitie (EN)": "Key-value pairs showing the environmental conditions during measurement.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Datastream",
+        "STA Entiteit": "Datastream",
+        "Nederlands": "Datastream",
+        "Definitie (EN)": "A collection of Observations measuring the same ObservedProperty and produced by the same Sensor.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Combines T, S, OP and O"
+    },
+    {
+        "SensrNet Entiteit": "Id",
+        "STA Entiteit": "",
+        "Nederlands": "Identificatienummer",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "SensRNet.DataStreamid"
+    },
+    {
+        "SensrNet Entiteit": "Name",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for Datastream entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Air Temperature DS"
+    },
+    {
+        "SensrNet Entiteit": "Reason",
+        "STA Entiteit": "",
+        "Nederlands": "??",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Description",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "The description of the Datastream entity.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Datastream for recording temperature"
+    },
+    {
+        "SensrNet Entiteit": "ObservedProperty",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "Physical element",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ObservationType",
+        "Nederlands": "Type observatie",
+        "Definitie (EN)": "The type of Observation (with unique result type), which is used by the service to encode observations.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "http://www.opengis.net/def/observationType/OGC-OM/2.0/OM_Measurement"
+    },
+    {
+        "SensrNet Entiteit": "UnitOfMeasurement",
+        "STA Entiteit": "UnitOfMeasurement",
+        "Nederlands": "Meeteenheid",
+        "Definitie (EN)": "A JSON Object containing three key-value pairs. The name property presents the full name of the unitOfMeasurement; the symbol property shows the textual form of the unit symbol; and the definition contains the URI defining the unitOfMeasurement. The values of these properties SHOULD follow the Unified Code for Unit of Measure (UCUM).",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Name",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Degree Celcius"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Symbol",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "degC"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Definition",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "http://www.qudt.org/qudt/owl/1.0.0/unit/Instances.html#DegreeCelsius"
+    },
+    {
+        "SensrNet Entiteit": "IsPublic",
+        "STA Entiteit": "",
+        "Nederlands": "Publiek?",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "IsOpenData",
+        "STA Entiteit": "",
+        "Nederlands": "Open data",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "IsReusable",
+        "STA Entiteit": "",
+        "Nederlands": "Herbruikbaar",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Documentation",
+        "STA Entiteit": "",
+        "Nederlands": "Documentatie",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Datalink",
+        "STA Entiteit": "",
+        "Nederlands": "Datalink",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "ObservedArea",
+        "Nederlands": "Meetgebied",
+        "Definitie (EN)": "The spatial bounding box of the spatial extent of all FeaturesOfInterest that belong to the Observations associated with this Datastream.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "PhenomenonTime",
+        "Nederlands": "Observatie-interval",
+        "Definitie (EN)": "The temporal interval of the phenomenon times of all observations belonging to this Datastream.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Datafrequency",
+        "STA Entiteit": "ResultTime",
+        "Nederlands": "Datafrequentie",
+        "Definitie (EN)": "The temporal interval of the result times of all observations belonging to this Datastream.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Dataquality",
+        "STA Entiteit": "",
+        "Nederlands": "Datakwaliteit",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "HistoricalLocation",
+        "Nederlands": "Voorgaande locatie",
+        "Definitie (EN)": "The times of the current (i.e., last known) and previous locations of the Thing.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "lat/lon 52.35,4.92"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Time",
+        "Nederlands": "Laatste tijdstip",
+        "Definitie (EN)": "The time when the Thing is known at the Location.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "1-8-2018 13:42"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "FeatureOfInterest",
+        "Nederlands": "Meetobject of -gebied",
+        "Definitie (EN)": "An Observation results in a value being assigned to a phenomenon.The phenomenon is a property of a feature, the latter being the FeatureOfInterest of the Observation.",
+        "Definitie (NL)": "",
+        "Voorbeeld": "Location of Station 11820004"
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Name",
+        "Nederlands": "Naam",
+        "Definitie (EN)": "A property provides a label for FeatureOfInterest entity, commonly a descriptive name.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Description",
+        "Nederlands": "Beschrijving",
+        "Definitie (EN)": "The description about the FeatureOfInterest.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "EncodingType",
+        "Nederlands": "Uitwisselingsformaat",
+        "Definitie (EN)": "The encoding type of the feature property.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "",
+        "STA Entiteit": "Feature",
+        "Nederlands": "Detailomschrijving",
+        "Definitie (EN)": "The detailed description of the feature. The data type is defined by encodingType.",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Organisation",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Id",
+        "STA Entiteit": "",
+        "Nederlands": "Identificatienummer",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "SensRnet.OrganisationId"
+    },
+    {
+        "SensrNet Entiteit": "Website",
+        "STA Entiteit": "",
+        "Nederlands": "Website",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "User",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Id",
+        "STA Entiteit": "",
+        "Nederlands": "Identificatienummer",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": "SensRnet.UserId"
+    },
+    {
+        "SensrNet Entiteit": "Socialid",
+        "STA Entiteit": "",
+        "Nederlands": "Eigen id",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Username",
+        "STA Entiteit": "",
+        "Nederlands": "Username",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Email",
+        "STA Entiteit": "",
+        "Nederlands": "E-mail",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Role",
+        "STA Entiteit": "",
+        "Nederlands": "Rol",
+        "Definitie (EN)": "Rights connected to role",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "ContactDetails",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Name",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Email",
+        "STA Entiteit": "",
+        "Nederlands": "E-mail",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    },
+    {
+        "SensrNet Entiteit": "Phone",
+        "STA Entiteit": "",
+        "Nederlands": "",
+        "Definitie (EN)": "",
+        "Definitie (NL)": "",
+        "Voorbeeld": ""
+    }
+]
