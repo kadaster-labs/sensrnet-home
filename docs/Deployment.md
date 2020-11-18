@@ -6,7 +6,10 @@ These containers are designed to be run on [Kubernetes](https://kubernetes.io/),
 Kubernetes can be deployed in your own datacenter or can be purchased at one of the cloud providers.
 
 Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
-For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an Azure Landing Zone [ALZ} 'cookbook'.
+
+# Azure Landing Zone [ALZ] 4 MVP pilot BrabantStad
+
+For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an Azure Landing Zone [ALZ] 'cookbook'.
 This is work in progress, to be delivered by SoftwareOne/Comparex, reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell)
 
 ## AKS
