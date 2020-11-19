@@ -1,2 +1,6 @@
+# editor files
+.vscode/
+
+
 # generated files
 out/
