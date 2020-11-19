@@ -7,6 +7,11 @@ Kubernetes can be deployed in your own datacenter or can be purchased at one of 
 
 Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
 
+# Azure Landing Zone [ALZ] 4 MVP pilot BrabantStad
+
+For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an Azure Landing Zone [ALZ] 'cookbook'.
+This is work in progress, to be delivered by SoftwareOne/Comparex, reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell)
+
 ## AKS
 
 AKS stands for [Microsoft Azure Kubernetes Service](https://azure.microsoft.com/nl-nl/services/kubernetes-service/) and is the 'Microsoft taste' / way of providing managed Kubernetes to their clients.
