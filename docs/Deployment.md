@@ -7,12 +7,12 @@ Kubernetes can be deployed in your own datacenter or can be purchased at one of 
 
 Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
 
-# Azure Landing Zone [ALZ] 4 MVP pilot BrabantStad
+## ALZ Cookbook
 
-For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an Azure Landing Zone [ALZ] 'cookbook'.
-This is work in progress, to be delivered by SoftwareOne/Comparex, reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell)
+ALZ stands for Azure Landing Zone. For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an 'ALZ cookbook'.
+This is work in progress, to be delivered by [SoftwareOne/Comparex](https://www.softwareone.com/), reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell)
 
-## AKS
+## AKS Cookbook
 
 AKS stands for [Microsoft Azure Kubernetes Service](https://azure.microsoft.com/nl-nl/services/kubernetes-service/) and is the 'Microsoft taste' / way of providing managed Kubernetes to their clients.
 
@@ -28,8 +28,6 @@ To run a [Registry Node](Architecture.md#registry-node) the following containers
 1. [Registry Frontend](https://github.com/kadaster-labs/sensrnet-registry-frontend)
 
 To do so on AKS follow this cookbook (including networking set up):
-
-> **// TODO** Check, Add, Update and Extend
 
 1. Decide on Azure subscription and prepare cli access
 
@@ -59,3 +57,4 @@ To do so on AKS follow this cookbook (including networking set up):
    $ kubectl config use-context sensrnet-aks-1
    ```
 
+> _Coming soon: Link to Ops repository with scripts to deploy SensRNet components on AKS (#wip)_
