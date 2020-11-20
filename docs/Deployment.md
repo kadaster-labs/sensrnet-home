@@ -7,10 +7,16 @@ Kubernetes can be deployed in your own datacenter or can be purchased at one of 
 
 Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
 
+# Altenative(s) to be investigated
+
+Input from Municipality of Nijmegen:
+Take our discussion with the VNG/CommonGround initiative Haven ( https://haven.commonground.nl/), for a standardized Kubernetes environment into account
+
+
 ## ALZ Cookbook
 
 ALZ stands for Azure Landing Zone. For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an 'ALZ cookbook'.
-This is work in progress, to be delivered by [SoftwareOne/Comparex](https://www.softwareone.com/), reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell)
+This is work in progress, to be delivered by [SoftwareOne/Comparex](https://www.softwareone.com/), reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell).
 
 ## AKS Cookbook
 
