@@ -7,10 +7,10 @@ Kubernetes can be deployed in your own datacenter or can be purchased at one of 
 
 Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
 
-# Altenative(s) to be investigated
+**Altenative(s) to be investigated**
 
-Input from Municipality of Nijmegen:
-Take our discussion with the VNG/CommonGround initiative Haven ( https://haven.commonground.nl/), for a standardized Kubernetes environment into account
+- Input from Municipality of Nijmegen:
+  Take our discussion with the VNG/CommonGround initiative [Haven](https://haven.commonground.nl/) for a standardized Kubernetes environment into account
 
 
 ## ALZ Cookbook
