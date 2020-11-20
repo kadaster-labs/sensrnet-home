@@ -8,4 +8,4 @@ Deelnemers worden beschouwd als inhoudelijke adviseurs. Als adviseur denk en dis
 
 Een adviseur heeft affiniteit met de (gemeentelijke, maar ook bredere) uitvoeringspraktijk en behoeftes rondom de registratie en informatieverstrekking van sensoren. 
 
-![Governance Structure (under construction)](../images/SensRNet-governance-structure-v0.1.png)
+![Governance Structure (under construction)](../images/SensRNet-governance-structure-v0.2.png)
