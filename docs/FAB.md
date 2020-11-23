@@ -1,4 +1,4 @@
-# Functional Advisory Board
+# Functional Advisory Board (FAB)
 
 _(Dutch only for now)_ | [link to notes / notulen](../notes)
 
@@ -9,3 +9,5 @@ Deelnemers worden beschouwd als inhoudelijke adviseurs. Als adviseur denk en dis
 Een adviseur heeft affiniteit met de (gemeentelijke, maar ook bredere) uitvoeringspraktijk en behoeftes rondom de registratie en informatieverstrekking van sensoren. 
 
 ![Governance Structure (under construction)](../images/SensRNet-governance-structure-v0.1.png)
+
+Bovenstaande organigram is in wording en nog niet gerealiseerd. Wel is de FAB in beperkte vorm opgezet om input voor het Product Development Team te kunnen leveren om een MVP te kunnen ontwikkelen. In beperkte vorm aangezien er nog geen grotere 'kapstok' is om een FAB in bovenstaande hoedanigheid te positioneren. De FAB die gestart is levert met name directe input aan het Product Development Team en heeft de potentie om uit te groeien tot het orgaan dat richting en inhoud bepaalt en besluiten neemt over het geheel. We zijn onderweg naar morgen ;-)
