@@ -15,6 +15,8 @@ Op dit moment zijn er drie grote partijen die de 'mining' van Bitcoin doen en do
 
 > Voor SensRNet is blockchain als trend nauwelijks relevant of van belang.
 
+**Hoe werkt een Blokchain?** Een blockchain is een transactieketen van data die gedeeld is tussen een netwerk van individuele onafhankelijke partijen. Een blockchain is in principe decentraal, elke partij die aangesloten is op het blockchainnetwerk is in het bezit van een volledige kopie van het grootboek.
+
 **Blockchain als technologie** is wél van belang voor SensRNet.
 De technologie onder blockchain wordt _'Distributed Ledger Technology'_ (DLT) genoemd; het decentraal kunnen beheren van een 'ledger', een grootboek, een register.
 Nr #1 van de [Key Concepts](KeyConcepts.md) van SensRNet is _'[Decentralisation as given](KeyConcepts.md#decentralization)'_; de architectuur gaat uit van decentrale opzet.
