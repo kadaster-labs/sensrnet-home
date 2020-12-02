@@ -18,6 +18,7 @@ Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) ma
 ALZ stands for Azure Landing Zone. For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an 'ALZ cookbook'.
 This is work in progress, to be delivered by [SoftwareOne/Comparex](https://www.softwareone.com/), reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell).
 
+
 ## AKS Cookbook
 
 AKS stands for [Microsoft Azure Kubernetes Service](https://azure.microsoft.com/nl-nl/services/kubernetes-service/) and is the 'Microsoft taste' / way of providing managed Kubernetes to their clients.
@@ -33,7 +34,8 @@ To run a [Registry Node](Architecture.md#registry-node) the following containers
 1. [Sync](https://github.com/kadaster-labs/sensrnet-sync)
 1. [Registry Frontend](https://github.com/kadaster-labs/sensrnet-registry-frontend)
 
-To do so on AKS follow this cookbook (including networking set up):
+
+(In short) to do so on AKS follow this cookbook (including networking set up):
 
 1. Decide on Azure subscription and prepare cli access
 
@@ -63,4 +65,4 @@ To do so on AKS follow this cookbook (including networking set up):
    $ kubectl config use-context sensrnet-aks-1
    ```
 
-> _Coming soon: Link to Ops repository with scripts to deploy SensRNet components on AKS (#wip)_
+For detailed instructions, manuals and scripts, please check out our operaions repository: [sensrnet-ops](https://github.com/kadaster-labs/sensrnet-ops)
