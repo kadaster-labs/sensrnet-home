@@ -6,19 +6,33 @@ SensRNet - The Dutch National Sensor Registry Network
 
 Read more:
 
-- [Systeembeschrijving (NL)](docs/SystemDescriptionNL.md)
+**General**
+
 - [Product Vision](docs/ProductVision.md)
+- [Systeembeschrijving (NL)](docs/SystemDescriptionNL.md)
+
+**Architectural**
+
 - [Key Concepts](docs/KeyConcepts.md)
 - [Architecture](docs/Architecture.md)
 - [Model](docs/Model.md)
+- [Blockchain](docs/Blockchain.md)
+
+**Functional**
+
 - [Use Cases (NL)](docs/UseCasesNL.md)
 - [Test Scenario's (NL)](docs/TestScenariosNL.md)
+
+**Technical**
+
 - [Deployment (EN)](docs/Deployment.md)
 
----
+**Organisation**
 
 - [Project Board](https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true)
 - [Functional Advisory Board](docs/FAB.md) ([notes](notes/))
+
+---
 
 ## Find Us
 
