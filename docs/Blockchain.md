@@ -42,7 +42,7 @@ Dit sluit - niet toevallig - heel goed aan bij de transacties van een DLT.
 
 _**SensRNet perspectief**_
 
-Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
+Voor SensRNet is een DLT de technologische oplossing als invulling van de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
 
 ---
 
