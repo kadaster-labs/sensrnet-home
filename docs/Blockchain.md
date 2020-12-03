@@ -19,7 +19,7 @@ _**SensRNet perspectief**_
 
 Voor SensRNet is blockchain als trend nauwelijks relevant of van belang. Het gaat - voor dit moment - niet over het invullen van een vertrouwde derde partij, maar om het bij elkaar brengen van informatie uit vertrouwde partijen, namelijk de bronhouders die sensoren bezitten. Aangezien SensRNet nu beperkt is in scope tot overheden, zijn alle deelnemers in het blockchain netwerk bekend en erkend.
 
-Op een later moment komt dit wellicht weer ter sprake als sensoren zichzelf gaan aanmelden bij het netwerk en zichzelf gaan registreren ... maar dat is (nog) toekomstmuziek.
+Op een later moment komt dit wellicht weer ter sprake als commerciële bedrijven en burgers ook deel gaan nemen in het netwerk en wellicht sensoren zichzelf gaan aanmelden bij het netwerk en zichzelf gaan registreren ... maar dat is (nog) toekomstmuziek.
 
 ---
 
