@@ -15,7 +15,7 @@ Op dit moment zijn er drie grote partijen die de 'mining' van Bitcoin doen en do
 
 ---
 
-_**SensRNet view**_
+_**SensRNet perspectief**_
 
 Voor SensRNet is blockchain als trend nauwelijks relevant of van belang. Het gaat - voor dit moment - niet over het invullen van een vertrouwde derde partij, maar om het bij elkaar brengen van informatie uit vertrouwde partijen, namelijk de bronhouders die sensoren bezitten. Aangezien SensRNet nu beperkt is in scope tot overheden, zijn alle deelnemers in het blockchain netwerk bekend en erkend.
 
@@ -40,7 +40,7 @@ Dit sluit - niet toevallig - heel goed aan bij de transacties van een DLT.
 
 ---
 
-_**SensRNet view**_
+_**SensRNet perspectief**_
 
 Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
 
