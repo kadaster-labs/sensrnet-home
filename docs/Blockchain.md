@@ -13,9 +13,18 @@ In werkelijkheid is een vertrouwde derde juist voorwaarde om blockchain (goed) t
 Er zijn wel uitzonderingen zoals Bitcoin ... maar dat daar er niet veel van en ook daar zijn twijfels of een vertrouwde derde wel ontbreekt.
 Op dit moment zijn er drie grote partijen die de 'mining' van Bitcoin doen en doordat zij een 'track record' hebben dat betrouwbaar te doen, worden deze min of meer beschouwd als de vertrouwde derde partij.
 
-> Voor SensRNet is blockchain als trend nauwelijks relevant of van belang.
+```diff
++ Voor SensRNet is blockchain als trend nauwelijks relevant of van belang. Het gaat - voor dit moment - niet over het invullen van een vertrouwde derde partij, maar om het bij elkaar brengen van informatie uit vertrouwde partijen, namelijk de bronhouders die sensoren bezitten. Aangezien SensRNet nu beperkt is in scope tot overheden, zijn alle deelnemers in het blockchain netwerk bekend en erkend.
 
-**Hoe werkt een Blokchain?** Een blockchain is een transactieketen van data die gedeeld is tussen een netwerk van individuele onafhankelijke partijen. Een blockchain is in principe decentraal, elke partij die aangesloten is op het blockchainnetwerk is in het bezit van een volledige kopie van het grootboek.
++ Op een later moment komt dit wellicht weer ter sprake als sensoren zichzelf gaan aanmelden bij het netwerk en zichzelf gaan registreren ... maar dat is (nog) toekomstmuziek.
+```
+
+> **Hoe werkt een Blockchain?**
+> Een blockchain is een transactieketen van data die gedeeld is tussen een netwerk van individuele onafhankelijke partijen.
+> In blockchains worden transacties opgeslagen zonder dat deze verwijderd of aangepast kunnen worden.
+> Een blockchain is decentraal en elke partij die aangesloten is op het blockchainnetwerk is in het bezit van een volledige kopie van het grootboek, de lijst van transacties.
+> 
+> _bron: [Blockchain Now!](https://www.blockchainnow.nl/blockchain-voor-dummies)_
 
 **Blockchain als technologie** is wél van belang voor SensRNet.
 De technologie onder blockchain wordt _'Distributed Ledger Technology'_ (DLT) genoemd; het decentraal kunnen beheren van een 'ledger', een grootboek, een register.
@@ -25,27 +34,33 @@ Een blockchain, of beter gezegd DLT, legt transacties vast in blokken die onweer
 Nr #2 van de Key Concepts van SensRNet is _'[Event-driven](KeyConcepts.md#event-driven)'_.
 Dit sluit - niet toevallig - heel goed aan bij de transacties van een DLT.
 
-> Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
+```diff
++ Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
+```
 
 Er zijn wel overwegingen die in acht genomen moeten worden:
 
-1. Open vs Gesloten: Hoe open kan de DLT zijn voor SensRNet?
+1. **Open vs Gesloten**: Hoe open kan de DLT zijn voor SensRNet?
 
    Als eerste inrichting is gekozen voor een gesloten DLT wat betekent dat alle nodes bekend zijn.
    Dit zijn de partijen die een 'SensRNet node draaien' (infrastructuur met de DLT software geïnstalleerd hebben, beheren en verbonden zijn in het DLT/SensRNet netwerk)
 
    Dit is bekend als een _'permissioned blockchain'_
 
-1. Publiek (Public) vs Privé (Private) data: Is de data in de DLT publiek toegankelijk / open data?
+1. **Publiek (Public) vs Privé (Private) data**: Is de data in de DLT publiek toegankelijk / open data?
    
    Vanuit het Key Concept _'[Privacy by design](KeyConcepts.md#privacy-by-design)'_ wordt er geen data gedeeld die privé (private) is. Dat betekent dat de DLT in principe leesbaar voor iedereen kan zijn. Dat is voor dit moment het uitgangspunt voor SensRNet. Mogelijk wijzigt dit standpunt naar aanleiding van 'geheime / private sensoren' (zie issues [home#8](https://github.com/kadaster-labs/sensrnet-home/issues/8), [home#100](https://github.com/kadaster-labs/sensrnet-home/issues/100))
 
-1. Netwerkbeheer: Wie is admin?
+1. **Netwerkbeheer**: Wie is admin?
    
    Op dit moment is SensRNet nog in alpha fase en zijn hier geen uitgebreide beslissingen over genomen.
    In de (nabije) toekomst zullen daar enige keuzes in genomen moeten worden ... maar die hangen samen met de governance van SensRNet en het nationale sensorenregister als totaal.
    Voor dit moment is Kadaster de beheerder (admin) van het netwerk.
    Alleen beheerders van Kadaster kunnen andere nodes toevoegen aan het netwerk.
+
+**Extra mogelijkheden**
+
+Blockchains bieden extra mogelijkheden, bijvoorbeeld rondom **Smart Contracts**. Dit zijn stukjes code die gebruikt worden om data aan de blockchain toe te voegen en validatie uitvoeren en zo integriteit kunnen afdwingen. Smart Contracts bieden ook mogelijkheden om geautomatiseerd met het netwerk te kunnen communiceren. Zo zouden - in de toekomst - sensoren zichzelf kunnen aanmelden in het netwerk waarna een bronhouder kan claimen de eigenaar te zijn. Voorlopig is dit out of scope voor SensRNet en liggen er nog een aantal fundamentele vraagstukken die eerst beantwoord moeten worden voordat dit mogelijk wordt. Technisch is deze beperking er niet meer (oa) dankzij blockchain.
 
 **Alternatieven**
 
