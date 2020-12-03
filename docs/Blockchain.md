@@ -1,7 +1,7 @@
 # Blockchain or not
 
 > _**Blockchain** is a buzzword which attracts attention, positive and negative.
-Therefor this page describes the point of view about this topic in the SensRNet context.
+Therefore this page describes the point of view about this topic in the SensRNet context.
 Because of the Dutch context only of SensRNet at this moment this document is written in Dutch only for the time being._
 
 **Blockchain** is een buzzword dat veel aandacht trekt, zowel positief als negatief.
@@ -68,7 +68,7 @@ Er zijn wel overwegingen die in acht genomen moeten worden:
 
 **Extra mogelijkheden**
 
-Blockchains bieden extra mogelijkheden, bijvoorbeeld rondom **Smart Contracts**. Dit zijn stukjes code die gebruikt worden om data aan de blockchain toe te voegen en validatie uitvoeren en zo integriteit kunnen afdwingen. Smart Contracts bieden ook mogelijkheden om geautomatiseerd met het netwerk te kunnen communiceren. Zo zouden - in de toekomst - sensoren zichzelf kunnen aanmelden in het netwerk waarna een bronhouder kan claimen de eigenaar te zijn. Voorlopig is dit out of scope voor SensRNet en liggen er nog een aantal fundamentele vraagstukken die eerst beantwoord moeten worden voordat dit mogelijk wordt. Technisch is deze beperking er niet meer (oa) dankzij blockchain.
+Blockchains bieden extra mogelijkheden, bijvoorbeeld rondom **Smart Contracts**. Dit zijn stukjes code die gebruikt worden om data aan de blockchain toe te voegen en validatie uitvoeren en zo integriteit kunnen afdwingen. Omdat iedere blockchain deelnemer een Smart Contract controlleert, wordt het onmogelijk om transacties te publiceren die niet voldoen aan de definities die de Smart Contracts stellen. Smart Contracts bieden ook mogelijkheden om geautomatiseerd met het netwerk te kunnen communiceren. Zo zouden - in de toekomst - sensoren zichzelf kunnen aanmelden in het netwerk waarna een bronhouder kan claimen de eigenaar te zijn. Voorlopig is dit out of scope voor SensRNet en liggen er nog een aantal fundamentele vraagstukken die eerst beantwoord moeten worden voordat dit mogelijk wordt. Technisch is deze beperking er niet meer (oa) dankzij blockchain.
 
 **Alternatieven**
 
