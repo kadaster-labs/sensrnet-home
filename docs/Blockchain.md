@@ -13,11 +13,15 @@ In werkelijkheid is een vertrouwde derde juist voorwaarde om blockchain (goed) t
 Er zijn wel uitzonderingen zoals Bitcoin ... maar dat daar er niet veel van en ook daar zijn twijfels of een vertrouwde derde wel ontbreekt.
 Op dit moment zijn er drie grote partijen die de 'mining' van Bitcoin doen en doordat zij een 'track record' hebben dat betrouwbaar te doen, worden deze min of meer beschouwd als de vertrouwde derde partij.
 
-```diff
-+ Voor SensRNet is blockchain als trend nauwelijks relevant of van belang. Het gaat - voor dit moment - niet over het invullen van een vertrouwde derde partij, maar om het bij elkaar brengen van informatie uit vertrouwde partijen, namelijk de bronhouders die sensoren bezitten. Aangezien SensRNet nu beperkt is in scope tot overheden, zijn alle deelnemers in het blockchain netwerk bekend en erkend.
+---
 
-+ Op een later moment komt dit wellicht weer ter sprake als sensoren zichzelf gaan aanmelden bij het netwerk en zichzelf gaan registreren ... maar dat is (nog) toekomstmuziek.
-```
+_**SensRNet view**_
+
+Voor SensRNet is blockchain als trend nauwelijks relevant of van belang. Het gaat - voor dit moment - niet over het invullen van een vertrouwde derde partij, maar om het bij elkaar brengen van informatie uit vertrouwde partijen, namelijk de bronhouders die sensoren bezitten. Aangezien SensRNet nu beperkt is in scope tot overheden, zijn alle deelnemers in het blockchain netwerk bekend en erkend.
+
+Op een later moment komt dit wellicht weer ter sprake als sensoren zichzelf gaan aanmelden bij het netwerk en zichzelf gaan registreren ... maar dat is (nog) toekomstmuziek.
+
+---
 
 > **Hoe werkt een Blockchain?**
 > Een blockchain is een transactieketen van data die gedeeld is tussen een netwerk van individuele onafhankelijke partijen.
@@ -34,9 +38,13 @@ Een blockchain, of beter gezegd DLT, legt transacties vast in blokken die onweer
 Nr #2 van de Key Concepts van SensRNet is _'[Event-driven](KeyConcepts.md#event-driven)'_.
 Dit sluit - niet toevallig - heel goed aan bij de transacties van een DLT.
 
-```diff
-+ Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
-```
+---
+
+_**SensRNet view**_
+
+Voor SensRNet is een DLT de technologische oplossing voor de Key Concepten om decentraal events te kunnen vastleggen en te delen in een netwerk van nodes.
+
+---
 
 Er zijn wel overwegingen die in acht genomen moeten worden:
 
@@ -76,3 +84,4 @@ Deze laatste zou een goed alternatief zijn als Multichain te kort gaat schieten 
 Meer info:
 
 - blog: [Public vs Private Blockchain in a Nutshell](https://medium.com/coinmonks/public-vs-private-blockchain-in-a-nutshell-c9fe284fa39f)
+- info: [Blockchain for Dummies](https://www.blockchainnow.nl/blockchain-voor-dummies)
