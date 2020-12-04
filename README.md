@@ -31,6 +31,7 @@ Read more:
 
 - [Project Board](https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true)
 - [Functional Advisory Board](docs/FAB.md) ([notes](notes/))
+- [Users Group](docs/UsersGroup.md) (UG; incl Pilotgroep) ([notes](notes/))
 
 ---
 
