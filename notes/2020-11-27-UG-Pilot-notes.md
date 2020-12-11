@@ -45,6 +45,12 @@ We hebben gesproken over:
 
 - Q&A SensRNet-aaS met Marc en SW1 => 1e aanpak/voorstel
 
+- HELMOND
+  
+  - 18-11 met Gemeente Helmond. Er is geen 'smart' architect beschikbaar in Helmond nu.
+  
+  - Vragen input 'functie profiel' om te gebruiken voor vacature
+
 - Provincie Noord-Brabant (PNB): 
   
   - Op 16-11 gesprek met Provincie Noord-Brabant. Follow-up/commitmnent toen niet helder
