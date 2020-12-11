@@ -31,7 +31,7 @@ We hebben gesproken over:
   
   Extra vraag: Kunnen jullie een open source aanbod doen? Antwoord: Jazeker! :-)
 
-En verder ...
+**En verder**: Afgelopen weken gesprekken om business Eindhoven, PNB en Helmond aan te haken positief
 
 **Gemeente Breda**
 
@@ -39,7 +39,17 @@ En verder ...
 
 **Gemeente Eindhoven**
 
-- ...?
+- Eigenaarschap secorhoofd Ruimtelijk Domein/Ruimtelijke Uitvoering, structureel budget, 'frisse en slimme meid' vanuit business FAB/Geo hoek+ borging beheer
+  
+  Note: To Be Confirmed!
+
+- Q&A SensRNet-aaS met Marc en SW1 => 1e aanpak/voorstel
+
+- Provincie Noord-Brabant (PNB): 
+  
+  - Op 16-11 gesprek met Provincie Noord-Brabant. Follow-up/commitmnent toen niet helder
+  
+  - Op 26-11 nadere kennismaking met nieuwe Enterprise Architect. Wordt vervolgd.
 
 **Gemeente Den Bosch**
 
