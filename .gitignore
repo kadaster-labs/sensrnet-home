@@ -1,2 +1,5 @@
 # generated files
 out/
+
+# IDE files
+.vscode/
