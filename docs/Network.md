@@ -10,7 +10,7 @@ There are actually multiple options, open for development and evolution of the n
 1. 1 node per department per municipality -> ca. 1000+ nodes
 1. 1 node per province -> ca. 12+ nodes
 1. 1 node per province + 1 node per (huge) city -> ca. 20+ nodes
-1. any mix -> betwee 12 and 2000 nodes
+1. any mix -> between 12 and 2000 nodes
 1. <s>Centraal -> 2 nodes (mutation + information side)</s>
 
 | Network set up 1 node per municipality     | Network set up 1 node per province     |
