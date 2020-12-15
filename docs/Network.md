@@ -1,4 +1,4 @@
-# Network Options
+# Network
 
 SensRNet is build on the [Key Concept](KeyConcepts.md) 'Decentralization as given'.
 This is applied as a decentral [architecture](Architecture.md) based on a distributed ledger (technology underneath [blockchain](Blockchain.md)).
