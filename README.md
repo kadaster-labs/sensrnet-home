@@ -15,9 +15,8 @@ Read more:
 
 - [Key Concepts](docs/KeyConcepts.md)
 - [Architecture](docs/Architecture.md)
-- [Model](docs/Model.md) and [Definitions](docs/Definitions.rst)
 - [Network](docs/Network.md)
-- [Model](docs/Model.md)
+- [Model](docs/Model.md) and [Definitions](docs/Definitions.rst)
 - [Blockchain](docs/Blockchain.md)
 
 **Functional**
