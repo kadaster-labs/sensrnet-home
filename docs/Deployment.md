@@ -1,35 +1,68 @@
 # Deployment (EN)
 
 Deployment is about how the system is running in a (production) environment.
-On this page the ideas about the end situation are described as well as the intermediate period growing towards the final situation.
-This is building on the [test environment](Architecture.md#test-environments) described in the [architecture](Architecture.md) (also shown below).
+SensRNet components are packaged in [Docker](https://www.docker.com/resources/what-container) containers.
+These containers are designed to be run on [Kubernetes](https://kubernetes.io/), an open source, container orchestration platform.
+Kubernetes can be deployed in your own datacenter or can be purchased at one of the cloud providers.
 
-![SensRNet Test Environments](../images/SensRNet-TestEnvs.png)
+Currently only [Microsoft Azure](https://azure.microsoft.com/nl-nl/overview/) managed Kubernetes Service, [AKS](#aks), is described and supported by the development team.
 
-The architecture is built upon one or more containers for each component.
+**Altenative(s) to be investigated**
 
-## MultiChain implementation
+- Input from Municipality of Nijmegen:
+  Take our discussion with the VNG/CommonGround initiative [Haven](https://haven.commonground.nl/) for a standardized Kubernetes environment into account
 
-![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers.png)
 
-The [MultiChain](SyncMultiChainEN.md) infrastructure is based on the Bitcoin Core architecture, which it extends by supplying support for permissions, assets and streams.
-For Kadaster this is deployed on [Microsoft Azure](https://azure.microsoft.com/en-us/overview/).
-Our MultiChain deployment has been containerized, and fits the architecture well.
-This permissioned blockchain network is very resillient, as it keeps functioning and synchronizing when any individual node goes offline.
+## ALZ Cookbook
 
-## Deployment steps
+ALZ stands for Azure Landing Zone. For the MVP pilot group BrabantStad, we are envisioning SensRNet as a Service, based on an 'ALZ cookbook'.
+This is work in progress, to be delivered by [SoftwareOne/Comparex](https://www.softwareone.com/), reusing the HLD ALZ for the Municipalities of Eindhoven (by PQR) and Tilburg (by Wortell).
 
-1. Set up Viewer Node
-   1. Request AKS (e.g. `sensrnet-viewer-1`)
-   1. Deploy MultiChain
-   1. Initiate SensRNet chain
-1. Set up Registry Node (repeat for each node)
-   1. Request AKS (e.g. `sensrnet-registry-1`)
-   1. Deploy MultiChain
-   1. Join SensRNet chain
-   1. Deploy Registry Backend:
-      1. Deploy Mongo
-      1. Deploy Eventstore
-      1. Deploy Backend
-   1. Deploy Sync-Bridge
-   1. Deploy Registry Frontend
+
+## AKS Cookbook
+
+AKS stands for [Microsoft Azure Kubernetes Service](https://azure.microsoft.com/nl-nl/services/kubernetes-service/) and is the 'Microsoft taste' / way of providing managed Kubernetes to their clients.
+
+The [architecture](Architecture.md) of SensRNet describes multiple components.
+To run a [Registry Node](Architecture.md#registry-node) the following containers need to be deployed:
+
+1. [MultiChain](SyncMultiChainEN.md)
+1. [Registry Backend](https://github.com/kadaster-labs/sensrnet-registry-backend):
+   1. MongoDB
+   1. Eventstore
+   1. Backend (itself)
+1. [Sync](https://github.com/kadaster-labs/sensrnet-sync)
+1. [Registry Frontend](https://github.com/kadaster-labs/sensrnet-registry-frontend)
+
+
+(In short) to do so on AKS follow this cookbook (including networking set up):
+
+1. Decide on Azure subscription and prepare cli access
+
+   ```
+   $ az login
+
+   $ az account set --subscription "your subscription name/ID"
+   ```
+
+1. Create a fresh resource group `sensrnet-resources`
+
+   ```
+   $ az group create --name sensrnet-resources --location westeurope
+   ```
+
+1. Create a new AKS cluster `sensrnet-aks-1`
+
+   ```
+   $ z aks create --resource-group sensrnet-resources --name sensrnet-aks-1 --node-count 1 --enable-addons monitoring --generate-ssh-keys
+   ```
+
+1. Configure `kubectl` cli access to the cluster
+
+   ```
+   $ az aks get-credentials --resource-group sensrnet-resources --name sensrnet-aks-1
+
+   $ kubectl config use-context sensrnet-aks-1
+   ```
+
+For detailed instructions, manuals and scripts, please check out our operaions repository: [sensrnet-ops](https://github.com/kadaster-labs/sensrnet-ops)
