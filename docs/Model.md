@@ -34,17 +34,8 @@ Latest version (dd 2020, Nov 2nd):
 
 ## Definitions
 
-- **Sensor**
-  
-  > EN: ..
+The definitions are put in a seperate table (in reStructuredText format): [Definitions](Definitions.rst)
 
-  > NL: Een sensor is een kunstmatig zintuig dat de omgeving waarneemt en de kenmerken daarvan meet. Ze bestaan in verschillende verschijningsvormen: een thermometer die temperatuur meet, een camera die passanten op een brug telt of een infraroodsensor die kan detecteren of een parkeerplaats bezet is of niet. Via een internetverbinding sturen deze sensoren data door die vervolgens gebruikt kunnen worden om analyses uit te voeren, real time dashboards te maken, of (geautomatiseerde) acties te laten volgen.
-
-- **Datastream**
-  
-  > EN: ..
-
-  > NL: ..
 
 ## Views
 

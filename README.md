@@ -10,7 +10,7 @@ Read more:
 - [Product Vision](docs/ProductVision.md)
 - [Key Concepts](docs/KeyConcepts.md)
 - [Architecture](docs/Architecture.md)
-- [Model](docs/Model.md)
+- [Model](docs/Model.md) and [Definitions](docs/Definitions.rst)
 - [Use Cases (NL)](docs/UseCasesNL.md)
 - [Test Scenario's (NL)](docs/TestScenariosNL.md)
 - [Deployment (EN)](docs/Deployment.md)
