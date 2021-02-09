@@ -1,6 +1,37 @@
-site_name: SensRNet Home
+site_name: SensRNet Documentation
 docs_dir: docs
 site_dir: site
+repo_url: https://github.com/kadaster-labs/sensrnet-home
 nav:
-    - Home: README.md
-theme: readthedocs
+    - 'General':
+      - Overview: README.md
+      - ProductVision.md
+      - SystemDescriptionNL.md
+    - 'Architecture':
+      - Overview: Architecture.md
+      - KeyConcepts.md
+      - Network.md
+      - Model.md
+      # - Definitions.rst
+      - Blockchain.md
+    - 'Functional':
+      - Use Cases (NL): UseCasesNL.md
+      - TestScenariosNL.md
+    - 'Technical':
+      - Overview: Deployment.md
+      - Multichain: SyncMultiChainEN.md
+    - 'Organisation':
+      - Functional Advisory Board: FAB.md
+      - Users Group: UsersGroup.md
+theme:
+  name: material
+  features:
+    - navigation.instant  
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+  palette:
+    primary: amber
+  icon:
+    logo: material/antenna
+    
