@@ -11,6 +11,6 @@ De Pilotgroep bestaat op dit moment uitsluitend uit de BrabantStad gemeenten: Ge
 
 Users Group in context van gehele SensRNet organisatie in wording:
 
-![Governance Structure (under construction)](../images/SensRNet-governance-structure-v0.2.png)
+![Governance Structure (under construction)](img/SensRNet-governance-structure-v0.2.png)
 
 Bovenstaande organigram is in wording en nog niet gerealiseerd. Wel is de Users Group in beperkte vorm opgezet om input voor het Product Development Team te kunnen leveren om een MVP te kunnen ontwikkelen. In beperkte vorm aangezien er nog geen grotere 'kapstok' is om de Users Group in bovenstaande hoedanigheid te positioneren. We zijn onderweg naar morgen ;-)

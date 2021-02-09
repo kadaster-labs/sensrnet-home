@@ -6,11 +6,11 @@ Deze architectuur is gebaseerd op een aantal [Key Concepts](KeyConcepts.md).
 
 De architectuur van SensRNet heeft een holistische benadering van het beheer van sensoren op nationaal niveau:
 
-![Holistische benadering](../images/SensRNet-holistische-benadering.png)
+![Holistische benadering](img/SensRNet-holistische-benadering.png)
 
 De 'solution' is dan ook een netwerk van deelnemers, nodes in een netwerk, waarin elk bevoegd gezag een node is met eigen applicatie en infrastructuur om het beheer van sensoren uit te voeren. Onderdeel van die infrastructuur is het standaard [Component Sync](#component-sync) dat er voor zorgt dat data gedeeld wordt in het netwerk, met alle andere nodes.
 
-![Solution](../images/SensRNet-Solution.png)
+![Solution](img/SensRNet-Solution.png)
 
 ## Walking skeleton
 
@@ -18,7 +18,7 @@ De realisatie van het SensRNet, het Nederlandse nationale sensorenregister, word
 
 ## Componenten
 
-![Components](../images/SensRNet-componenten.png)
+![Components](img/SensRNet-componenten.png)
 
 SensRNet bestaat uit een aantal componenten:
 
@@ -33,7 +33,7 @@ In een 'Registry Node' worden de componenten 1 en 2 uitgevoerd en component 4 be
 
 Het beheer van sensoren, de 'registry', bestaat uit twee componenten die nauw samenwerken: een frontend en backend. De backend biedt APIs aan de frontend. Voor de (geo-services) WMS/WFS is een aparte server aan dezelfde database gekoppeld.
 
-![SensRNet Registry Components](../images/SensRNet-Registry-components.png)
+![SensRNet Registry Components](img/SensRNet-Registry-components.png)
 
 Er kunnen meerdere varianten bestaan voor de verschillende componenten voor de verschillende behoeftes van de diverse bevoegde gezagen.
 
@@ -45,11 +45,11 @@ Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken n
 
 ### Component Sync
 
-![SensRNet Sync](../images/SensRNet-component-sync.png)
+![SensRNet Sync](img/SensRNet-component-sync.png)
 
 **Sync** is de synchronisatie van alle 'shared data' in het netwerk. Daarnaast biedt deze component APIs voor directe calls tussen specifieke nodes.
 
-![SensRNet Sync](../images/SensRNet-Sync-component.png)
+![SensRNet Sync](img/SensRNet-Sync-component.png)
 
 1. **Synchronisatie van events van elke node met alle nodes**
    
@@ -69,7 +69,7 @@ Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken n
 Een omgeving (environment) bestaat uit meerdere containers die samen een node vormen.
 Om deze in samenhang te kunnen draaien en om de operatie (Operations) gemakkelijk te maken, is gebruik van [Kubernetes](https://kubernetes.io/) als uitgangspunt genomen voor SensRNet en omgevingen (environments).
 
-![SensRNet Environments & Containers](../images/SensRNet-EnvsAndContainers.png)
+![SensRNet Environments & Containers](img/SensRNet-EnvsAndContainers.png)
 
 
 Details van de [deployment](Deployment.md) (uitrollen) van de componenten is apart beschreven.
@@ -78,4 +78,4 @@ Details van de [deployment](Deployment.md) (uitrollen) van de componenten is apa
 
 Voor het testen wordt gebruik gemaakt van Kadaster infrastructuur in Azure/KadasterLabs. Daarin worden twee 'Registry nodes' opgezet die twee verschillende gemeenten simuleren. Daarnaast natuurlijk de 'Publishing node' die standaard bij Kadaster blijft draaien.
 
-![SensRNet Test Environments](../images/SensRNet-TestEnvs.png)
+![SensRNet Test Environments](img/SensRNet-TestEnvs.png)

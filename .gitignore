@@ -1,9 +1,9 @@
 # editor files
 .vscode/
 
-
 # generated files
 out/
+site/
 
 # IDE files
 .vscode/

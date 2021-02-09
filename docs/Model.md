@@ -25,11 +25,11 @@ In our first event-storming session we came up with this [event modeling](https:
 
 'Walking skeleton' version:
 
-![Event Modeling](../images/SensRNet-event-modeling.png)
+![Event Modeling](img/SensRNet-event-modeling.png)
 
 Latest version (dd 2020, Nov 2nd):
 
-![Event Modeling](../images/SensRNet-Event-Modeling-v20201102.jpg)
+![Event Modeling](img/SensRNet-Event-Modeling-v20201102.jpg)
 
 
 ## Definitions
@@ -42,7 +42,7 @@ The definitions are put in a seperate table (in reStructuredText format): [Defin
 The views in the event modeling above contains of two main parts: Owner and Sensor.
 The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model and the [SensorThingAPI](https://en.wikipedia.org/wiki/SensorThings_API)
 
-![UML Model](../images/SensRNet-UML-Model.png)
+![UML Model](img/SensRNet-UML-Model.png)
 
 
 This needs to be complemented with 'recipies' of sensible and possible combinations of values. For example, a temperature data stream has options for _unitOfMeasurement_ between `Degree Celcius` and `Degree Farenheit`, not `percentage CO2`.

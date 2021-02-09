@@ -9,7 +9,7 @@ Een netwerk van deelnemers omdat het uitgangspunt is dat een bronhouder autonoom
 Sterker nog, door het gebruik van open source en gedocumenteerde APIs kan een bronhouder een eigen implementatie gebruiken of zelfs bestaande systemen aanpassen en blijven gebruiken en koppelen met het netwerk.
 Door het netwerk wordt de (publieke) data gedeeld zodat gezamenlijk een nationale, landsdekkende registratie ontstaat.
 
-![Solution](../images/SensRNet-Solution.png)
+![Solution](img/SensRNet-Solution.png)
 
 Een netwerk bestaat uit deelnemers, vaak aangeduid met een 'node'; een netwerk van nodes.
 De node van een bronhouder wordt een 'Registry Node' genoemd.

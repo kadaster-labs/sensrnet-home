@@ -15,4 +15,4 @@ There are actually multiple options, open for development and evolution of the n
 
 | Network set up 1 node per municipality     | Network set up 1 node per province     |
 |--------------------------------------------|----------------------------------------|
-| ![Network option municipalities](../images/SensRNet-network-option-municipalities.png) | ![Network option provinces](../images/SensRNet-network-option-provinces.png) |
+| ![Network option municipalities](img/SensRNet-network-option-municipalities.png) | ![Network option provinces](img/SensRNet-network-option-provinces.png) |
