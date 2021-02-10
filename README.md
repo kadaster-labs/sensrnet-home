@@ -20,6 +20,8 @@ Publish:
 
 ```bash
 $ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+
+$ git checkout gh-pages && git push && git checkout master
 ```
 
 ---
