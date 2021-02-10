@@ -4,7 +4,7 @@ site_dir: site
 repo_url: https://github.com/kadaster-labs/sensrnet-home
 nav:
     - 'General':
-      - Overview: Index.md
+      - Overview: README.md
       - ProductVision.md
       - SystemDescriptionNL.md
     - 'Architecture':
