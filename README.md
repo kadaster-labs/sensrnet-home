@@ -8,9 +8,20 @@ Publication of documentation: https://kadaster-labs.github.io/sensrnet-home/
 
 ## Build & Publication
 
+The publication of the documentation is based on [Squidfunk Mkdocs Material](https://squidfunk.github.io/mkdocs-material/)
+
+Develop & serve on [localhost:8000](http://localhost:8000/):
+
+```bash
+$ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+```
+
+Publish:
+
 ```bash
 $ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
 ```
+
 ---
 
 ## Find Us
