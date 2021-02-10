@@ -1,39 +1,16 @@
 # Home of the SensRNet
 
-<img src="images/SensRNet-logo.png" width="300" align="right">
+<img src="docs/img/SensRNet-logo.png" width="300">
 
 SensRNet - The Dutch National Sensor Registry Network
 
-Read more:
+Publication of documentation: https://kadaster-labs.github.io/sensrnet-home/
 
-**General**
+## Build & Publication
 
-- [Product Vision](docs/ProductVision.md)
-- [Systeembeschrijving (NL)](docs/SystemDescriptionNL.md)
-
-**Architectural**
-
-- [Key Concepts](docs/KeyConcepts.md)
-- [Architecture](docs/Architecture.md)
-- [Network](docs/Network.md)
-- [Model](docs/Model.md) and [Definitions](docs/Definitions.rst)
-- [Blockchain](docs/Blockchain.md)
-
-**Functional**
-
-- [Use Cases (NL)](docs/UseCasesNL.md)
-- [Test Scenario's (NL)](docs/TestScenariosNL.md)
-
-**Technical**
-
-- [Deployment (EN)](docs/Deployment.md)
-
-**Organisation**
-
-- [Project Board](https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true)
-- [Functional Advisory Board](docs/FAB.md) ([notes](notes/))
-- [Users Group](docs/UsersGroup.md) (UG; incl Pilotgroep) ([notes](notes/))
-
+```bash
+$ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+```
 ---
 
 ## Find Us

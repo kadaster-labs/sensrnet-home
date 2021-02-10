@@ -31,7 +31,7 @@ theme:
     - navigation.tabs.sticky
     - navigation.sections
   palette:
-    primary: amber
+    primary: indigo
   icon:
     logo: material/antenna
     
