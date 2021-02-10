@@ -1,6 +1,6 @@
 # The SensRNet Contribution Guide
 
-The SensRNet project aims to start and support the development of a National Sensor Registry (see our [Product Vision](https://github.com/kadaster-labs/sensrnet-home/blob/master/docs/ProductVision.md)) in The Netherlands. While the future National Sensor Registry product is owned and maintained by a consortium, the SensRNet project is intended as (and will stay) an open source project. Contribution to this project is started by a group of developers at Kadaster but the aim is to get as many contributors as possible in the future.
+The SensRNet project aims to start and support the development of a National Sensor Registry (see our [Product Vision](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/ProductVision.md)) in The Netherlands. While the future National Sensor Registry product is owned and maintained by a consortium, the SensRNet project is intended as (and will stay) an open source project. Contribution to this project is started by a group of developers at Kadaster but the aim is to get as many contributors as possible in the future.
 
 Thus we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration. Therefore we love issues and pull requests from everyone.
 
@@ -12,7 +12,7 @@ You don’t need to change any of our code or documentation to be a contributor!
 If you want to add to the documentation or code of one of our projects you should make a pull request.
 If you never used GitHub, get up to speed with [Understanding the GitHub flow](https://guides.github.com/introduction/flow/) or follow one of the great free interactive courses in the [GitHub learning lab](https://lab.github.com/) on working with GitHub and working with [MarkDown](https://lab.github.com/githubtraining/communicating-using-markdown), the syntax this project’s documentation is in.
 
-This project is licensed under the [European Union Public Licence](https://eupl.eu/), also available [here](https://github.com/kadaster-labs/sensrnet-home/blob/master/LICENSE.md) in MarkDown, English and Dutch.
+This project is licensed under the [European Union Public Licence](https://eupl.eu/), also available [here](https://github.com/kadaster-labs/sensrnet-home/blob/main/LICENSE.md) in MarkDown, English and Dutch.
 
 ### 1. Make your changes
 This project uses the [GitHub flow](https://guides.github.com/introduction/flow/) and contributors are requested to use [Fork & Pull](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-collaborative-development-models) creating a personal copy of an existing repository. You can push changes to your personal fork and after a pull request the changes can (eventually) be pulled into the source repository by the project maintainer.
