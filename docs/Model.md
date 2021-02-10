@@ -63,4 +63,4 @@ The fields in both events are the same (for a start and maintained as such as fa
 
 The events in the Registry Backend are modelled like this:
 
-![SensRNet Registry Backend Events](https://raw.githubusercontent.com/kadaster-labs/sensrnet-registry-backend/master/docs/images/events-uml.svg)
+![SensRNet Registry Backend Events](https://raw.githubusercontent.com/kadaster-labs/sensrnet-registry-backend/main/docs/images/events-uml.svg)
