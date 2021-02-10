@@ -23,6 +23,8 @@ nav:
     - 'Organisation':
       - Functional Advisory Board: FAB.md
       - Users Group: UsersGroup.md
+extra_css:
+  - css/sensrnet.css
 theme:
   name: material
   features:
@@ -32,6 +34,7 @@ theme:
     - navigation.sections
   palette:
     primary: indigo
+    accent: amber
   icon:
     logo: material/antenna
     
