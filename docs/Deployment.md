@@ -43,7 +43,5 @@ This installation is tested on [Microsoft Azure](https://azure.microsoft.com/nl-
    $ kubectl config use-context aks-sensrnet-registry-1
    ```
 
-1. [optional] Secure and/or install secrets into your Kubernetes cluster following the [SensRNet Ops](https://github.com/kadaster-labs/sensrnet-ops) way or your own choice of storing secrets
-
 1. Follow the [Helm chart instructions](https://github.com/kadaster-labs/sensrnet-helm-charts)
 
