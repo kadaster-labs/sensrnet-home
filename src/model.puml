@@ -1,6 +1,6 @@
 @startuml "SensRNet-UML-Model"
 
-package organisation <<Rectangle>> {
+package LegalEntity <<Rectangle>> {
     together {
         class ContactDetails {
             name: String
@@ -8,24 +8,24 @@ package organisation <<Rectangle>> {
             phone: String
         }
 
-        class Organisation {
-            id: SensRNet.OrganisationId
+        class LegalEntity {
+            id: SensRNet.LegalEntityId
             website: URL
         }
 
-        Organisation *- ContactDetails : contactPerson
-        Organisation *- ContactDetails : publicContactDetails
+        LegalEntity *- ContactDetails : contactPerson
+        LegalEntity *- ContactDetails : publicContactDetails
     }
 
     enum Role {
         // device eigenaar
-        DEVICE_OWNER,
+        DEVICE_OWNER
         // sensor eigenaar + SensRNet data verantwoordelijke
-        SENSOR_OWNER,
+        SENSOR_OWNER
         // technisch verantwoordelijke
-        TECHNICAL_STEWARD,
+        TECHNICAL_STEWARD
         // juridisch verantwoordelijke
-        LEGAL_STEWARD,
+        LEGAL_STEWARD
         // data verantwoordelijke
         DATA_STEWARD
     }
@@ -36,21 +36,26 @@ package organisation <<Rectangle>> {
         username: String
         email: String
         // rights connected to role
-        role: String
+        userRole: UserRole
     }
 
-    note right
-        <size:10>Organisations are the 'real'</size>
+    note left
+        <size:10>LegalEntitys are the 'real'</size>
         <size:10>objects but will be</size>
         <size:10>represented by users. Users</size>
         <size:10>will connect with a social</size>
         <size:10>or business account</size>
-        <size:10>(e.g. Google, Azure, </size>
-        <size:10>Facebook)</size>
+        <size:10>(e.g. Office365, Google)</size>
     end note
 
-    Organisation o-- "*" User : users
-    Organisation o- "*" Role : roles
+    enum UserRole {
+        USER
+        ADMIN
+    }
+
+    LegalEntity o-- "*" User : users
+    LegalEntity o- "*" Role : roles
+    User - UserRole : role
 }
 
 package sensor <<Rectangle>> {
@@ -59,47 +64,73 @@ package sensor <<Rectangle>> {
         class Device {
             id: SensRNet.DeviceId
             description: String
+            connectivity: String
+            .. out of scope MVP ..
+            networkOperator: String
+            powerSupply: String
+            properties: jsonObject
         }
 
         class Sensor {
             id: SensRNet.SensorId
             name: String
-            // de vergunning of verordening
-            aim: String
             description: String
             manufacturer: String
+            supplier: String
             // whole sensor or per dataStream?
-            active: Boolean 
-            observationArea: GML
-            // or only on dataStream?
+            isActive: Boolean 
             documentation: URL
-            .. variants are in seperate lists/enums ..
-            theme: List<Themes>
-            type: Type
-            // per type details
-            typeDetails: jsonObject
+            properties: jsonObject
         }
 
         class DataStream {
             id: SensRNet.DataStreamId
             name: String
-            reason: String
             description: String
-            // physicalElement
-            observedProperty: String
+            theme: List<Theme>
+            .. stream details ..
             unitOfMeasurement: String
+            resultTime: String
+            dataQuality: String
             isPublic: Boolean
             isOpenData: Boolean
+            containsPIData: Boolean
             isReusable: Boolean
             documentation: URL
             dataLink: URL
-            // in seconds
-            dataFrequency: Int
-            // 0.0 - 1.0
-            dataQuality: Float
+            .. out of scope MVP ..
+            dataClassification: String
         }
 
     }
+
+    class Observation {
+        id: SensRNet.ObservationId
+        description: String
+        observedProperty: String
+        observedArea: GML
+        legalGround: String
+        .. out of scope MVP ..
+        phenomenonTime: datetime
+        result: any
+        resultQuality: String
+        parameters: jsonObject
+    }
+
+    class Location {
+        description: String
+        // xyz-array
+        coordinates: Array
+        // reference to external Id
+        // e.g. IMGEO+ objectId
+        baseObjectId: String
+    }
+
+    class HistoricalLocation extends Location {
+        time: datetime
+    }
+
+
 
     interface Type
 
@@ -109,73 +140,61 @@ package sensor <<Rectangle>> {
     end note
 
     enum Category {
-        SENSOR,
-        CAMERA,
+        SENSOR
+        CAMERA
         BEACON
     }
 
-    enum Themes {
-        Weather,
-        NatureAndEnvironment,
-        Waste,
-        Safety,
-        Mobility,
-        SoilAndUnderground,
+    enum Theme {
+        Weather
+        NatureAndEnvironment
+        Waste
+        Safety
+        Mobility
+        SoilAndUnderground
         Other
     }
 
-    enum TypeSensor {
-        WeatherStation,
-        WindGauge,
-        WasteContainers,
-        FineDustSensor,
-        UVSensor,
-        LightCell,
-        MotionSensor,
-        FireDetector,
-        WaterLevelMeter,
-        MicrophoneOrSoundMeter,
-        PedometerCounters,
-        RadarDetector,
-        GMSSensor,
-        DetectionLoop,
+    enum TypeSensor extends Type {
+        WeatherStation
+        WindGauge
+        WasteContainers
+        FineDustSensor
+        UVSensor
+        LightCell
+        MotionSensor
+        FireDetector
+        WaterLevelMeter
+        MicrophoneOrSoundMeter
+        PedometerCounters
+        RadarDetector
+        GMSSensor
+        DetectionLoop
         HeightDetectionDevice
     }
 
-    enum TypeCamera {
-        EnvironmentalZoneCameras,
-        SecurityCamera,
-        TraphicFlashlight,
+    enum TypeCamera extends Type {
+        EnvironmentalZoneCameras
+        SecurityCamera
+        TraphicFlashlight
     }
 
-    enum TypeBeacon {
+    enum TypeBeacon extends Type {
         NavigationBeacon
-    }
-
-    class Location {
-        x: Float
-        y: Float
-        z: Float
-        epsgCode: Int
-        // reference to external Id
-        // e.g. IMGEO+ objectId
-        baseObjectId: String
     }
 
     Device "1" *-- "1" Location : location
     Device "1" *- "*" Sensor : sensors
     Sensor "1" *- "*" DataStream : dataStreams
+    DataStream -- Observation : observation
 
-    Sensor "1" o-- "*" Themes
+    Sensor "1" o-- "*" Theme
     Sensor "1" o-- "1" Type
-    Type <-- TypeSensor
-    Type <-- TypeBeacon
-    Type <-- TypeCamera
 }
 
-Organisation "1" *-- "*" Device : has <a device-owner>
-Organisation "1" *-- "*" Sensor : has <a sensor-owner>
-Organisation "0" *-- "*" Sensor : has <a legal-steward>
-Organisation "0" *-- "*" DataStream : has <a data-steward>
+LegalEntity "1" *-- "*" Device : has <a device-owner>
+LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
+LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
+LegalEntity "0" *-- "*" DataStream : has <a data-steward>
 
 @enduml
