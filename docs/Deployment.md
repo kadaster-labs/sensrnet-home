@@ -5,7 +5,7 @@ SensRNet components are packaged in [Docker](https://www.docker.com/resources/wh
 These containers are designed to be run on [Kubernetes](https://kubernetes.io/), an open source, container orchestration platform.
 Kubernetes can be deployed in your own datacenter or can be purchased at one of the cloud providers.
 
-As of February 2021 the SensRNet components can be installed with [Helm](https://helm.sh/), the Kubernetes package manager. This is also the basis of the VNG/CommonGround [Haven](https://haven.commonground.nl/) initiative, which standardizes the cloud-agnostic infrastructure.
+As of February 2021 the SensRNet components can be installed with [Helm](https://helm.sh/), the Kubernetes package manager. This is also the basis of the VNG/CommonGround [Haven](https://haven.commonground.nl/) initiative, which standardizes the cloud-agnostic infrastructure. The SensRNet components can be found in the [Common Ground Componentencatalogus](https://componentencatalogus.commonground.nl/componenten?query=sensr).
 
 The Helm charts for SensRNet can be found in a separate repository: [kadaster-labs/sensrner-helm-charts](https://github.com/kadaster-labs/sensrnet-helm-charts) including installation instructions.
 
