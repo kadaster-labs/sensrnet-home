@@ -13,6 +13,7 @@ _All published notes can be found below_
 - [Notes 16-12-2020](2020-12-16-FAB-notes.md)
 - [Notes 13-01-2021](2021-01-13-FAB-notes.md)
 - [Notes 27-01-2021](2021-01-27-FAB-notes.md)
+- [Notes 10-02-2021](2021-02-10-FAB-notes.md)
 
 ## Users Group
 
