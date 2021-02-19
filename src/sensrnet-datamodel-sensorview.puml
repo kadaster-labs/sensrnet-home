@@ -1,0 +1,208 @@
+@startuml "SensRNet-Datamodel-SensorView"
+
+package LegalEntity <<Rectangle>> {
+    together {
+        class ContactDetails {
+            name: String
+            email: String
+            phone: String
+        }
+
+        class LegalEntity {
+            id: SensRNet.LegalEntityId
+            website: URL
+        }
+
+        LegalEntity *- ContactDetails : contactPerson
+        LegalEntity *- ContactDetails : publicContactDetails
+    }
+
+    enum Role {
+        AGGREGATE_OWNER (aggregaat eigenaar)
+        {abstract} TECHNICAL_STEWARD (technisch verantwoordelijke)
+        {abstract} LEGAL_STEWARD (juridisch verantwoordelijke)
+        {abstract} DATA_STEWARD (data verantwoordelijke)
+    }
+
+    class User {
+        id: SensRNet.UserId
+        socialId: String
+        username: String
+        email: String
+        // rights connected to role
+        userRole: UserRole
+    }
+
+    note left
+        <size:10>LegalEntitys are the 'real'</size>
+        <size:10>objects but will be</size>
+        <size:10>represented by users. Users</size>
+        <size:10>will connect with a social</size>
+        <size:10>or business account</size>
+        <size:10>(e.g. Office365, Google)</size>
+    end note
+
+    enum UserRole {
+        USER
+        ADMIN
+    }
+
+    LegalEntity o-- "*" User : users
+    LegalEntity o- "*" Role : roles
+    User - UserRole : role
+}
+
+package sensor <<Rectangle>> {
+
+    together {
+
+        class SensorAggregate {
+            id: SensRNet.SensorId
+            type: SensorType
+        }
+
+        class Thing {
+            id: SensRNet.ThingId
+            .. SensorThingsAPI ..
+            name: String
+            description: String
+            {abstract} properties: jsonObject
+            .. SensRNet ..
+            connectivity: String
+            {abstract} networkOperator: String
+            {abstract} powerSupply: String
+        }
+
+        class Datastream {
+            id: SensRNet.DatastreamId
+            .. SensorThingsAPI ..
+            name: String
+            description: String
+            unitOfMeasurement: jsonObject
+            observedArea: GML
+            {abstract} observationType: ValueCode
+            {abstract} phenomenonTime: period
+            {abstract} resultTime: period
+            .. SensRNet ..
+            theme: List<Theme>
+            dataQuality: String
+            isActive: Boolean 
+            isPublic: Boolean
+            isOpenData: Boolean
+            containsPIData: Boolean
+            isReusable: Boolean
+            documentation: URL
+            dataLink: URL
+            {abstract} dataClassification: String
+        }
+
+    }
+
+    class Sensor {
+        id: SensRNet.SensorId
+        .. SensorThingsAPI ..
+        name: String
+        description: String
+        {abstract} metadata: any
+        .. SensRNet ..
+        manufacturer: String
+        supplier: String
+        documentation: URL
+    }
+
+    class ObservedProperty {
+        id: SensRNet.ObservedPropertyId
+        .. SensorThingsAPI ..
+        name: String
+        definition: URL
+        description: String
+        .. SensRNet ..
+        legalGround: String
+        legalGroundLink: URL
+    }
+
+    class Location {
+        id: SensRNet.LocationId
+        .. SensorThingsAPI ..
+        name: String
+        description: String
+        location: xyH-array
+        .. SensRNet ..
+        // reference to external Id
+        // e.g. IMGEO+ objectId
+        baseObjectId: String
+    }
+
+    ' enum Category {
+    '     SENSOR
+    '     CAMERA
+    '     BEACON
+    ' }
+
+    ' note left
+    '     Category can be derived from
+    '     specific type
+    ' end note
+
+    enum Theme {
+        Weather
+        NatureAndEnvironment
+        Waste
+        Safety
+        Mobility
+        SoilAndUnderground
+        Other
+    }
+
+    enum SensorType {
+        .. beacon ..
+        NavigationBeacon
+        .. camera ..
+        EnvironmentalZoneCameras
+        SecurityCamera
+        TraphicFlashlight
+        .. sensor ..
+        WeatherStation
+        WindGauge
+        WasteContainers
+        FineDustSensor
+        UVSensor
+        LightCell
+        MotionSensor
+        FireDetector
+        WaterLevelMeter
+        MicrophoneOrSoundMeter
+        PedometerCounters
+        RadarDetector
+        GMSSensor
+        DetectionLoop
+        HeightDetectionDevice
+    }
+
+    SensorAggregate "1" *- "*" Thing
+    SensorAggregate "1" *-- "*" Sensor
+    SensorAggregate "1" o-- "1" SensorType
+    SensorAggregate "1" *-- "*" Datastream
+
+    Thing "1" *-- "1" Location
+    ' Thing "1" *-- "*" Datastream
+    ' Sensor "1" *-- "*" Datastream : datastreams
+    Datastream - ObservedProperty
+
+    Datastream "1" o-- "*" Theme
+    Datastream "1" --* "0..*" Sensor
+    ' Sensor "1" o-- "1" SensorType
+}
+
+LegalEntity "1" o-- "*" SensorAggregate : is <aggregate-owner>
+' LegalEntity "1" *-- "*" Thing : has <a thing-owner>
+' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
+' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
+' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
+
+note top of sensor
+    <i>cursive</i> field are out of scope
+    of the MVP product
+end note
+
+@enduml

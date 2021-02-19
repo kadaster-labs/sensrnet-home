@@ -1,0 +1,69 @@
+@startuml "SensRNet-Datamodel-Context"
+
+package "'Physical World'" <<Rectangle>> {
+
+    class "Physical Device" {
+        // visible in the real world
+    }
+
+}
+
+package "SensorRegistry" <<Rectangle>> #LightCyan {
+
+
+    class SensorAggregate {
+        digital representation
+        a.k.a. 'the sensor'
+    }
+
+    note left
+        <b>Sensor</b> is often perceived as the
+        device which is visible in the physical
+        world. It might (or does) actually consist
+        of multiple parts of electronics
+        which transform some physical elements
+        into electronic and digital signals. The
+        outcome of digital signals is what is relevant
+        to the SensorRegistry. All details of the
+        electronic internals of the device can be
+        gathered as aggregate.
+    end note
+
+    class Datastream
+
+    class ObservedProperty
+
+    SensorAggregate - Datastream
+    Datastream -- ObservedProperty
+
+}
+
+note as N1
+    In general the SensorRegistry is the metadata
+    linking the physical conceivable world to the
+    digital conceivable world of the raw data and
+    the governmental world in which goal and legal
+    ground are decided.
+end note
+
+N1 .. "SensorRegistry"
+
+package "'Digital World'" <<Rectangle>> {
+
+    class "Digital channel" {
+        raw data 'visible' 
+        in the digital world
+    }
+
+}
+
+package "'Governmental World'" <<Rectangle>> {
+
+    class "Goal & Legal Ground"
+}
+
+"Physical Device" -- "SensorAggregate"
+Datastream - "Digital channel" : what is being send out of the SensorAggregate
+ObservedProperty - "Goal & Legal Ground"
+
+@enduml
