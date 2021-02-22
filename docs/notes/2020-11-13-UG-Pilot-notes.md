@@ -2,7 +2,7 @@
 
 _(Dutch only)_
 
-Dit zijn de notes van het overleg op **13 november 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../docs/UsersGroup.md).
+Dit zijn de notes van het overleg op **13 november 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../UsersGroup.md).
 
 ## Attendees
 
@@ -32,11 +32,11 @@ In alle gemeentes wordt gezocht naar business owner voor een sensorenregister en
 
 **Gemeente Tilburg**
 
-  - business owner gevonden! -> verbinding verloopt via [FAB](../docs/FAB.md)
+  - business owner gevonden! -> verbinding verloopt via [FAB](../FAB.md)
   - Innovation Lab Lead haakt aan -> in contact brengen met Kadaster
 
 **Kadaster**
 
-  - [Deployment](../docs/Deployment.md) cookbook opgesteld voor bronhouders / kennisdeling
+  - [Deployment](../Deployment.md) cookbook opgesteld voor bronhouders / kennisdeling
   - inrichting eigen omgeving loopt (en heeft nog wel even doorlooptijd nodig ivm (oa) certificaten, DNS e.d.)
   - domeinnaam `sensorenregister.nl` is geregistreerd

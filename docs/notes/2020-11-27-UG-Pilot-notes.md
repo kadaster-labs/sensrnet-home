@@ -2,7 +2,7 @@
 
 _(Dutch only)_
 
-Dit zijn de notes van het overleg op **27 november 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../docs/UsersGroup.md).
+Dit zijn de notes van het overleg op **27 november 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../UsersGroup.md).
 
 ## Attendees
 
@@ -25,7 +25,7 @@ We hebben gesproken over:
   
   Dit betreft vooral het juist inrichten van abonnementen en subscriptions in Azure zodat kosten en scheiding van verantwoordelijkheden goed zijn ingericht.
 
-- het opzetten en inrichten van een AKS cluster voor SensRNet volgens het [Deployment](../docs/Deployment.md) cookbook (en later public gemaakte [Ops](https://github.com/kadaster-labs/sensrnet-ops) repo)
+- het opzetten en inrichten van een AKS cluster voor SensRNet volgens het [Deployment](../Deployment.md) cookbook (en later public gemaakte [Ops](https://github.com/kadaster-labs/sensrnet-ops) repo)
 
 - hoe zou SoftwareOne hierbij kunnen helpen cq in kunnen voorzien? SoftwareOne komt binnen twee weken terug met een voorstel.
   

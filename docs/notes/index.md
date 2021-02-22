@@ -15,7 +15,7 @@ _All published notes can be found below_
 - [Notes 27-01-2021](2021-01-27-FAB-notes.md)
 - [Notes 10-02-2021](2021-02-10-FAB-notes.md)
 
-## Users Group
+## Users Group Notes
 
 - [Notes 28-10-2020](2020-10-28-UG-Pilot-notes-session-1.md)
 - [Notes 13-11-2020](2020-11-13-UG-Pilot-notes.md)

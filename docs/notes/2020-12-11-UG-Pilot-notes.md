@@ -2,7 +2,7 @@
 
 _(Dutch only)_
 
-Dit zijn de notes van het overleg op **11 december 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../docs/UsersGroup.md).
+Dit zijn de notes van het overleg op **11 december 2020** van de **Pilotgroep**, de eerste vorm van de [Users Group](../UsersGroup.md).
 
 ## Attendees
 

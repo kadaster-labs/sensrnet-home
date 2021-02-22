@@ -2,7 +2,7 @@
 
 _(Dutch only)_
 
-Vandaag hebben we de eerste sessie van het [Functional Advisory Board](../docs/FAB.md), 'het FAB', gehad. Leuk en goed om met betrokken stakeholders inhoudelijk te spreken over wat een nationaal sensorenregister zou moeten doen, waar het in moet voorzien, wat het aan burgers biedt, waar het juist niet past of onmogelijk is om op nationaal niveau informatie te delen en/of te publiceren.
+Vandaag hebben we de eerste sessie van het [Functional Advisory Board](../FAB.md), 'het FAB', gehad. Leuk en goed om met betrokken stakeholders inhoudelijk te spreken over wat een nationaal sensorenregister zou moeten doen, waar het in moet voorzien, wat het aan burgers biedt, waar het juist niet past of onmogelijk is om op nationaal niveau informatie te delen en/of te publiceren.
 
 ## Attendees
 

@@ -2,6 +2,7 @@ site_name: SensRNet Documentation
 docs_dir: docs
 site_dir: site
 repo_url: https://github.com/kadaster-labs/sensrnet-home
+edit_uri: edit/main/docs/
 nav:
     - 'General':
       - Overview: README.md
@@ -23,6 +24,8 @@ nav:
     - 'Organisation':
       - Functional Advisory Board: FAB.md
       - Users Group: UsersGroup.md
+      - Notes: notes/index.md
+      - Project Board: https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true
 extra_css:
   - css/sensrnet.css
 theme:
