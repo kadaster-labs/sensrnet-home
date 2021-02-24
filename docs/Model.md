@@ -7,7 +7,8 @@ But because this can be very diverse and complex, the general conception of 'the
 
 So on one hand there's the object we conveive in the physical world. On the other hand there's the data coming out of this 'box'.
 The stream of raw data of the observations, the values of the measurements.
-This can be indicated as 'datastream' and could be described as the general conception of the sensor in 'the digital world'. On top of these conceptions the datamodel links the 'governmental world' to the sensor (aggregate) and datastreams with the goal and the legal decision which form the legal ground on why these measurements are allowed to take place.
+This can be indicated as 'datastream' and could be described as the general conception of the sensor in 'the digital world'. On top of these conceptions the datamodel links the 'governmental world' to the sensor (aggregate) and datastreams with the goal and the legal decision which form the legal ground on why these measurements are allowed to take place (see also [Datamodel Explained.pptx](SensRNet-Datamodel-explained.pptx))
+
 
 ![SensRNet Datamodel Context](img/SensRNet-Datamodel-Context.png)
 
