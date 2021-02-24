@@ -11,30 +11,31 @@ package "'Physical World'" <<Rectangle>> {
 package "SensorRegistry" <<Rectangle>> #LightCyan {
 
 
-    class SensorAggregate {
+    class "Device or Thing" {
         digital representation
+        of the sensor installation
         a.k.a. 'the sensor'
     }
 
     note left
         <b>Sensor</b> is often perceived as the
-        device which is visible in the physical
-        world. It might (or does) actually consist
-        of multiple parts of electronics
+        device or installation which is visible in the
+        physical world. It might (or does) actually
+        consist of multiple parts of electronics
         which transform some physical elements
         into electronic and digital signals. The
         outcome of digital signals is what is relevant
         to the SensorRegistry. All details of the
         electronic internals of the device can be
-        gathered as aggregate.
+        gathered as 'the thing' or 'device'.
     end note
 
     class Datastream
 
-    class ObservedProperty
+    class ObservationGoal
 
-    SensorAggregate - Datastream
-    Datastream -- ObservedProperty
+    "Device or Thing" - Datastream
+    Datastream -- ObservationGoal
 
 }
 
@@ -62,8 +63,15 @@ package "'Governmental World'" <<Rectangle>> {
     class "Goal & Legal Ground"
 }
 
-"Physical Device" -- "SensorAggregate"
-Datastream - "Digital channel" : what is being send out of the SensorAggregate
-ObservedProperty - "Goal & Legal Ground"
+"Physical Device" -- "Device or Thing"
+
+Datastream - "Digital channel"
+
+note top on link
+    signals which are send out of
+    (leaving) the Device or Thing
+end note
+
+ObservationGoal - "Goal & Legal Ground"
 
 @enduml

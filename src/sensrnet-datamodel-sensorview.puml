@@ -58,12 +58,22 @@ package sensor <<Rectangle>> {
         id: SensRNet.AggregateId
     }
 
+    note bottom
+        The collection of data which belong
+        to one 'sensor installation' or device
+        can be aggregated or collected as a 
+        group. The 'aggregateId' is the identity
+        of this group. This is especially applicable
+        to event-sourced systems although the
+        usage is general.
+    end note
+
     together {
 
-        class Thing {
+        class Device <<Thing>> {
             aggregateId: SensRNet.AggregateId
-            id: SensRNet.ThingId
-            .. SensorThingsAPI ..
+            id: SensRNet.DeviceId
+            .. SensorDevicesAPI ..
             name: String
             description: String
             {abstract} properties: jsonObject
@@ -74,17 +84,17 @@ package sensor <<Rectangle>> {
             {abstract} powerSupply: String
         }
 
-        note top of Thing
-          A 'Thing' is referring to the sensor installation
-          or device which is conceivable in the physical
-          world. Thing is the SensorThingsAPI standard.
-          This can also be referred to as Device
+        note top of Device
+          A 'Device' is referring to the sensor installation
+          or thing which is conceivable in the physical
+          world. Thing is the SensorDevicesAPI standard.
+          In SensRNet this is called Device.
         end note
 
         class Sensor {
             aggregateId: SensRNet.AggregateId
             id: SensRNet.SensorId
-            .. SensorThingsAPI ..
+            .. SensorDevicesAPI ..
             name: String
             description: String
             {abstract} metadata: any
@@ -100,7 +110,7 @@ package sensor <<Rectangle>> {
     class Datastream {
         aggregateId: SensRNet.AggregateId
         id: SensRNet.DatastreamId
-        .. SensorThingsAPI ..
+        .. SensorDevicesAPI ..
         name: String
         description: String
         unitOfMeasurement: jsonObject
@@ -121,9 +131,9 @@ package sensor <<Rectangle>> {
         {abstract} dataClassification: String
     }
 
-    class ObservedGoal {
+    class ObservationGoal {
         aggregateId: SensRNet.AggregateId
-        id: SensRNet.ObservedGoalId
+        id: SensRNet.ObservationGoalId
         .. SensRNet ..
         name: String
         description: String
@@ -134,7 +144,7 @@ package sensor <<Rectangle>> {
     class Location {
         aggregateId: SensRNet.AggregateId
         id: SensRNet.LocationId
-        .. SensorThingsAPI ..
+        .. SensorDevicesAPI ..
         name: String
         description: String
         location: xyH-array
@@ -185,21 +195,21 @@ package sensor <<Rectangle>> {
         HeightDetectionDevice
     }
 
-    ' this is added compared to SensorThingsAPI
-    Thing "1" *- "*" Sensor
+    ' this is added compared to SensorDevicesAPI
+    Device "1" *- "*" Sensor
 
-    Thing "1" o- "1" Category
-    Thing "1" *-- "1" Location
-    Thing "1" *-- "*" Datastream
+    Device "1" o- "1" Category
+    Device "1" *-- "1" Location
+    Device "1" *-- "*" Datastream
 
     Sensor "1" *-- "*" Datastream : datastreams
     Sensor "1" o-- "1" SensorType
 
-    Datastream "1" - "1" ObservedGoal
+    Datastream "1" - "1" ObservationGoal
     Datastream "1" o-- "*" Theme
 }
 
-LegalEntity "1" o-- "*" Thing : is <device-owner>
+LegalEntity "1" o-- "*" Device : is <device-owner>
 ' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
 ' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
 ' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
