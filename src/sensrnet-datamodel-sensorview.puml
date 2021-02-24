@@ -18,7 +18,7 @@ package LegalEntity <<Rectangle>> {
     }
 
     enum Role {
-        AGGREGATE_OWNER (aggregaat eigenaar)
+        DEVICE_OWNER (device eigenaar)
         {abstract} TECHNICAL_STEWARD (technisch verantwoordelijke)
         {abstract} LEGAL_STEWARD (juridisch verantwoordelijke)
         {abstract} DATA_STEWARD (data verantwoordelijke)
@@ -54,74 +54,85 @@ package LegalEntity <<Rectangle>> {
 
 package sensor <<Rectangle>> {
 
+    class SensorAggregate #DDD {
+        id: SensRNet.AggregateId
+    }
+
     together {
 
-        class SensorAggregate {
-            id: SensRNet.SensorId
-            type: SensorType
-        }
-
         class Thing {
+            aggregateId: SensRNet.AggregateId
             id: SensRNet.ThingId
             .. SensorThingsAPI ..
             name: String
             description: String
             {abstract} properties: jsonObject
             .. SensRNet ..
+            category: Category
             connectivity: String
             {abstract} networkOperator: String
             {abstract} powerSupply: String
         }
 
-        class Datastream {
-            id: SensRNet.DatastreamId
+        note top of Thing
+          A 'Thing' is referring to the sensor installation
+          or device which is conceivable in the physical
+          world. Thing is the SensorThingsAPI standard.
+          This can also be referred to as Device
+        end note
+
+        class Sensor {
+            aggregateId: SensRNet.AggregateId
+            id: SensRNet.SensorId
             .. SensorThingsAPI ..
             name: String
             description: String
-            unitOfMeasurement: jsonObject
-            observedArea: GML
-            {abstract} observationType: ValueCode
-            {abstract} phenomenonTime: period
-            {abstract} resultTime: period
+            {abstract} metadata: any
             .. SensRNet ..
-            theme: List<Theme>
-            dataQuality: String
-            isActive: Boolean 
-            isPublic: Boolean
-            isOpenData: Boolean
-            containsPIData: Boolean
-            isReusable: Boolean
+            type: SensorType
+            manufacturer: String
+            supplier: String
             documentation: URL
-            dataLink: URL
-            {abstract} dataClassification: String
         }
 
     }
 
-    class Sensor {
-        id: SensRNet.SensorId
+    class Datastream {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.DatastreamId
         .. SensorThingsAPI ..
         name: String
         description: String
-        {abstract} metadata: any
+        unitOfMeasurement: jsonObject
+        observedArea: GML
+        {abstract} observationType: ValueCode
+        {abstract} phenomenonTime: period
+        {abstract} resultTime: period
         .. SensRNet ..
-        manufacturer: String
-        supplier: String
+        theme: List<Theme>
+        dataQuality: String
+        isActive: Boolean 
+        isPublic: Boolean
+        isOpenData: Boolean
+        containsPIData: Boolean
+        isReusable: Boolean
         documentation: URL
+        dataLink: URL
+        {abstract} dataClassification: String
     }
 
-    class ObservedProperty {
-        id: SensRNet.ObservedPropertyId
-        .. SensorThingsAPI ..
-        name: String
-        definition: URL
-        description: String
+    class ObservedGoal {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.ObservedGoalId
         .. SensRNet ..
+        name: String
+        description: String
         legalGround: String
         legalGroundLink: URL
     }
 
     class Location {
+        aggregateId: SensRNet.AggregateId
         id: SensRNet.LocationId
         .. SensorThingsAPI ..
         name: String
@@ -133,16 +144,11 @@ package sensor <<Rectangle>> {
         baseObjectId: String
     }
 
-    ' enum Category {
-    '     SENSOR
-    '     CAMERA
-    '     BEACON
-    ' }
-
-    ' note left
-    '     Category can be derived from
-    '     specific type
-    ' end note
+    enum Category {
+        SENSOR
+        CAMERA
+        BEACON
+    }
 
     enum Theme {
         Weather
@@ -179,23 +185,21 @@ package sensor <<Rectangle>> {
         HeightDetectionDevice
     }
 
-    SensorAggregate "1" *- "*" Thing
-    SensorAggregate "1" *-- "*" Sensor
-    SensorAggregate "1" o-- "1" SensorType
-    SensorAggregate "1" *-- "*" Datastream
+    ' this is added compared to SensorThingsAPI
+    Thing "1" *- "*" Sensor
 
+    Thing "1" o- "1" Category
     Thing "1" *-- "1" Location
-    ' Thing "1" *-- "*" Datastream
-    ' Sensor "1" *-- "*" Datastream : datastreams
-    Datastream - ObservedProperty
+    Thing "1" *-- "*" Datastream
 
+    Sensor "1" *-- "*" Datastream : datastreams
+    Sensor "1" o-- "1" SensorType
+
+    Datastream "1" - "1" ObservedGoal
     Datastream "1" o-- "*" Theme
-    Datastream "1" --* "0..*" Sensor
-    ' Sensor "1" o-- "1" SensorType
 }
 
-LegalEntity "1" o-- "*" SensorAggregate : is <aggregate-owner>
-' LegalEntity "1" *-- "*" Thing : has <a thing-owner>
+LegalEntity "1" o-- "*" Thing : is <device-owner>
 ' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
 ' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
 ' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
