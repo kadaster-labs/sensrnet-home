@@ -11,56 +11,51 @@ De notes van het [Functional Advisory Board](../FAB.md).
 _(in alfabetische volgorde)_
 
 - Gemeente Amsterdam
-- Gemeente Den Bosch
-- Gemeente Eindhoven
-- Gemeente Nijmegen
+- v Gemeente Den Bosch
+- v Gemeente Eindhoven
+- v Gemeente Nijmegen
 - Gemeente Rotterdam
 - Gemeente Tilburg
-- Gemeente Utrecht
-- Kadaster (initiator)
+- v Gemeente Utrecht
+- v Kadaster (initiator)
 
+Remco Tepper?
+ 
 ## Notes
 
 Onderwerpen:
 
 1. **Mededelingen**
-   - Kadaster heeft samen met Tilburg tijdens de [Fieldlab Hackathon](https://commonground.nl/events/view/9593be7b-c4d8-430e-a573-d99d6c3c2c6e/fieldlab-l-hackathon-common-ground-in-de-praktijk) van [CommonGround.nl](https://commonground.nl/) een demo gegeven van de installatie/werking van SensRNet op een Haven/NLX platform.
-   - Kadaster zal een presentatie verzorgen over SensRNet voor het IPO. 
-   - Informatie en documentatie over SensRNet is nu op een meer gebruikers vriendelijke manier beschikbaar via [deze link](https://kadaster-labs.github.io/sensrnet-home/).
+   - Uitnodiging gehad om mee te doen aan summit brabantstad 16 maart. Kadaster heeftzal meedoen
+   - Vraag over bulkimport: csv tegen API, we hebben een voorbeeld ontwikkeld om aan te tonen dat het kan (het importeren van een csv met de API).
+   - Vraag: wanneer is het verstnadig omdata te gaan verzamelen in sensorenregister? Antw: pas over ongeveer 3 weken is het datamodel stabiel en de productieomgeving opgezet om dit te faciliteren. Daarna zullen we ook datamigraties moeten gaan ondersteunen bij datamodelwijzigingen.
    
 2. **Stand van zaken huidige en komende sprint** (zie [bord](https://github.com/orgs/kadaster-labs/projects/1))
    
    Het bord is bijgewerkt.
    
-   In de komende 2 weken zal ook het bijwerken van de code naar de laatste versie van het datamodel worden opgepakt. Een belangrijke stap in het realiseren van het Minimal Viable Product (MVP) van het sensorenregister.
+   In de komende 2 weken zal wederom het datamodel en het bijwerken van de code rond de afspraken die zijn neergelegd in het datamodel de meeste tijd in beslag nemen.
+   
+3. **Stand van zaken rond het Datamodel** (Kadaster en Nijmegen)
+   
+   Marc presenteert (link!!):
+   De vraag is wat een sensor nou precies is: er is gekozen om het datamodel zo op te stellen dat het enerzijds zoveel mogelijk raakt aan de SensorTingsAPI en anderzijds het niet willen vóórschrijven wat een sensor is en de software zó te maken dat de eindgebruiker de vrijheid heeft om flexibel met het begrip om te gaan.
+   
+   Vraag Utrecht: is er bewust gekozen voor het niet opnemen van het veld FeatureOfInterest uit de SensorThingsAPI? Ja en Nee, het staat voor ons op dit moment buiten de scope van het MVP voor een sensorenregistratie waarin we willen registreren en niet direct teveel technische informatie willen vastleggen. Voor nu lijkt het 'Obervatiedoel' voldoende voor het MVP van een registratie. Ook ObservedProperty uit SensorThingsAPI is voor ons op dit moment niet relevant geacht.
+   Indien de gemaakte keuzes niet terecht zijn dan horen we dat graag.
+   
+   vraag den bosch Verbetering/aanpassing: in het gepresenteerde model kunnen meerdere datastromen maar aan 1 OvervatiieDoel gekoppeld zijn maar wat ook moet kunnen is dat 1 datastroom meerdere Observatiedoelen dient, bv camerabeelden kunnen beveiliging én druktemeting als doel hebben. Dit wordt aangepast in het model.
+   
+   Verbetering/aanpassing: Vraag over de koppeling aan BGT-objecten. In de "Location" van een sensor was een veld opgenomen (in het datamodel) zodat deze aan een BGT-object gekoppeld lan worden: "baseObjectId". Nu kiezen we voor een keuze van het type locatie: 1. xyH-type, 2. BaseObjectLocation (gekoppeld aan BGT-object) en voor later 3. MobileLocation (ook in xyH).
 
-3. **Stand van zaken rond ‘Organisation’ mbt vraag over ‘rechtspersoon’** (Kadaster)
+4. **Wvttk en Afsluiting**
    
-   Kadaster heeft de status toegelicht rond het vraagstuk over 'rechtspersoon' => Issue [home#110](https://github.com/kadaster-labs/sensrnet-home/issues/110)
+   Vraag den bosch: hoe gaat het verder na de common groud hackathon, andere gemeenten worden daar enthousiast van en willen weten waar we staan.
+   Atw: we zijn nog bezig om installatie vergaand te automatisen maar dat is er nog niet. Onderdeel van MVP of niet??????????????
    
-   Voorstel om Rechtspersoon in het datamodel op te nemen en vooralsnog op het scherm Organisatie te tonen, want de term Rechtspersoon kan bij burgers vragen oproepen. Vooralsnog registreren we alleen organisaties, geen particulieren.
+   Kadaster: PIA rapport worde bijgewerkt en in het MVP document gezet. Wordt later gedeeld.
    
-   Besluiten, zoals besproken in FAB's van 28/1 en 10/2:
-
-   - Organisation blijft op het scherm, maar wordt Legal Entity in het datamodel. Nederlands: Organisatie resp. Rechtspersoon.
-   - Legal Entity krijgt de eigenschappen: Id, name, Website, Role (id, naam, website, rol).
-   - Type organisatie wordt niet vastgelegd voor dit MVP.
-   - Particulieren kunnen geen sensor registreren.
-
-4. **Innovatiebudget BZK en ‘beloftes’** (Kadaster)
-   
-   In het indieningsformulier voor het Innovatiebudget Digital Overheid BZK hebben is vermeld dat we ook aandacht gaan besteden aan de eindgebruikers incl. burgers. Om de gebruiksvriendelijkheid van het sensorenregister en de viewer te toetsen zou allereerst implementatie en registratie van sensoren moeten plaatsvinden. Zo ver zijn we echter nog niet. Er is een oproep gedaan om vrijwilligers te vinden die met dit onderdeel binnenkort aan de slag willen gaan. In eerste instantie was het idee dit te laten doen door professionals en het daarna breder op te pakken bijvoorbeeld met behulp van de [Waag community](https://waag.org/nl/over-waag).
-
-5. **Toetsing MVP (waar staan we eind Q1 2021?)** – op verzoek van gemeente Eindhoven
-   
-   Op basis van een vorig jaar (begin 2020) opgesteld document rond wat een Minimum Viable Product (MVP) voor SensRNet zou moeten omvatten is door Kadaster gekeken naar de realisatie tot nu toe ten opzichte van dit document. Dit document had als doel de grote lijnen te schetsen voor de realisatie van het toekomstige product en is samengesteld door adviseurs en beidsmedewerkers vanuit een puur functioneel oogpunt zonder technisch kader.
-   
-   Kadaster heeft aangegeven hoe op dit moment de zaken uit dit document zijn geïnterpreteerd en gerealiseerd of gepland om te realiseren. Daaruit blijkt enerzijds dat het document erg veel ruimte laat voor eigen interpretatie (niet SMART opgesteld) maar dat anderzijds veel 'must haves' al zijn gerealiseerd of binnenkort worden gerealiseerd.
-   Er zal de komende tijd nog energie worden gestoken in de communicatie naar de andere SensRNet-groepen over dit document en of en hoe het gebruikt kan worden voor het vaststellen van het MVP van SensRNet.
-
-6. **Wvttk en Afsluiting**
-   
-   Geen bijzonderheden.
+   Verder geen bijzonderheden.
 
 
 
