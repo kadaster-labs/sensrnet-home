@@ -147,11 +147,21 @@ package sensor <<Rectangle>> {
         .. SensorDevicesAPI ..
         name: String
         description: String
+    }
+
+    class XyhLocation extends Location {
         location: xyH-array
-        .. SensRNet ..
+    }
+
+    class BaseObjectLocation extends Location {
         // reference to external Id
         // e.g. IMGEO+ objectId
         baseObjectId: String
+    }
+
+    abstract class MobileLocation #DDD extends Location {
+        timestamp: timestamp
+        location: xyH-array
     }
 
     enum Category {
