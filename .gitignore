@@ -7,3 +7,6 @@ site/
 
 # IDE files
 .vscode/
+
+# temporary files
+~$*.*

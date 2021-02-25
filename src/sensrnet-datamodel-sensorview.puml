@@ -75,7 +75,7 @@ package sensor <<Rectangle>> {
         class Device <<Thing>> {
             aggregateId: SensRNet.AggregateId
             id: SensRNet.DeviceId
-            .. SensorDevicesAPI ..
+            .. SensorThingsAPI ..
             name: String
             description: String
             {abstract} properties: jsonObject
@@ -89,14 +89,14 @@ package sensor <<Rectangle>> {
         note top of Device
           A 'Device' is referring to the sensor installation
           or thing which is conceivable in the physical
-          world. Thing is the SensorDevicesAPI standard.
+          world. Thing is the SensorThingsAPI standard.
           In SensRNet this is called Device.
         end note
 
         class Sensor {
             aggregateId: SensRNet.AggregateId
             id: SensRNet.SensorId
-            .. SensorDevicesAPI ..
+            .. SensorThingsAPI ..
             name: String
             description: String
             {abstract} metadata: any
@@ -112,7 +112,7 @@ package sensor <<Rectangle>> {
     class Datastream {
         aggregateId: SensRNet.AggregateId
         id: SensRNet.DatastreamId
-        .. SensorDevicesAPI ..
+        .. SensorThingsAPI ..
         name: String
         description: String
         unitOfMeasurement: jsonObject
@@ -146,24 +146,26 @@ package sensor <<Rectangle>> {
     class Location {
         aggregateId: SensRNet.AggregateId
         id: SensRNet.LocationId
-        .. SensorDevicesAPI ..
+        .. SensorThingsAPI ..
         name: String
         description: String
-    }
-
-    class XyhLocation extends Location {
         location: xyH-array
     }
 
     class BaseObjectLocation extends Location {
+        // last timestamp when the topological
+        // base object was checked for xyH-location
+        validated: timestamp
+        ..
         // reference to external Id
         // e.g. IMGEO+ objectId
         baseObjectId: String
     }
 
     abstract class MobileLocation #DDD extends Location {
-        timestamp: timestamp
-        location: xyH-array
+        // last timestamp when the location
+        // was updated
+        updated: timestamp
     }
 
     enum Category {
@@ -207,7 +209,7 @@ package sensor <<Rectangle>> {
         HeightDetectionDevice
     }
 
-    ' this is added compared to SensorDevicesAPI
+    ' this is added compared to SensorThingsAPI
     Device "1" *- "*" Sensor
 
     Device "1" o- "1" Category
