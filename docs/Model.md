@@ -20,8 +20,8 @@ The definitions are put in a seperate table (in reStructuredText format): [Defin
 
 ## Views
 
-The views in the event modeling above contains of two main parts: Owner and Sensor.
-The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model and the [SensorThingAPI](https://en.wikipedia.org/wiki/SensorThings_API)
+The views in the event modeling above consists of two main parts: Owner (or more formal: Legal Entity) and Sensor.
+The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model and the [SensorThingsAPI](https://en.wikipedia.org/wiki/SensorThings_API)
 
 ![Sensor View Model](img/SensRNet-Datamodel-SensorView.png)
 
@@ -33,19 +33,13 @@ This needs to be complemented with 'recipies' of sensible and possible combinati
 
 Missing in all models are the actions or so called 'Commands' and the Events. 
 What kind of actions, commands can be executed (called) at a resource like Owner and Sensor? 
-In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
+What reasons are there to change the information?
+What is the granularity of these changes?
 
-'Walking skeleton' version:
-
-![Event Modeling](img/SensRNet-event-modeling.png)
-
-Latest version (dd 2020, Nov 2nd):
-
-![Event Modeling](img/SensRNet-Event-Modeling-v20201102.jpg)
-
+For more info about events see [event modeling](https://eventmodeling.org/)
 
 Events are the 'core APIs' of the system, of SensRNet. 
-There are differences between the events in the Registry (_'Beheer van Sensoren'_) and in the Network (Sync).
+There are differences between the events in the Registry Nodes (_'Beheer van Sensoren'_) and in the Network (Sync).
 
 | Registry events         | Network events                                |
 |-------------------------|-----------------------------------------------|
@@ -60,12 +54,26 @@ The events in the Registry Backend are modelled like this:
 ![SensRNet Registry Backend Events](https://raw.githubusercontent.com/kadaster-labs/sensrnet-registry-backend/main/docs/images/events-uml.svg)
 
 
+## Event Storming
+
+In our first event-storming session we came up with this [event modeling](https://eventmodeling.org/) diagram:
+
+'Walking skeleton' version:
+
+![Event Modeling](img/SensRNet-event-modeling.png)
+
+Latest version (dd 2021, Feb 26th):
+
+![Event Modeling](img/SensRNet-Event-Modeling-v20210226.png)
+
+
+
 ## Background & Standards
 
 For the different contexts the datamodel follows as much as possible (open) standards.
 The main standard is the **SensorThingsAPI**.
 
-- [SensorThingAPI](https://en.wikipedia.org/wiki/SensorThings_API)
+- [SensorThingsAPI](https://en.wikipedia.org/wiki/SensorThings_API)
 - [Open Urban Platform]()
 - [SmartM2M](https://www.etsi.org/committee/smartm2m)
 - [Slimme apparaten van Amsterdam](https://slimmeapparaten.amsterdam.nl/) (sources: [frontend](https://github.com/Amsterdam/register-slimme-apparaten-frontend) and [backend](https://github.com/Amsterdam/iot-api))
