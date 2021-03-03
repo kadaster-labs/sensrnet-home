@@ -26,7 +26,15 @@ The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model
 ![Sensor View Model](img/SensRNet-Datamodel-SensorView.png)
 
 
-This needs to be complemented with 'recipies' of sensible and possible combinations of values. For example, a temperature data stream has options for _unitOfMeasurement_ between `Degree Celcius` and `Degree Farenheit`, not `percentage CO2`.
+A few notes to concern about this model:
+
+- A Device is the object of choice to register as the 'container' or 'the box' or 'the installation' you would like to register. The general guideline for this is:
+  
+  > If the primary goal of a topological object is sensing then it might be the Device to register in SensRNet (e.g. an integrated smart lamppost). If it's primary goal is NOT sensing but something else and it also supports (integrated or non-integrated) sensors it is considered a plain topological object (in BGT for example) and is referenced in the location of the Device registered in SensRNet.
+
+- The location of a Device in SensRNet is always at the given and registered xyH-array location. Of course this can be derived from the `baseObjectId` in (for example) BGT, but this is an explicit action by the user. No automated correction are being made when the location in BGT changes (of the referenced object). This is because the location of the sensor might be slightly different although still connected to the topological base object. This can not be derived automatically.
+
+- In addition to this during usage of SensRNet the datamodel might be complemented with 'recipies' of sensible and possible combinations of values. For example, a temperature data stream has options for _unitOfMeasurement_ between `Degree Celcius` and `Degree Farenheit`, not `percentage CO2`. Or maybe even 'recipies' of known devices available on the market. This will evolve over time and after the MVP has been released. (i.o.w. out of scope of the MVP ;-)
 
 
 ## Events

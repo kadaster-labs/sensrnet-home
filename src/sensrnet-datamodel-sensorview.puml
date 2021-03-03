@@ -20,10 +20,12 @@ package LegalEntity <<Rectangle>> {
     }
 
     enum Role {
-        DEVICE_OWNER (device eigenaar)
-        {abstract} TECHNICAL_STEWARD (technisch verantwoordelijke)
-        {abstract} LEGAL_STEWARD (juridisch verantwoordelijke)
-        {abstract} DATA_STEWARD (data verantwoordelijke)
+        ' Bestuurlijk-juridisch verantwoordelijke + gegevensverantwoordelijke + AVG controller
+        ACCOUNTABLE (eindverantwoordelijke)
+        ' Fysieke - beheersmatige role
+        RESPONSIBLE (beheerverantwoordelijke)
+        {abstract} DATA PROCESSOR (gegevensverwerker)
+        {abstract} SENSRNET METADATA ACCOUNTABLE (SensRNet metadata beheerder)
     }
 
     class User {
@@ -56,19 +58,19 @@ package LegalEntity <<Rectangle>> {
 
 package sensor <<Rectangle>> {
 
-    class SensorAggregate #DDD {
-        id: SensRNet.AggregateId
-    }
+    ' class SensorAggregate #DDD {
+    '     id: SensRNet.AggregateId
+    ' }
 
-    note bottom
-        The collection of data which belong
-        to one 'sensor installation' or device
-        can be aggregated or collected as a 
-        group. The 'aggregateId' is the identity
-        of this group. This is especially applicable
-        to event-sourced systems although the
-        usage is general.
-    end note
+    ' note bottom
+    '     The collection of data which belong
+    '     to one 'sensor installation' or device
+    '     can be aggregated or collected as a 
+    '     group. The 'aggregateId' is the identity
+    '     of this group. This is especially applicable
+    '     to event-sourced systems although the
+    '     usage is general.
+    ' end note
 
     together {
 
@@ -184,14 +186,16 @@ package sensor <<Rectangle>> {
         Other
     }
 
+    note right of Theme
+        Themes (selection) of 
+        data.overheid.nl
+    end note
+
     enum SensorType {
-        .. beacon ..
         NavigationBeacon
-        .. camera ..
         EnvironmentalZoneCameras
         SecurityCamera
         TraphicFlashlight
-        .. sensor ..
         WeatherStation
         WindGauge
         WasteContainers
@@ -223,8 +227,10 @@ package sensor <<Rectangle>> {
     Datastream "1" o-- "*" Theme
 }
 
-LegalEntity "1" o- "*" Device : is <device-owner>
-LegalEntity "1" o- "*" SensorAggregate : is <metadata-owner>
+LegalEntity "1" o- "*" Device : is <responsible>
+' LegalEntity "1" o- "*" Device : is <accountable>
+LegalEntity "1" o- "*" ObservationGoal : is <accountable>
+' LegalEntity "1" o- "*" SensorAggregate : is <metadata-owner>
 ' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
 ' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
 ' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
