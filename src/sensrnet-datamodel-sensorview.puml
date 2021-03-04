@@ -2,21 +2,31 @@
 
 package LegalEntity <<Rectangle>> {
     together {
-        class ContactDetails {
-            name: String
-            email: String
-            phone: String
-            ..
-            {abstract} forRole: String
-        }
-
-        class LegalEntity {
+        abstract class LegalEntity {
             id: SensRNet.LegalEntityId
+            name: String
             website: URL
         }
 
-        LegalEntity "1" *-- "1..*" ContactDetails : privateContactDetails
-        LegalEntity "1" *-- "1..*" ContactDetails : publicContactDetails
+        class Organisation extends LegalEntity {
+            governmental: Boolean
+        }
+
+        abstract class Citizen extends LegalEntity {
+            // only meaningless id 
+            // will be publicly shared
+        }
+
+        LegalEntity "1" *- "*" ContactDetails : contactDetails
+    }
+
+    class ContactDetails {
+        name: String
+        email: String
+        phone: String
+        ..
+        isPublic: Boolean
+        forRole: String
     }
 
     enum Role {
@@ -25,7 +35,7 @@ package LegalEntity <<Rectangle>> {
         ' Fysieke - beheersmatige role
         RESPONSIBLE (beheerverantwoordelijke)
         {abstract} DATA PROCESSOR (gegevensverwerker)
-        {abstract} SENSRNET METADATA ACCOUNTABLE (SensRNet metadata beheerder)
+        {abstract} METADATA ADMINISTRATOR (metadata beheerder)
     }
 
     class User {
@@ -227,9 +237,9 @@ package sensor <<Rectangle>> {
     Datastream "1" o-- "*" Theme
 }
 
-LegalEntity "1" o- "*" Device : is <responsible>
+LegalEntity o- Device : is <responsible>
 ' LegalEntity "1" o- "*" Device : is <accountable>
-LegalEntity "1" o- "*" ObservationGoal : is <accountable>
+LegalEntity o- ObservationGoal : is <accountable>
 ' LegalEntity "1" o- "*" SensorAggregate : is <metadata-owner>
 ' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
 ' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
