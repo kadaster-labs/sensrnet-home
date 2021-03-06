@@ -1,6 +1,12 @@
 @startuml "SensRNet-Datamodel-SensorView"
 
-package LegalEntity <<Rectangle>> {
+note as N1
+    <i>cursive</i> fields are 
+    out of scope
+    of the MVProduct
+end note
+
+package "LegalEntity Aggregate" <<Rectangle>> {
     together {
         abstract class LegalEntity {
             id: SensRNet.LegalEntityId
@@ -38,6 +44,17 @@ package LegalEntity <<Rectangle>> {
         {abstract} METADATA ADMINISTRATOR (metadata beheerder)
     }
 
+
+    enum UserRole {
+        USER
+        ADMIN
+    }
+
+    LegalEntity o-- "*" Role : roles
+}
+
+package "User Aggregate" <<Rectangle>> {
+
     class User {
         id: SensRNet.UserId
         socialId: String
@@ -48,25 +65,20 @@ package LegalEntity <<Rectangle>> {
     }
 
     note left
-        <size:10>LegalEntitys are the 'real'</size>
-        <size:10>objects but will be</size>
-        <size:10>represented by users. Users</size>
-        <size:10>will connect with a social</size>
-        <size:10>or business account</size>
-        <size:10>(e.g. Office365, Google)</size>
+        LegalEntitys are the 'real'
+        objects but will be
+        represented by users. Users
+        will connect with a social
+        or business account
+        (e.g. Office365, Google)
     end note
 
-    enum UserRole {
-        USER
-        ADMIN
-    }
-
-    LegalEntity o- "*" User : users
-    LegalEntity o-- "*" Role : roles
-    User -- UserRole : role
 }
 
-package sensor <<Rectangle>> {
+User -- UserRole : role
+LegalEntity o- "*" User : users
+
+package "Sensor Aggregate" <<Rectangle>> {
 
     ' class SensorAggregate #DDD {
     '     id: SensRNet.AggregateId
@@ -143,16 +155,6 @@ package sensor <<Rectangle>> {
         documentation: URL
         dataLink: URL
         {abstract} dataClassification: String
-    }
-
-    class ObservationGoal {
-        aggregateId: SensRNet.AggregateId
-        id: SensRNet.ObservationGoalId
-        .. SensRNet ..
-        name: String
-        description: String
-        legalGround: String
-        legalGroundLink: URL
     }
 
     class Location {
@@ -233,21 +235,31 @@ package sensor <<Rectangle>> {
     Sensor "1" *-- "*" Datastream : datastreams
     Sensor "1" o-- "1" SensorType
 
-    Datastream "*" - "*" ObservationGoal
     Datastream "1" o-- "*" Theme
 }
 
+package "ObservationGoal Aggregate" <<Rectangle>> {
+
+    class ObservationGoal {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.ObservationGoalId
+        .. SensRNet ..
+        name: String
+        description: String
+        legalGround: String
+        legalGroundLink: URL
+    }
+
+}
+
+Datastream "*" -- "*" ObservationGoal
+
 LegalEntity o- Device : is <responsible>
 ' LegalEntity "1" o- "*" Device : is <accountable>
-LegalEntity o- ObservationGoal : is <accountable>
+LegalEntity o-- ObservationGoal : is <accountable>
 ' LegalEntity "1" o- "*" SensorAggregate : is <metadata-owner>
 ' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
 ' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
 ' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
-
-note top of sensor
-    <i>cursive</i> field are out of scope
-    of the MVP product
-end note
 
 @enduml
