@@ -78,7 +78,7 @@ package "User Aggregate" <<Rectangle>> {
 User -- UserRole : role
 LegalEntity o- "*" User : users
 
-package "Sensor Aggregate" <<Rectangle>> {
+package "SensorDevice Aggregate" <<Rectangle>> {
 
     ' class SensorAggregate #DDD {
     '     id: SensRNet.AggregateId
