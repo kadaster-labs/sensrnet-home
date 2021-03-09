@@ -15,7 +15,6 @@ package "LegalEntity Aggregate" <<Rectangle>> {
         }
 
         class Organisation extends LegalEntity {
-            governmental: Boolean
         }
 
         abstract class Citizen extends LegalEntity {

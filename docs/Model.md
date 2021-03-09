@@ -70,9 +70,11 @@ In our first event-storming session we came up with this [event modeling](https:
 
 ![Event Modeling](img/SensRNet-event-modeling.png)
 
-Latest version (dd 2021, Feb 26th):
+Latest version (dd 2021, March 9th):
 
-![Event Modeling](img/SensRNet-Event-Modeling-v20210226.png)
+![Event Modeling](img/SensRNet-Event-Modeling-I-v20210309.png)
+
+![Event Modeling](img/SensRNet-Event-Modeling-II-v20210309.png)
 
 
 
