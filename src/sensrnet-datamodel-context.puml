@@ -1,0 +1,77 @@
+@startuml "SensRNet-Datamodel-Context"
+
+package "'Physical World'" <<Rectangle>> {
+
+    class "Physical Device" {
+        // visible in the real world
+    }
+
+}
+
+package "SensorRegistry" <<Rectangle>> #LightCyan {
+
+
+    class "Device or Thing" {
+        digital representation
+        of the sensor installation
+        a.k.a. 'the sensor'
+    }
+
+    note left
+        <b>Sensor</b> is often perceived as the
+        device or installation which is visible in the
+        physical world. It might (or does) actually
+        consist of multiple parts of electronics
+        which transform some physical elements
+        into electronic and digital signals. The
+        outcome of digital signals is what is relevant
+        to the SensorRegistry. All details of the
+        electronic internals of the device can be
+        gathered as 'the thing' or 'device'.
+    end note
+
+    class Datastream
+
+    class ObservationGoal
+
+    "Device or Thing" - Datastream
+    Datastream -- ObservationGoal
+
+}
+
+note as N1
+    In general the SensorRegistry is the metadata
+    linking the physical conceivable world to the
+    digital conceivable world of the raw data and
+    the governmental world in which goal and legal
+    ground are decided.
+end note
+
+N1 .. "SensorRegistry"
+
+package "'Digital World'" <<Rectangle>> {
+
+    class "Digital channel" {
+        raw data 'visible' 
+        in the digital world
+    }
+
+}
+
+package "'Governmental World'" <<Rectangle>> {
+
+    class "Goal & Legal Ground"
+}
+
+"Physical Device" -- "Device or Thing"
+
+Datastream - "Digital channel"
+
+note top on link
+    signals which are send out of
+    (leaving) the Device or Thing
+end note
+
+ObservationGoal - "Goal & Legal Ground"
+
+@enduml

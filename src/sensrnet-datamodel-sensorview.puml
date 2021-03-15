@@ -1,0 +1,264 @@
+@startuml "SensRNet-Datamodel-SensorView"
+
+note as N1
+    <i>cursive</i> fields are 
+    out of scope
+    of the MVProduct
+end note
+
+package "LegalEntity Aggregate" <<Rectangle>> {
+    together {
+        abstract class LegalEntity {
+            id: SensRNet.LegalEntityId
+            name: String
+            website: URL
+        }
+
+        class Organisation extends LegalEntity {
+        }
+
+        abstract class Citizen extends LegalEntity {
+            // only meaningless id 
+            // will be publicly shared
+        }
+
+        LegalEntity "1" *- "*" ContactDetails : contactDetails
+    }
+
+    class ContactDetails {
+        name: String
+        email: String
+        phone: String
+        ..
+        isPublic: Boolean
+        forRole: String
+    }
+
+    enum Role {
+        ' Bestuurlijk-juridisch verantwoordelijke + gegevensverantwoordelijke + AVG controller
+        ACCOUNTABLE (eindverantwoordelijke)
+        ' Fysieke - beheersmatige role
+        RESPONSIBLE (beheerverantwoordelijke)
+        {abstract} DATA PROCESSOR (gegevensverwerker)
+        {abstract} METADATA ADMINISTRATOR (metadata beheerder)
+    }
+
+
+    enum UserRole {
+        USER
+        ADMIN
+    }
+
+    LegalEntity o-- "*" Role : roles
+}
+
+package "User Aggregate" <<Rectangle>> {
+
+    class User {
+        id: SensRNet.UserId
+        socialId: String
+        username: String
+        email: String
+        // rights connected to role
+        userRole: UserRole
+    }
+
+    note left
+        LegalEntitys are the 'real'
+        objects but will be
+        represented by users. Users
+        will connect with a social
+        or business account
+        (e.g. Office365, Google)
+    end note
+
+}
+
+User -- UserRole : role
+LegalEntity o- "*" User : users
+
+package "SensorDevice Aggregate" <<Rectangle>> {
+
+    ' class SensorAggregate #DDD {
+    '     id: SensRNet.AggregateId
+    ' }
+
+    ' note bottom
+    '     The collection of data which belong
+    '     to one 'sensor installation' or device
+    '     can be aggregated or collected as a 
+    '     group. The 'aggregateId' is the identity
+    '     of this group. This is especially applicable
+    '     to event-sourced systems although the
+    '     usage is general.
+    ' end note
+
+    together {
+
+        class Device <<Thing>> {
+            aggregateId: SensRNet.AggregateId
+            id: SensRNet.DeviceId
+            .. SensorThingsAPI ..
+            name: String
+            description: String
+            {abstract} properties: jsonObject
+            .. SensRNet ..
+            category: Category
+            connectivity: String
+            {abstract} networkOperator: String
+            {abstract} powerSupply: String
+        }
+
+        note top of Device
+          A 'Device' is referring to the sensor installation
+          or thing which is conceivable in the physical
+          world. Thing is the SensorThingsAPI standard.
+          In SensRNet this is called Device.
+        end note
+
+        class Sensor {
+            aggregateId: SensRNet.AggregateId
+            id: SensRNet.SensorId
+            .. SensorThingsAPI ..
+            name: String
+            description: String
+            {abstract} metadata: any
+            .. SensRNet ..
+            type: SensorType
+            manufacturer: String
+            supplier: String
+            documentation: URL
+        }
+
+    }
+
+    class Datastream {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.DatastreamId
+        .. SensorThingsAPI ..
+        name: String
+        description: String
+        unitOfMeasurement: jsonObject
+        observedArea: GML
+        {abstract} observationType: ValueCode
+        {abstract} phenomenonTime: period
+        {abstract} resultTime: period
+        .. SensRNet ..
+        theme: List<Theme>
+        dataQuality: String
+        isActive: Boolean 
+        isPublic: Boolean
+        isOpenData: Boolean
+        containsPIData: Boolean
+        isReusable: Boolean
+        documentation: URL
+        dataLink: URL
+        {abstract} dataClassification: String
+    }
+
+    class Location {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.LocationId
+        .. SensorThingsAPI ..
+        name: String
+        description: String
+        location: xyH-array
+    }
+
+    class BaseObjectLocation extends Location {
+        // last timestamp when the topological
+        // base object was checked for xyH-location
+        validated: timestamp
+        ..
+        // reference to external Id
+        // e.g. IMGEO+ objectId
+        baseObjectId: String
+    }
+
+    abstract class MobileLocation #DDD extends Location {
+        // last timestamp when the location
+        // was updated
+        updated: timestamp
+    }
+
+    enum Category {
+        SENSOR
+        CAMERA
+        BEACON
+    }
+
+    enum Theme {
+        Weather
+        NatureAndEnvironment
+        Waste
+        Safety
+        Mobility
+        SoilAndUnderground
+        Other
+    }
+
+    note right of Theme
+        Themes (selection) of 
+        data.overheid.nl
+    end note
+
+    enum SensorType {
+        NavigationBeacon
+        EnvironmentalZoneCameras
+        SecurityCamera
+        TraphicFlashlight
+        WeatherStation
+        WindGauge
+        WasteContainers
+        FineDustSensor
+        UVSensor
+        LightCell
+        MotionSensor
+        FireDetector
+        WaterLevelMeter
+        MicrophoneOrSoundMeter
+        PedometerCounters
+        RadarDetector
+        GMSSensor
+        DetectionLoop
+        HeightDetectionDevice
+    }
+
+    ' this is added compared to SensorThingsAPI
+    Device "1" *- "*" Sensor
+
+    Device "1" o- "1" Category
+    Device "1" *-- "1" Location
+    Device "1" *-- "*" Datastream
+
+    Sensor "1" *-- "*" Datastream : datastreams
+    Sensor "1" o-- "1" SensorType
+
+    Datastream "1" o-- "*" Theme
+}
+
+package "ObservationGoal Aggregate" <<Rectangle>> {
+
+    class ObservationGoal {
+        aggregateId: SensRNet.AggregateId
+        id: SensRNet.ObservationGoalId
+        .. SensRNet ..
+        name: String
+        description: String
+        legalGround: String
+        legalGroundLink: URL
+    }
+
+}
+
+Datastream "*" -- "*" ObservationGoal
+
+LegalEntity o- Device : is <responsible>
+' LegalEntity "1" o- "*" Device : is <accountable>
+LegalEntity o-- ObservationGoal : is <accountable>
+' LegalEntity "1" o- "*" SensorAggregate : is <metadata-owner>
+' LegalEntity "1" *-- "*" Sensor : has <a sensor-owner>
+' LegalEntity "0" *-- "*" Sensor : has <a legal-steward>
+' LegalEntity "0" *-- "*" Datastream : has <a data-steward>
+
+@enduml
