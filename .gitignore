@@ -10,3 +10,6 @@ site/
 
 # temporary files
 ~$*.*
+
+# npm
+node_modules/

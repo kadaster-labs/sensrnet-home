@@ -1,0 +1,29 @@
+{
+  "name": "sensrnet-home",
+  "version": "0.1.0",
+  "description": "SensRNet Documentation Home",
+  "author": "https://github.com/kadaster-labs/sensrnet-home/blob/main/MAINTAINERS.md",
+  "license": "EUPL-1.2",
+  "scripts": {
+    "adrs": "adr-log -d ./docs/adr -i ./docs/adr/index.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadaster-labs/sensrnet-home.git"
+  },
+  "keywords": [
+    "sensrnet",
+    "sensorenregister",
+    "sensoren",
+    "overheid",
+    "Netherlands"
+  ],
+  "bugs": {
+    "url": "https://github.com/kadaster-labs/sensrnet-home/issues"
+  },
+  "homepage": "https://kadaster-labs.github.io/sensrnet-home/",
+  "devDependencies": {
+    "adr-log": "^2.2.0",
+    "madr": "^2.1.2"
+  }
+}
