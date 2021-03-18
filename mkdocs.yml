@@ -11,7 +11,7 @@ nav:
     - 'Architecture':
       - Overview: Architecture.md
       - KeyConcepts.md
-      - Architectural Decision Records (ARDs): adr
+      - Architectural Decision Records (ARDs): adr/index.md
       - Network.md
       - Model.md
       # - Definitions.rst
