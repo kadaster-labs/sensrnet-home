@@ -1,4 +1,4 @@
-# NestJS and Eventstore as Technical Stack for Backend Components
+# NestJS and Eventstore as Backend stack
 
 * Status: accepted
 * Deciders: Kadaster Development Team
@@ -54,7 +54,7 @@ Chosen option: "NestJS with Eventstore", because of
 
 ### Negative Consequences
 
-* The event-sourcing pattern is not implemented in NestJS and even the Evenstore gives room for different usage. Therefor the developer were not guided as much as the AxonFramework would have done during development
+* The event-sourcing pattern is not implemented in NestJS and even the Evenstore gives room for different usage. Therefore the developer were not guided as much as the AxonFramework would have done during development
 * Kadaster knowledge how to apply event-sourcing could not really be of use because of the different stack. Of course the knowledge about the pattern has been inject in the team. 
 
 ## Links

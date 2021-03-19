@@ -6,7 +6,8 @@ This log lists the architectural decisions for [SensRNet](https://kadaster-labs.
 
 * [ADR-0001](0001-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
 * [ADR-0002](0002-github-as-open-source-project-home.md) - GitHub as Open Source Project Home
-* [ADR-0003](0003-nestjs-and-eventstore-as-technical-stack-backend-comps.md) - NestJS and Eventstore as Technical Stack for Backend Components
+* [ADR-0003](0003-nestjs-and-eventstore-as-backend-stack.md) - NestJS and Eventstore as Backend stack
+* [ADR-0004](0004-angular-and-openlayers-as-frontend-stack.md) - Angular and OpenLayers as Frontend stack
 
 <!-- adrlogstop -->
 
