@@ -31,7 +31,7 @@ Chosen option: "Angular & OpenLayers", because
 * it is safe choice in the currently de factor standard frameworks to start building a rich and nice frontend with.
 * the Kadaster Development Team already has experience with this stack and even can use internal available components built upon this stack.
 
-  _At a later point in time these internal components will be removed because of the lack of openness of these components. They were of great help at the start of the project but less helpful at a later point in time._
+  _At a later point in time these internal components will be removed because of the lack of openness of these components. They were of great help at the start of the project, but prevent non-Kadaster developers from inspecting or building the frontend component._
 
 
 ## Links <!-- optional -->

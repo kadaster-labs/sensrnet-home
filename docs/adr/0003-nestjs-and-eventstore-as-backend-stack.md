@@ -51,6 +51,7 @@ Chosen option: "NestJS with EventStoreDB", because of
 * The learning curve of the developers was mainly focused on the event-sourcing patterns and domain knowledge, rather than the technical stack itself.
 * Adoption and readability for others has been easier, although this has not been huge in quantity.
 * The runtime containers produced for each component have quite a small footprint, since the footprint of NodeJS/NestJS is smaller than the JVM (Java) footprint.
+* NestJS allows us to build a split stack, exposing APIs on the backend. The frontend can simply query those APIs. This allows other teams to build their own frontend, or possibly integrate other (already existing) systems with the SensRNet backend.
 
 ### Negative Consequences
 
