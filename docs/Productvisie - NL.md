@@ -14,6 +14,7 @@ Het register:
 De eerste stappen richting een nationaal sensorenregister zijn inmiddels gezet. Er is een aantal succesvolle pilots uitgevoerd door de gemeenten Amsterdam en Eindhoven, deze laatste in samenwerking met het Kadaster. Er is een aantal publicaties uitgebracht en er zijn presentaties voor een divers publiek gegeven. Momenteel zijn de grootste uitdagingen het reguleren van sensoren in de publieke ruimte en het verkrijgen van het benodigde budget van het Ministerie van Binnenlandse Zaken.
 
 Gelukkig is er groeiende steun vanuit overheidsorganisaties zoals BrabantStad (samenwerkingsverband van de provincie Noord-Brabant, Breda, Eindhoven, Helmond, ’s-Hertogenbosch, Tilburg), Apeldoorn, Nijmegen, Zwolle, Utrecht, Rotterdam, het G40-stedennetwork - themagroep Smart Cities en het Kadaster, die alvast samenwerken om de opzet voor een sensorenregister uit te werken en die hun eigen innovatiebudget en kennis inzetten in afwachting van definitieve regelgeving en fondsen.
+
 Neem hier ook eens een kijkje:
 - [Rapport Geonovum - Op weg naar een Sensorverordening 2018](Rapport-Op-weg-naar-een-Sensorverordening-eindversie-201218.pdf) (pdf)
 - [Verkenning Making Sense for Society (MS4S) - Sensoren en Semantiek 2.0](Verkenning-MS4S-SensorenEnSemantiek-2.0.pdf) (pdf)
