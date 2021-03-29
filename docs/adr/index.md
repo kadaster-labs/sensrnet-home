@@ -6,6 +6,9 @@ This log lists the architectural decisions for [SensRNet](https://kadaster-labs.
 
 * [ADR-0001](0001-use-markdown-architectural-decision-records.md) - Use Markdown Architectural Decision Records
 * [ADR-0002](0002-github-as-open-source-project-home.md) - GitHub as Open Source Project Home
+* [ADR-0003](0003-nestjs-and-eventstore-as-backend-stack.md) - NestJS and EventStoreDB as Backend stack
+* [ADR-0004](0004-angular-and-openlayers-as-frontend-stack.md) - Angular and OpenLayers as Frontend stack
+* [ADR-0005](0005-en-as-default-language-in-code-with-dutch-translation.md) - EN as the default language in code and Dutch as translation
 
 <!-- adrlogstop -->
 
