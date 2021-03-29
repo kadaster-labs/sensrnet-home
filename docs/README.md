@@ -8,8 +8,8 @@ Read more:
 
 **General**
 
-- [Product Vision](ProductVision.md)
-- [Systeembeschrijving (NL)](SystemDescriptionNL.md)
+- [Product Vision](ProductVision.md) ([NL](ProductVisionNL.md))
+- [Systeembeschrijving (Dutch only)](SystemDescriptionNL.md)
 
 **Architectural**
 
@@ -21,12 +21,12 @@ Read more:
 
 **Functional**
 
-- [Use Cases (NL)](UseCasesNL.md)
-- [Test Scenario's (NL)](TestScenariosNL.md)
+- [Use Cases (Dutch only)](UseCasesNL.md)
+- [Test Scenario's (Dutch only)](TestScenariosNL.md)
 
 **Technical**
 
-- [Deployment (EN)](Deployment.md)
+- [Deployment](Deployment.md)
 
 **Organisation**
 
