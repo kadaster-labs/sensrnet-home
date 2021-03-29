@@ -32,6 +32,7 @@ Het eindpunt binnen het netwerk is de Publishing node. Dit is de ingang (portaal
 
 Meer over dit concept vind je in [Architecture](Architecture.md).
 
+
 ## Hoe verder?
 Het nationale sensorenregister zal in de toekomst het eigendom zijn van een consortium. In het consortium zullen vertegenwoordigers van overheidsorganisaties zitting hebben, als ook van private ondernemingen en andere belanghebbenden.
 
