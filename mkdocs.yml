@@ -7,6 +7,7 @@ nav:
     - 'General':
       - Overview: README.md
       - ProductVision.md
+      - ProductVisionNL.md
       - SystemDescriptionNL.md
     - 'Architecture':
       - Overview: Architecture.md
