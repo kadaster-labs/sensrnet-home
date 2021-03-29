@@ -14,8 +14,8 @@ Het register:
 De eerste stappen richting een nationaal sensorenregister zijn inmiddels gezet. Er is een aantal succesvolle pilots uitgevoerd door de gemeenten Amsterdam en Eindhoven, deze laatste in samenwerking met het Kadaster. Er is een aantal publicaties uitgebracht en er zijn presentaties voor een divers publiek gegeven. Momenteel zijn de grootste uitdagingen het reguleren van sensoren in de publieke ruimte en het verkrijgen van het benodigde budget van het Ministerie van Binnenlandse Zaken.
 Gelukkig is er groeiende steun vanuit overheidsorganisaties zoals BrabantStad (samenwerkingsverband van de provincie Noord-Brabant, Breda, Eindhoven, Helmond, ’s-Hertogenbosch, Tilburg), Apeldoorn, Nijmegen, Zwolle, Utrecht, Rotterdam, het G40-stedennetwork - themagroep Smart Cities en het Kadaster, die alvast samenwerken om de opzet voor een sensorenregister uit te werken en die hun eigen innovatiebudget en kennis inzetten in afwachting van definitieve regelgeving en fondsen.
 Neem hier ook eens een kijkje:
-•	Rapport Geonovum - Op weg naar een Sensorverordening 2018 (pdf)
-•	Verkenning Making Sense for Society (MS4S) - Sensoren en Semantiek 2.0 (pdf)
+- [Rapport Geonovum - Op weg naar een Sensorverordening 2018](Rapport-Op-weg-naar-een-Sensorverordening-eindversie-201218.pdf) (pdf)
+- [Verkenning Making Sense for Society (MS4S) - Sensoren en Semantiek 2.0](Verkenning-MS4S-SensorenEnSemantiek-2.0.pdf) (pdf)
 
 ## Wat is er al?
 Het samenwerkingsverband (de community) heeft een eerste versie van het register afgeleverd in de eerste helft van 2020. Tot de zomer van 2020 hebben wij ons geconcentreerd op de ontwikkeling van een zogenaamd Walking skeleton – een demonstratie dat de complete keten van componenten werkt (loopt), maar met minimale implementatie van functionaliteit en technologie (skelet). In de tweede helft van 2020 was het doel de eerste versie geschikt te maken voor een breder gebruik in productie-omgeving.
@@ -23,7 +23,7 @@ De applicatie is opgezet met open source software componenten en is gedeeld met 
 Om aan deze verschillende behoeften te voldoen heeft elke daartoe geautoriseerde partij de mogelijkheid een eigen register (Registry node) op te zetten, die deel zal uitmaken van een netwerk van registers. Elke geautoriseerde partij heeft de keuze om voor dit register een eigen applicatie te ontwikkelen of om de standaard implementatie te gebruiken en deze zonodig uit te breiden.
 In de Registry node bevindt zich een synchronisatiecomponent die verbinding maakt met het netwerk. Dit is ook een open sourceproject waarin alle deelnemers aan SensRNet samen bepalen welke gegevens gedeeld en gecommuniceerd gaan worden over het netwerk.
 Het eindpunt binnen het netwerk is de Publishing node. Dit is de ingang (portaal) voor burgers en organisaties om via een kaart de sensoren op een locatie te zoeken en om verdere informatie te bekijken.
-Meer over dit concept vind je in Architecture.
+Meer over dit concept vind je in [Architecture](Architecture.md).
 
 ## Hoe verder?
 Het nationale sensorenregister zal in de toekomst het eigendom zijn van een consortium. In het consortium zullen vertegenwoordigers van overheidsorganisaties zitting hebben, als ook van private ondernemingen en andere belanghebbenden.
