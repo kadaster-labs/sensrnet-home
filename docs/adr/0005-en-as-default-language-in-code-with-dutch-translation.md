@@ -8,7 +8,7 @@ Technical Story: [Engelse taal als standaard - Nederlands als optie (intl vs loc
 
 ## Context and Problem Statement
 
-SensRNet is an initiative of Dutch governmental organizations and primary targeted for the Dutch government and citizens. So should we develop the frontends of SensRNet in Dutch or in English? Of course the code is in English and will remain in English (as we're using Angular: see [ADR-0004](0004-angular-and-openlayers-as-frontend-stack.md)) so this decision is limited to the labels visible by the user of the frontend web applications.
+SensRNet is an initiative of Dutch governmental organizations and primarily targeted for the Dutch government and citizens. So should we develop the frontends of SensRNet in Dutch or in English? Of course the code is in English and will remain in English (as we're using Angular: see [ADR-0004](0004-angular-and-openlayers-as-frontend-stack.md)) so this decision is limited to the labels visible by the user of the frontend web applications.
 
 ## Considered Options
 
@@ -18,7 +18,7 @@ SensRNet is an initiative of Dutch governmental organizations and primary target
 
 * English
 
-  English is the language of the code and this is the international default language for all software sources. Support for multiple languages / translations is available in all mainstream frameworks (e.g. Angular has superb multilingual support out of the box). By using English as primary language the code and included labels will all be of the same language which increases the readibility and maintainability of the whole code base.
+  English is the language of the code and this is the international default language for all software sources. Support for multiple languages / translations is available in all mainstream frameworks (e.g. Angular has superb multilingual support out of the box). By using English as primary language the code and included labels will all be of the same language, which increases the readability and maintainability of the whole code base.
 
   Besides the maintainability we would like to be as inclusive as possible. As English is the default language internationally all developers will expect and support English. Also developers for the Dutch government might not be Dutch native speaking developers.
 
