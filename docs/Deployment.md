@@ -50,11 +50,13 @@ This installation is tested on [Microsoft Azure](https://azure.microsoft.com/nl-
 The SensRNet components don't include user registration, but instead rely on external identity providers for authentication. This way, organizations using the SensRNet stack can plug in their own user management system, without having to have operators recreate accounts. While any OpenID Connect provider can be used, AzureAD has currently been tested and is assumed in the rest of this chapter.
 
 ### AzureAD App registration
-To be able to interface the AzureAD directory with SensRNet, an app has to be registered in Azure. This can be done in the Azure Portal, under "Azure Active Directory", and then, "App registrations" (or go to http://aka.ms/AppRegistrations). During registration, choose "single tenant" account type to only allow business accounts which reside your own tenant. A redirect URL is required for redirecting the users after they've successfully logged in. Choose redirect URI type "Web" and fill in the right callback URL for Dex ()
+To be able to interface the AzureAD directory with SensRNet, an app has to be registered in Azure. This can be done in the Azure Portal, under "Azure Active Directory", and then, "App registrations" (or go to http://aka.ms/AppRegistrations). During registration, choose "single tenant" account type to only allow business accounts which reside your own tenant. A redirect URL is required for redirecting the users after they've successfully logged in. Choose redirect URI type "Web" and fill in the right callback URL for Dex.
 
 ```
 https://<YOUR-SENSRNET-DOMAIN>/dex/callback
 ```
+
+> :warning: Please note that <YOUR-SENSRNET-DOMAIN> should be an https endpoint.
 
 The next step is to enable "ID tokens" under "Authentication" -> "Implicit grant and hybrid flows". Then, create a Client secret, under "Certificates & secrets", and save the value for later. Finally, add the Microsoft Graph "OpenId permissions" ("email", "offline_access", "openid" and "profile") to the delegated permissions.
 
@@ -63,33 +65,7 @@ Once the app is registered, please note the "Application (client) ID", "Director
 ### Dex
 While you could theoretically plug in the OIDC parameters of your providers into the frontend and backend, we recommend using [Dex](https://dexidp.io/). You can define the OIDC connections there and it provides a standardized API for SensRNet to interface against.
 
-```bash
-helm repo add dex https://charts.dexidp.io
-helm repo update
-
-helm upgrade --install dex dex/dex \
-  --namespace dex \
-  --set "livenessProbe.httpPath=/dex/healthz" \
-  --set "readinessProbe.httpPath=/dex/healthz" \
-  --set "config.issuer=http://localhost/dex" \
-  --set "config.storage.type=kubernetes" \
-  --set "config.storage.config.inCluster=true" \
-  --set "config.staticClients[0].name=SensrnetRegistry" \
-  --set "config.staticClients[0].id=registry-frontend" \
-  --set "config.staticClients[0].public=true" \
-  --set "config.connectors[0].type=microsoft" \
-  --set "config.connectors[0].id=microsoft" \
-  --set "config.connectors[0].name=Microsoft" \
-  --set "config.connectors[0].config.clientID=<CLIENT_ID>" \
-  --set "config.connectors[0].config.clientSecret=Q0y3..5T5sSqP2ss1ls_mM9_v52NoG\~DRG" \
-  --set "config.connectors[0].config.redirectURI=https://<YOUR_SENSRNET_DOMAIN>/dex/callback" \
-  --set "config.connectors[0].config.tenant=<TENANT_ID>" \
-  --set "config.oauth2.responseTypes={code,token,id_token}" \
-  --set "config.oauth2.skipApprovalScreen=true" \
-  --set "ingress.enabled=true" \
-  --set "ingress.hosts[0].host=<YOUR-SENSRNET-DOMAIN>" \
-  --set "ingress.hosts[0].paths[0].path=/dex"
-```
+Instructions on how to install Dex on your cluster, please refer to https://github.com/kadaster-labs/sensrnet-helm-charts#openid-connect.
 
 Links:
 - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
