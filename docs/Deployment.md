@@ -45,3 +45,28 @@ This installation is tested on [Microsoft Azure](https://azure.microsoft.com/nl-
 
 1. Follow the [Helm chart instructions](https://github.com/kadaster-labs/sensrnet-helm-charts)
 
+## Authentication
+
+The SensRNet components don't include user registration, but instead rely on external identity providers for authentication. This way, organizations using the SensRNet stack can plug in their own user management system, without having to have operators recreate accounts. While any OpenID Connect provider can be used, AzureAD has currently been tested and is assumed in the rest of this chapter.
+
+### AzureAD App registration
+To be able to interface the AzureAD directory with SensRNet, an app has to be registered in Azure. This can be done in the Azure Portal, under "Azure Active Directory", and then, "App registrations" (or go to http://aka.ms/AppRegistrations). During registration, choose "single tenant" account type to only allow business accounts which reside your own tenant. A redirect URL is required for redirecting the users after they've successfully logged in. Choose redirect URI type "Web" and fill in the right callback URL for Dex.
+
+```
+https://<YOUR-SENSRNET-DOMAIN>/dex/callback
+```
+
+> :warning: Please note that <YOUR-SENSRNET-DOMAIN> should be an https endpoint.
+
+The next step is to enable "ID tokens" under "Authentication" -> "Implicit grant and hybrid flows". Then, create a Client secret, under "Certificates & secrets", and save the value for later. Finally, add the Microsoft Graph "OpenId permissions" ("email", "offline_access", "openid" and "profile") to the delegated permissions.
+
+Once the app is registered, please note the "Application (client) ID", "Directory (tenant) ID" and client secret, these will be needed in the next step.
+
+### Dex
+While you could theoretically plug in the OIDC parameters of your providers into the frontend and backend, we recommend using [Dex](https://dexidp.io/). You can define the OIDC connections there and it provides a standardized API for SensRNet to interface against.
+
+Instructions on how to install Dex on your cluster, please refer to https://github.com/kadaster-labs/sensrnet-helm-charts#openid-connect.
+
+Links:
+- [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)
+- [Dex: Authentication Through Microsoft](https://dexidp.io/docs/connectors/microsoft/)
