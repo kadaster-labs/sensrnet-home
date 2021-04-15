@@ -1,4 +1,4 @@
-# SensRNet product visie
+# SensRNet Product Visie
 > Roadmap naar een nationaal sensorenregister
 
 ## Waarom dit initiatief?
