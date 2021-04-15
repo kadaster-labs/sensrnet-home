@@ -47,12 +47,12 @@ Read more:
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://github.com/kadaster-labs/sensrnet-home/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/kadaster-labs/sensrnet-home/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Maintainers <a name="maintainers"></a>
 
-Should you have any questions or concerns, please reach out to one of the project's [Maintainers](https://github.com/kadaster-labs/sensrnet-home/MAINTAINERS.md).
+Should you have any questions or concerns, please reach out to one of the project's [Maintainers](https://github.com/kadaster-labs/sensrnet-home/blob/main/MAINTAINERS.md).
 
 ## License
 
-This work is licensed under a [EUPL v1.2 license](https://github.com/kadaster-labs/sensrnet-home/LICENSE.md). All documentation is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+This work is licensed under a [EUPL v1.2 license](https://github.com/kadaster-labs/sensrnet-home/blob/main/LICENSE.md). All documentation is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
