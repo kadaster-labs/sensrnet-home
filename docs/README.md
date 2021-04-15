@@ -4,9 +4,9 @@
 
 SensRNet - The Dutch National Sensor Registry Network
 
-Production: [Central Viewer](https://viewer.sensorenregister.nl/) | [Demo Registry Node](https://demo.sensorenregister.nl/)
-
-Test: [Central Viewer](https://viewer.test.sensorenregister.nl/) | [Demo Registry Node](https://demo.test.sensorenregister.nl/)
+| [Central Viewer](https://viewer.sensorenregister.nl/)        | [Registry Node (demo)](https://demo.sensorenregister.nl/)       |
+|--------------------------------------------------------------|-----------------------------------------------------------------|
+| [Central Viewer (test)](https://viewer.test.sensorenregister.nl/)   | [Registry Node (test)](https://demo.test.sensorenregister.nl/)  |
 
 Read more:
 
