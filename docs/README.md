@@ -39,6 +39,10 @@ Read more:
 - [Functional Advisory Board](FAB.md) ([notes](notes/))
 - [Users Group](UsersGroup.md) (UG; incl Pilotgroep) ([notes](notes/))
 
+## Connect
+
+Please join us in Slack @ Common Ground [#sensrnet](https://samenorganiseren.slack.com/archives/C020BGH5N0J)
+
 ---
 
 ## Find Us
