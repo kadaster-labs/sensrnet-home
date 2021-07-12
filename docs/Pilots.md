@@ -20,16 +20,18 @@ In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen v
 | Gemeente Apeldoorn | -                  | -              | -                   | Intentie |
 | Gemeente Zwolle    | -                  | -              | -                   | Intentie |
 
-| :white_check_mark: done | :raised_hand: committed | :question: willing |
+| Legenda                 |
+| ----------------------- |
+| :white_check_mark: done |
+| :raised_hand: committed |
+| :question: willing      |
 
 ## Technische pilot
 
 Voor de technsiche pilot is de volgende documentatie relevant en belangrijk:
 
 - [Architectuur](Architecture.md)
-- [Deployment](Deployment.md)
-  
-  waarin verwezen wordt naar de technische installatie dmv de [sensrnet-helm-charts](https://github.com/kadaster-labs/sensrnet-helm-charts)
+- [Deployment](Deployment.md), waarin verwezen wordt naar de technische installatie dmv de [sensrnet-helm-charts](https://github.com/kadaster-labs/sensrnet-helm-charts)
 
 ## Business pilot
 
