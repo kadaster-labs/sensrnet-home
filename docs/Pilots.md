@@ -20,11 +20,9 @@ In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen v
 | Gemeente Apeldoorn | -                  | -              | -                   | Intentie |
 | Gemeente Zwolle    | -                  | -              | -                   | Intentie |
 
-| Legenda                 |
-| ----------------------- |
-| :white_check_mark: done |
-| :raised_hand: committed |
-| :question: willing      |
+| Legenda | :white_check_mark: done | :raised_hand: committed | :question: willing |
+| ------- | ----------------------- | ----------------------- | ------------------ |
+
 
 ## Technische pilot
 
