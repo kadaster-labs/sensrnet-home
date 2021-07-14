@@ -39,6 +39,10 @@ Read more:
 - [Functional Advisory Board](FAB.md) ([notes](notes/))
 - [Users Group](UsersGroup.md) (UG; incl Pilotgroep) ([notes](notes/))
 
+**Miscellaneous**
+
+- [SensRNet Plain PowerPoint template](2021-SensRNet-plain-PowerPoint-template.potx) ;)
+
 ## Connect
 
 Please join us in Slack @ Common Ground [#sensrnet](https://samenorganiseren.slack.com/archives/C020BGH5N0J)
