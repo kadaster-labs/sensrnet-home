@@ -36,6 +36,7 @@ Read more:
 **Organisation**
 
 - [Project Board](https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true)
+- [Discussions](https://github.com/kadaster-labs/sensrnet-home/discussions)
 - [Functional Advisory Board](FAB.md) ([notes](notes/))
 - [Users Group](UsersGroup.md) (UG; incl Pilotgroep) ([notes](notes/))
 
