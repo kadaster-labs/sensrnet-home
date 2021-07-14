@@ -33,7 +33,9 @@ Voor de technsiche pilot is de volgende documentatie relevant en belangrijk:
 
 ## Business pilot
 
-// TODO
+Voor de business pilots zijn de volgende zaken relevant:
+
+- [SensRNet Functional Advisory Board](FAB.md)
 
 ## Transparantie pilot
 
