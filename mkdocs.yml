@@ -1,6 +1,7 @@
 site_name: SensRNet Documentation
 docs_dir: docs
 site_dir: site
+site_url: http://localhost:8000
 repo_url: https://github.com/kadaster-labs/sensrnet-home
 edit_uri: edit/main/docs/
 nav:
@@ -25,6 +26,7 @@ nav:
       - Multichain: SyncMultiChainEN.md
     - 'Organisation':
       - Functional Advisory Board: FAB.md
+      - Pilots: Pilots.md
       - Users Group: UsersGroup.md
       - Notes: notes/index.md
       - Project Board: https://github.com/orgs/kadaster-labs/projects/1?fullscreen=true
@@ -42,4 +44,8 @@ theme:
     accent: amber
   icon:
     logo: material/antenna
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
     

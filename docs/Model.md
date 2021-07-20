@@ -21,7 +21,7 @@ The definitions are put in a seperate table (in reStructuredText format): [Defin
 ## Views
 
 The views in the event modeling above consists of two main parts: Owner (or more formal: Legal Entity) and Sensor.
-The UML model of these parts is based on the [SensorPilot](SensorPilot.md) model and the [SensorThingsAPI](https://en.wikipedia.org/wiki/SensorThings_API)
+The UML model of these parts is based on the [SensorPilot](SensorPilot2018.md) model and the [SensorThingsAPI](https://en.wikipedia.org/wiki/SensorThings_API)
 
 ![Sensor View Model](img/SensRNet-Datamodel-SensorView.png)
 
@@ -87,7 +87,7 @@ The main standard is the **SensorThingsAPI**.
 - [Open Urban Platform]()
 - [SmartM2M](https://www.etsi.org/committee/smartm2m)
 - [Slimme apparaten van Amsterdam](https://slimmeapparaten.amsterdam.nl/) (sources: [frontend](https://github.com/Amsterdam/register-slimme-apparaten-frontend) and [backend](https://github.com/Amsterdam/iot-api))
-- [SensorPilot](SensorPilot.md)
+- [SensorPilot](SensorPilot2018.md)
 
 Also have a look at:
 
