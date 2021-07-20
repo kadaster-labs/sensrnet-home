@@ -4,8 +4,9 @@ The SensRNet project aims to start and support the development of a National Sen
 
 Thus we appreciate your input, enjoy feedback and welcome improvements to this project and are very open to collaboration. Therefore we love issues and pull requests from everyone.
 
-## Problems, suggestions and questions in issues
-Please help development by reporting problems, suggesting changes and asking questions. To do this, you can [create a GitHub issue](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue) for this project.
+## Problems, suggestions and questions in issues or discussions
+Please help development by reporting problems, suggesting changes and asking questions. To do this, you can create a GitHub [issue](https://github.com/kadaster-labs/sensrnet-home/issues) (see [help](https://help.github.com/en/github/managing-your-work-on-github/creating-an-issue)) for this project or start a [discussion](https://github.com/kadaster-labs/sensrnet-home/discussions).
+
 You don’t need to change any of our code or documentation to be a contributor!
 
 ## Documentation and code in pull requests
@@ -27,7 +28,7 @@ When submitting the pull request, please accompany it with a description of the 
 ### 3. Improve
 All contributions have to be reviewed by someone.
 It could be that your contribution can be merged immediately by a maintainer. However, usually, a new pull request needs some improvements before it can be merged. Other contributors (or helper robots) might have feedback. If this is the case the reviewing maintainer will help you improve your documentation and code.
-If your documentation and code have passed human review, it is merged.
+If your documentation and code have passed human review, it will be merged.
 
 ### 4. Celebrate
 Your ideas, documentation and code are very much appreciated and will become an integral part of this project. You are the open source hero we need!
