@@ -15,7 +15,7 @@ In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen v
 
 | Bronhouder         | Technische pilot (self hosted) | Technische pilot (joined) | Business pilot | Transparantie pilot | Status      |
 | ------------------ | ------------------------------ | ------------------------- | -------------- | ------------------- | ----------- |
-| Gemeente Tilburg   | :white_check_mark              | -                         | :raised_hand:  | -                   | Onbevestigd |
+| Gemeente Tilburg   | :white_check_mark:             | -                         | :raised_hand:  | -                   | Onbevestigd |
 | Gemeente Eindhoven | :raised_hand:                  | -                         | :question:     | -                   | Onbevestigd |
 | Gemeente Amsterdam | :raised_hand:                  | -                         | :raised_hand:  | :question:          | Onbevestigd |
 | Gemeente Utrecht   | :question:                     | -                         | -              | -                   | Onbevestigd |
