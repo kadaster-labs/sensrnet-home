@@ -31,6 +31,16 @@ In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen v
 
 ## Technische pilot
 
+Er bestaan twee soorten pilots:
+
+1. 'self hosted' waarbij een bronhouder zelf een Registry Node gaat hosten. Voorwaarden: cloud infrastructuur, identity provider integratie.
+2. 'joined' waarbij een bronhouder gebruik maakt van een Registry Node van een andere bronhouder. Voorwaarden: identity provider integratie (en een samenwerking met de bronhouder die wél de hosting doet uiteraard)
+
+Voorwaarden (voor meer info: zie documentatie):
+
+1. SensRNet gaat uit van een beschikbare **cloud infrastructure** gebaseerd op Common Ground Haven
+2. SensRNet beheert zelf geen gebruikers, maar maakt gebruik van integratie met een **identity prodiver** op basis van de _Open Connect ID_ standaard.
+
 Voor de technsiche pilot is de volgende documentatie relevant en belangrijk:
 
 - [Architectuur](Architecture.md)
