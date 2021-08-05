@@ -38,7 +38,7 @@ Er bestaan twee soorten pilots:
 
 Voorwaarden (voor meer info: zie documentatie):
 
-1. SensRNet gaat uit van een beschikbare **cloud infrastructure** gebaseerd op Common Ground Haven
+1. SensRNet gaat uit van een beschikbare **cloud infrastructure** gebaseerd op Common Ground Haven (incl. TLS cert voor ontsluiting)
 2. SensRNet beheert zelf geen gebruikers, maar maakt gebruik van integratie met een **identity prodiver** op basis van de _Open Connect ID_ standaard.
 
 Voor de technsiche pilot is de volgende documentatie relevant en belangrijk:
