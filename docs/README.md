@@ -1,10 +1,12 @@
 # Home of the SensRNet
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+---
+
 <img src="img/SensRNet-logo.png" width="300" align="right">
 
 SensRNet - The Dutch National Sensor Registry Network
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 | Links                                                             |                                                                |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- |
