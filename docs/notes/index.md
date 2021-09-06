@@ -20,6 +20,7 @@ _All published notes can be found below_
 - [Notes 19-05-2021](2021-05-19-FAB-notes.md)
 - [Notes 16-06-2021](2021-06-16-FAB-notes.md)
 - [Notes 14-07-2021](2021-07-14-FAB-notes.md)
+- [Notes 25-08-2021](2021-08-25-FAB-notes.md)
 
 ## Users Group Notes
 
