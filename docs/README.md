@@ -47,6 +47,8 @@ Read more:
 
 **Miscellaneous**
 
+- We published a conference paper on SensRNet: <br>
+    [Sensor Registry As A Base Layer For Smart Cities](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLVI-4-W1-2021/115/2021/)
 - [SensRNet Plain PowerPoint template](2021-SensRNet-plain-PowerPoint-template.potx) ;)
 
 ## Connect
