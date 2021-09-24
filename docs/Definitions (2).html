@@ -1,0 +1,755 @@
+<h1 id="definitions-restructuredtext-format">Definitions (reStructuredText format)</h1>
+<p>These definitions of fields are part of the SensRNet <a href="Model.md">datamodel</a></p>
+<table>
+<col width="5%" />
+<col width="6%" />
+<col width="8%" />
+<col width="2%" />
+<col width="26%" />
+<col width="25%" />
+<col width="18%" />
+<col width="5%" />
+<thead>
+<tr class="header">
+<th align="left">SensrNet Entiteit</th>
+<th align="left">SensorThings Entiteit</th>
+<th align="left">Nederlands</th>
+<th align="left">In MVP</th>
+<th align="left">Definitie (EN)</th>
+<th align="left">Definitie (NL)</th>
+<th align="left">Voorbeeld</th>
+<th align="left">Issuenr. Github</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Device</td>
+<td align="left">Thing</td>
+<td align="left">Apparaat</td>
+<td align="left">Yes</td>
+<td align="left">An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks</td>
+<td align="left">Een fysiek of virtueel ding dat verbonden en geïdentificeerd kan worden in communicatienetwerken.</td>
+<td align="left">Meetstation, Citybeacon</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">AggregateId</td>
+<td align="left"></td>
+<td align="left">Aggregatie identificatie</td>
+<td align="left">Yes</td>
+<td align="left">Identification number of the Aggregate</td>
+<td align="left">Identificatienummer van de gegevensgroep</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet Identification number for the device</td>
+<td align="left">Een SensRNet-identificatienummer voor het apparaat.</td>
+<td align="left">SensRnet.DeviceId</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Name</td>
+<td align="left">Name</td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Category</td>
+<td align="left"></td>
+<td align="left">Categorie</td>
+<td align="left">Yes</td>
+<td align="left">The broadest characterisation of the device</td>
+<td align="left">De meest algemene typering van het apparaat</td>
+<td align="left">Sensor, camera, beacon (baken)</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Description</td>
+<td align="left">Description</td>
+<td align="left">Omschrijving apparaat</td>
+<td align="left">Yes</td>
+<td align="left">This is a short description of the corresponding Thing entity.</td>
+<td align="left">Een korte omschrijving van het apparaat.</td>
+<td align="left">Sensor system monitoring area temperature</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Connectivity</td>
+<td align="left"></td>
+<td align="left">Connectiviteit</td>
+<td align="left">Yes</td>
+<td align="left">The way in which the device is connected to communication networks</td>
+<td align="left">De wijze waarop het apparaat verbonden is aan communicatienetwerken.</td>
+<td align="left">Bedraad, LTE, Wifi, Mesh</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Network Operator</td>
+<td align="left"></td>
+<td align="left">Netwerkoperator</td>
+<td align="left">No</td>
+<td align="left">The supplier and operator of the connected communication network.</td>
+<td align="left">De leverancier en beheerder van het verbonden communicatienetwerk.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Power</td>
+<td align="left"></td>
+<td align="left">Stroomvoorziening</td>
+<td align="left">No</td>
+<td align="left">The way in which the device is supplied with power</td>
+<td align="left">De wijze waarop het apparaat van stroom voorzien wordt.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Properties</td>
+<td align="left">Properties</td>
+<td align="left">Eigenschappen</td>
+<td align="left">No</td>
+<td align="left">A JSON Object containing user-annotated properties as key-value pairs.</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Location</td>
+<td align="left">Location</td>
+<td align="left">Locatie</td>
+<td align="left">Yes</td>
+<td align="left">The last known location of the Thing.</td>
+<td align="left">De laatst bekende locatie van het apparaat</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">AggregateId</td>
+<td align="left"></td>
+<td align="left">Aggregatie identificatie</td>
+<td align="left">Yes</td>
+<td align="left">Identification number of the Aggregate</td>
+<td align="left">Identificatienummer van de gegevensgroep</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet identification number for the Location</td>
+<td align="left">SensRNet-identificatienummer voor de locatie.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Name</td>
+<td align="left">Name</td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">A property provides a label for Location, commonly a desciptive name</td>
+<td align="left">Naam van de locatie</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Description</td>
+<td align="left">Description</td>
+<td align="left">Opstelpunt omschrijving</td>
+<td align="left">Yes</td>
+<td align="left">The description about the Location.</td>
+<td align="left">Een korte omschrijving van de locatie.</td>
+<td align="left">University of Calgary, CCIT building</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Coordinates</td>
+<td align="left">Coordinates</td>
+<td align="left">XYZ-coördinaten</td>
+<td align="left">Yes</td>
+<td align="left">The coordinates of the location in Latitude, Longitude, and elevation (Z).</td>
+<td align="left">De coördinaten van de locatie in Latitude, Longitude, en hoogte (Z).</td>
+<td align="left">[ 51.442, 5.470, 5]</td>
+<td align="left">93</td>
+</tr>
+<tr class="odd">
+<td align="left">BaseObjectid</td>
+<td align="left"></td>
+<td align="left">Extern object-id</td>
+<td align="left">Yes</td>
+<td align="left">Reference to external id</td>
+<td align="left">Een verwijzing naar de BGT-code voor het object waaraan of waarop het apparaat geplaatst is.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"><p>Sensor</p>
+<p>AggregateId</p></td>
+<td align="left">Sensor</td>
+<td align="left"><p>Sensor</p>
+<p>Aggregatie identificatie</p></td>
+<td align="left"><p>Yes</p>
+<p>Yes</p></td>
+<td align="left">An instrument that observes a property or phenomenon with the goal of producing an estimate of the value of the property Identification number of the Aggregate</td>
+<td align="left">Apparaat voor de meting van een fysieke grootheid (bijv. temperatuur, licht, druk, elektriciteit). Identificatienummer van de gegevensgroep</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet identification number for the sensor</td>
+<td align="left">Een SensRNet-identificatienummer voor de sensor</td>
+<td align="left"></td>
+<td align="left">94</td>
+</tr>
+<tr class="even">
+<td align="left">Name</td>
+<td align="left">Name</td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">A property provides a label for Sensor entity, commonly a descriptive name.</td>
+<td align="left">Een korte aanduiding van de sensor.</td>
+<td align="left">DHT22</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Description</td>
+<td align="left">Description</td>
+<td align="left">Omschrijving sensor</td>
+<td align="left">Yes</td>
+<td align="left">The description about the sensor</td>
+<td align="left">Een korte omschrijving van de sensor</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Metadata</td>
+<td align="left"></td>
+<td align="left">Metadata</td>
+<td align="left">No</td>
+<td align="left">Contextual information that describes the characteristics of specific data.</td>
+<td align="left">Contextuele informatie die de karakteristieken van bepaalde gegevens beschrijven.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">SensorType</td>
+<td align="left"></td>
+<td align="left">Sensortype</td>
+<td align="left">Yes</td>
+<td align="left">The technical qualification of the Sensor entity.</td>
+<td align="left">Een typering van de sensor op basis van technische mogelijkheden van de sensor.</td>
+<td align="left">Zie lijst Sensortypes</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Supplier</td>
+<td align="left"></td>
+<td align="left">Leverancier</td>
+<td align="left">Yes</td>
+<td align="left"><p>The organisation responsible for the supply of the sensor and</p>
+<p>contracting party for the owner of the sensor.</p></td>
+<td align="left">De organisatie die verantwoordelijk is voor de levering van de sensor en contractpartij is voor de eigenaar van de sensor.</td>
+<td align="left"></td>
+<td align="left">102</td>
+</tr>
+<tr class="odd">
+<td align="left">Manufacturer</td>
+<td align="left"></td>
+<td align="left">Fabrikant</td>
+<td align="left">Yes</td>
+<td align="left">The organisation responsible for producing the sensor.</td>
+<td align="left">De organisatie die verantwoordelijk is voor de productie van de sensor.</td>
+<td align="left"></td>
+<td align="left">102</td>
+</tr>
+<tr class="even">
+<td align="left">Documentation</td>
+<td align="left">Metadata</td>
+<td align="left">Documentatie</td>
+<td align="left">Yes</td>
+<td align="left">The detailed description of the Sensor or system. The metadata type is defined by encodingType.</td>
+<td align="left">Een verwijziging naar gedetailleerde beschrijvingen en technische documentatie.</td>
+<td align="left"><a href="https://cdn-shop.adafruit.com/datasheets/DHT22.pdf">https://cdn-shop.adafruit.com/datasheets/DHT22.pdf</a></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ObservationGoal</td>
+<td align="left"></td>
+<td align="left">Doel van de waarneming</td>
+<td align="left">Yes</td>
+<td align="left">The goal of measuring</td>
+<td align="left">Het doel of de grondslag van de waarneming</td>
+<td align="left">Beoordelen van veiligheid</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">AggregateId</td>
+<td align="left"></td>
+<td align="left">Aggregatie identificatie</td>
+<td align="left">Yes</td>
+<td align="left">Identification number of the Aggregate</td>
+<td align="left">Identificatienummer van de gegevensgroep</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">Sensrnet identification number of the observation goal</td>
+<td align="left">SensRNet-identificatienummer voor het doel van de waarneming.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Name</td>
+<td align="left"></td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">The name of the observation goal.</td>
+<td align="left">De naam van het doel van de waarneming</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Description</td>
+<td align="left"></td>
+<td align="left">Beschrijving</td>
+<td align="left">Yes</td>
+<td align="left">The short description of the goal of the observation</td>
+<td align="left">Een korte omschrijving van het doel van de waarneming</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">LegalGround</td>
+<td align="left"></td>
+<td align="left">Wettelijke grondslag</td>
+<td align="left">Yes</td>
+<td align="left">The legal basis for the observation, e.g. mandate, license</td>
+<td align="left">De wettelijke basis van de waarneming, bijv. door aanwijzing of vergunningsplicht.</td>
+<td align="left">Verwijzing naar privacyverklaring of register van verwerkingen</td>
+<td align="left">95</td>
+</tr>
+<tr class="odd">
+<td align="left">LegalGroundLink</td>
+<td align="left"></td>
+<td align="left">Grondslag link</td>
+<td align="left">Yes</td>
+<td align="left">The link to regulations for the legal ground</td>
+<td align="left">De link naar de regelgeving voor de wettelijke basis</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Datastream</td>
+<td align="left">Datastream</td>
+<td align="left">Datastroom</td>
+<td align="left">Yes</td>
+<td align="left"><p>A collection of Observations measuring the same ObservedProperty</p>
+<p>and produced by the same Sensor.</p></td>
+<td align="left">Een continue levering of collectie van data gericht op één waarneming, verzameld door één sensor.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">AggregateId</td>
+<td align="left"></td>
+<td align="left">Aggregatie identificatie</td>
+<td align="left">Yes</td>
+<td align="left">Identification number of the Aggregate</td>
+<td align="left">Identificatienummer van de gegevensgroep</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet identification number of the datastream</td>
+<td align="left">Een SensRNet-identificatienummer voor de datastroom.</td>
+<td align="left"></td>
+<td align="left">94</td>
+</tr>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left">Name</td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">A property provides a label for Datastream entity, commonly a descriptive name.</td>
+<td align="left">Een korte aanduiding van de datastroom.</td>
+<td align="left">Air Temperature DS</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Description</td>
+<td align="left">Description</td>
+<td align="left">Omschrijving datastroom</td>
+<td align="left">Yes</td>
+<td align="left">The description of the Datastream entity.</td>
+<td align="left">Een korte omschrijving van de datastream.</td>
+<td align="left">Datastream for recording temperature</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Theme</td>
+<td align="left"></td>
+<td align="left">Thema</td>
+<td align="left">Yes</td>
+<td align="left">A functional classification of the datastream</td>
+<td align="left">Een functionele classificatie van de datastroom.</td>
+<td align="left">Conform TOP 1.1, zie Lijst Themes</td>
+<td align="left">97</td>
+</tr>
+<tr class="even">
+<td align="left">UnitOfMeasurement</td>
+<td align="left">UnitOfMeasurement</td>
+<td align="left">Meeteenheid</td>
+<td align="left">Yes</td>
+<td align="left"><p>A JSON Object containing three key-value pairs. The name property presents</p>
+<p>the full name of the unitOfMeasurement; the symbol property shows the textual form of the unit symbol; and the definition contains the URI defining the unitOfMeasurement. The values of these properties SHOULD follow the Unified Code for Unit of Measure (UCUM).</p></td>
+<td align="left">De eenheid waarmee de waardes die weergegeven worden in de datastream aangegeven worden.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ObservedArea</td>
+<td align="left">ObservedArea</td>
+<td align="left">Waargenomen gebied</td>
+<td align="left">Yes</td>
+<td align="left">The spatial bounding box of the spatial extent of all FeaturesOfInterest that belong to the Observations associated with this Datastream.</td>
+<td align="left">Het gebied waarover de datastroom informatie geeft.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">ResultTime</td>
+<td align="left">ResultTime</td>
+<td align="left">Datafrequentie</td>
+<td align="left">Yes</td>
+<td align="left">The temporal interval of the result times of all observations belonging to this Datastream.</td>
+<td align="left">De tijdsinterval tussen de waardes die weergegeven worden in de datastroom.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Dataquality</td>
+<td align="left"></td>
+<td align="left">Datakwaliteit</td>
+<td align="left">Yes</td>
+<td align="left">The degree of pollution or inconsistency of the measured values in the datastream</td>
+<td align="left">De mate van ruis in of afwijkingen van de waardes die weergegeven worden in de datastream.</td>
+<td align="left">Laag, voldoende, hoog</td>
+<td align="left">99</td>
+</tr>
+<tr class="even">
+<td align="left">IsPublic</td>
+<td align="left"></td>
+<td align="left">Publiek beschikbaar</td>
+<td align="left">Yes</td>
+<td align="left">Indicating if data about the datastream is publicly available.</td>
+<td align="left">Geeft aan of gegevens over de datastroom publiek beschikbaar zijn.</td>
+<td align="left"></td>
+<td align="left">100</td>
+</tr>
+<tr class="odd">
+<td align="left">IsOpenData</td>
+<td align="left"></td>
+<td align="left">Open data</td>
+<td align="left">Yes</td>
+<td align="left">Indicating if values in the datastream are freely available and usable.</td>
+<td align="left">Geeft aan of de waardes in de datastroom vrij beschikbaar en bruikbaar zijn.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">IsActive</td>
+<td align="left"></td>
+<td align="left">Actief</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+<td align="left">Geeft aan of de datastroom beschikbaar is en actief waardes oplevert.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ObservationType</td>
+<td align="left"></td>
+<td align="left">Type observatie</td>
+<td align="left">No</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">PhenomenonTime</td>
+<td align="left">PhenomenonTime</td>
+<td align="left">Tijdsperiode waarneming</td>
+<td align="left">No</td>
+<td align="left">The time when or the interval during which the observation happened.</td>
+<td align="left">Het tijdstip of de tijdsduur van de waarneming</td>
+<td align="left">Niet per se gelijk aan het TijdstipResultaat. Kan een tijdstip zijn of een interval of een andere tijdseenheid. Not necessarily the same as the ResultTime. May be an interval or an instant time, or some other compound temporal entity</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ResultTime</td>
+<td align="left">ResultTime</td>
+<td align="left">Tijdstip resultaat</td>
+<td align="left">No</td>
+<td align="left">The instant time when the observation activity was completed.</td>
+<td align="left">Het tijdstip waarop de waarneming is beëindigd.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">ContainsPIData</td>
+<td align="left"></td>
+<td align="left">Bevat persoonsgegevens</td>
+<td align="left">Yes</td>
+<td align="left"><p>Indicates whether the values displayed in the data stream can be traced</p>
+<p>back to individual persons.</p></td>
+<td align="left">Geeft aan of de waardes die weergegeven worden in de datastroom herleidbaar zijn tot individuele personen.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">IsReusable</td>
+<td align="left"></td>
+<td align="left">Herbruikbaar</td>
+<td align="left">Yes</td>
+<td align="left"><p>Indicates whether the values displayed in the data stream are reusable</p>
+<p>for other purposes.</p></td>
+<td align="left">Geeft aan of de waardes die weergegeven worden in de datastroom herbruikbaar zijn voor andere doelen.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Documentation</td>
+<td align="left"></td>
+<td align="left">Documentatie</td>
+<td align="left">Yes</td>
+<td align="left">A reference to detailed descriptions and technical documentation.</td>
+<td align="left">Een verwijziging naar gedetailleerde beschrijvingen en technische documentatie.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Datalink</td>
+<td align="left"></td>
+<td align="left">Datalink</td>
+<td align="left">Yes</td>
+<td align="left">A reference to the data stream.</td>
+<td align="left">Een verwijziging naar de datastroom.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Dataclassification</td>
+<td align="left"></td>
+<td align="left">Dataclassificatie</td>
+<td align="left">No</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Conform Beschikbaarheid, Integriteit, Vertrouwelijkheid</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">MobileLocation</td>
+<td align="left">HistoricalLocation</td>
+<td align="left">Voorgaande locatie</td>
+<td align="left">No</td>
+<td align="left">The times of the current (i.e., last known) and previous locations of the Thing.</td>
+<td align="left">Het tijdstip van de huidige (laatst bekende) en voorgaande locaties van het apparaat</td>
+<td align="left">lat/lon 52.35,4.92</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Time</td>
+<td align="left">Time</td>
+<td align="left">Tijdstip</td>
+<td align="left">No</td>
+<td align="left">The time when the Thing is known at the Location.</td>
+<td align="left">Het tijdstip waarop het apparaat op de locatie was</td>
+<td align="left">1-8-2018 13:42</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">LegalEntity</td>
+<td align="left"></td>
+<td align="left">Rechtspersoon</td>
+<td align="left">Yes</td>
+<td align="left"><p>An entity with legal personality, including legal persons under public laws,</p>
+<p>denominations, legal persons under private law and natural persons.</p></td>
+<td align="left">Een entiteit met rechtspersoonlijkheid, waaronder publiekrechtelijke rechtspersonen, kerkgenootschappen, privaatrechtelijke rechtspersonen en natuurlijke personen.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet Identification number for the legal entity</td>
+<td align="left">Een SensRNet-identificatienummer voor de rechtspersoon.</td>
+<td align="left">SensRnet.OrganisationId</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left"></td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">A property provides a label for the legal entity, commonly a descriptive name.</td>
+<td align="left">Een korte aanduiding van de rechtspersoon.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Website</td>
+<td align="left"></td>
+<td align="left">Website</td>
+<td align="left">Yes</td>
+<td align="left"></td>
+<td align="left">Het webadres (url) van de website van de rechtspersoon.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">User</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">Yes</td>
+<td align="left">An user of the SensRNet-application.</td>
+<td align="left">Een gebruiker van de SensRNet-applicatie.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Id</td>
+<td align="left"></td>
+<td align="left">Identificatienummer</td>
+<td align="left">Yes</td>
+<td align="left">SensRNet Identification number for the user</td>
+<td align="left">Een SensRNet-identificatienummer voor gebruiker.</td>
+<td align="left">SensRnet.UserId</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Username</td>
+<td align="left"></td>
+<td align="left">Gebruikersnaam</td>
+<td align="left">Yes</td>
+<td align="left">User name by which the user is known in the SensRNet-application</td>
+<td align="left">De naam waarmee de gebruiker in de SensRNet-applicatie bekend is.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Email</td>
+<td align="left"></td>
+<td align="left">E-mail</td>
+<td align="left">Yes</td>
+<td align="left">The e-mail address of the user</td>
+<td align="left">Het e-mailadres van de gebruiker.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Role</td>
+<td align="left"></td>
+<td align="left">Rol</td>
+<td align="left">Yes</td>
+<td align="left">Rights connected to role</td>
+<td align="left">Geheel aan autorisaties in de Sensrnet-applicatie, gekoppeld aan de rol van de gebruiker.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">ContactDetails</td>
+<td align="left"></td>
+<td align="left">Contactgegevens</td>
+<td align="left">Yes</td>
+<td align="left">The way of contacting the legal entity</td>
+<td align="left">De wijze waarop contact gelegd kan worden met de rechtspersoon.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left"></td>
+<td align="left">Naam</td>
+<td align="left">Yes</td>
+<td align="left">A property provides a label for the contact entity, commonly a descriptive name.</td>
+<td align="left">Een korte aanduiding van de rechtspersoon waarmee contact gelegd kan worden.</td>
+<td align="left">Bijv. Klantcontactcentrum gemeente Nijmegen of Gemeente Nijmegen</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">Email</td>
+<td align="left"></td>
+<td align="left">E-mail</td>
+<td align="left">Yes</td>
+<td align="left">The e-mail address by which the legal entity can be contacted.</td>
+<td align="left">Het e-mailadres van de rechtspersoon waarmee contact gelegd kan worden.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Phone</td>
+<td align="left"></td>
+<td align="left">Telefoonnummer</td>
+<td align="left">Yes</td>
+<td align="left">The phone number address by which the legal entity can be contacted.</td>
+<td align="left">Het telefoonnummer van de rechtspersoon waarmee contact gelegd kan worden.</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">IsPublic</td>
+<td align="left"></td>
+<td align="left">Is openbaar</td>
+<td align="left">Yes</td>
+<td align="left">Indicates whether the contact details are public</td>
+<td align="left">Geeft aan of de contactgegevens publiek zijn</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">ForRole</td>
+<td align="left"></td>
+<td align="left">De rol voor contactgegevens</td>
+<td align="left">Yes</td>
+<td align="left">Indicates the role for which the contact details may be used</td>
+<td align="left">Geeft de rol aan waarvoor de contactgegevens gelden</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
