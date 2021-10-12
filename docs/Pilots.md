@@ -3,31 +3,31 @@
 In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen verschillende focus hebben:
 
 1. **Technische pilot**: de installatie van een registry node op de eigen [Haven-compliant cloud platform](https://haven.commonground.nl/) (of nader te bepalen omgeving naar _best effort_) en het verzamelen van feedback hierover.
-2. **Business pilot**:  Het gebruiken van het sensorenregister in de gemeentelijke organisatie en het verzamelen van feedback hierover, tbv van de business case.
+2. **Business pilot**: Het gebruiken van het sensorenregister in de gemeentelijke organisatie en het verzamelen van feedback hierover, tbv van de business case.
 3. **Transparantie pilot**: Het verstrekken van informatie over sensoren in de directe omgeving van een geselecteerde groep burgers en het verzamelen van feedback hierover.
 
 ## Overzicht
 
-| Legenda                                                              |
-| -------------------------------------------------------------------- |
-| :white_check_mark: done  :raised_hand: committed  :question: willing |
+| Legenda                                                            |
+| ------------------------------------------------------------------ |
+| :white_check_mark: done :raised_hand: committed :question: willing |
 
-
-| Bronhouder         | Technische pilot (self hosted) | Technische pilot (joined) | Business pilot | Transparantie pilot | Status      |
-| ------------------ | ------------------------------ | ------------------------- | -------------- | ------------------- | ----------- |
-| Gemeente Tilburg   | :white_check_mark:             | -                         | :raised_hand:  | -                   | Onbevestigd |
-| Gemeente Eindhoven | :raised_hand:                  | -                         | :question:     | -                   | Onbevestigd |
-| Gemeente Amsterdam | :raised_hand:                  | -                         | :raised_hand:  | :question:          | Onbevestigd |
-| Gemeente Utrecht   | :question:                     | -                         | -              | -                   | Onbevestigd |
-| Gemeente Nijmegen  | :question:                     | -                         | :question:     | :question:          | Onbevestigd |
-| Gemeente Den Bosch | :question:                     | -                         | :question:     | -                   | Onbevestigd |
-| Gemeente Rotterdam | :question:                     | -                         | :question:     | -                   | Onbevestigd |
-| Gemeente Helmond   | :question:                     | -                         | :question:     | -                   | Onbevestigd |
-| Gemeente Breda     | -                              | -                         | -              | -                   | Onbevestigd |
-| Gemeente Eersel    | -                              | :question:                | -              | -                   | Onbevestigd |
-| Gemeente Apeldoorn | -                              | -                         | -              | -                   | Onbevestigd |
-| Gemeente Zwolle    | -                              | -                         | -              | -                   | Onbevestigd |
-
+| Gemeente  | Technische pilot (self hosted) | Technische pilot (joined) | Business pilot | Transparantie pilot | Status          | Opmerking                                                       |
+| --------- | ------------------------------ | ------------------------- | -------------- | ------------------- | --------------- | --------------------------------------------------------------- |
+| Breda     | :raised_hand: (eind okt'21)    | -                         | :raised_hand:  | :question:          | Ingediend       |                                                                 |
+| Den Bosch | -                              | -                         | :raised_hand:  | -                   | Ingediend       |                                                                 |
+| Eindhoven | :raised_hand: (okt'21)         | -                         | :raised_hand:  | :raised_hand:       | Ingediend       |                                                                 |
+| Helmond   | :raised_hand:                  | -                         | :raised_hand:  | :raised_hand:       | Ingediend       |                                                                 |
+| Hilversum | -                              | :raised_hand: (gewenst)   | :raised_hand:  | :raised_hand:       | Ingediend       | Nog niet duidelijk hoe technische pilot uit te voeren           |
+| Nijmegen  | -                              | -                         | -              | -                   | Klaar           | Geen capaciteit                                                 |
+| Tilburg   | :white_check_mark:             | -                         | :raised_hand:  | -                   | Ingediend       |                                                                 |
+| Utrecht   | :raised_hand: (okt/nov'21)     | -                         | :raised_hand:  | :raised_hand:       | Ingediend       |                                                                 |
+| Zwolle    | -                              | :raised_hand:             | :question:     | :raised_hand:       | Ingediend       |                                                                 |
+| ------    | ------------------------------ | ------------------------- | -------------- | ------------------- | --------------- | ---------------                                                 |
+| Apeldoorn | -                              | -                         | -              | -                   | Onbevestigd     |                                                                 |
+| Amsterdam | -                              | -                         | -              | -                   | Onbevestigd     | Eerst eigen oplossing voor meldplicht; later over naar SensRNet |
+| Eersel    | -                              | -                         | -              | -                   | Onbevestigd     |                                                                 |
+| Rotterdam | -                              | -                         | -              | -                   | Onbevestigd     |                                                                 |
 
 ## Technische pilot
 
