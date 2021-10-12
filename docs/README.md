@@ -53,6 +53,8 @@ Read more:
 
 Please join us in Slack @ Common Ground [#sensrnet](https://samenorganiseren.slack.com/archives/C020BGH5N0J)
 
+Contact [FAB](FAB.md): sensrnet@kadaster.nl
+
 ---
 
 ## Find Us
