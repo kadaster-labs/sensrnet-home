@@ -32,6 +32,7 @@ Read more:
 
 - [Use Cases (Dutch only)](UseCasesNL.md)
 - [Test Scenario's (Dutch only)](TestScenariosNL.md)
+- [Documentatie (Dutch only)](DocumentationNL.md)
 
 **Technical**
 
