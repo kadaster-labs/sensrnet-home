@@ -8,10 +8,11 @@
 
 SensRNet - The Dutch National Sensor Registry Network
 
-| Links                                                             |                                                                |
-| ----------------------------------------------------------------- | -------------------------------------------------------------- |
-| **[Central Viewer](https://viewer.sensorenregister.nl/)**         | [Registry Node (demo)](https://demo.sensorenregister.nl/)      |
-| [Central Viewer (test)](https://viewer.test.sensorenregister.nl/) | [Registry Node (test)](https://demo.test.sensorenregister.nl/) |
+| Omgeving                           | Links                                                                                                                 |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| Productie                          | **[Central Viewer](https://viewer.sensorenregister.nl/)**                                                             |
+| Demo<br>&nbsp;                     | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)       |
+| Test (*Kadaster intern*)<br>&nbsp; | [Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/) |
 
 Read more:
 
