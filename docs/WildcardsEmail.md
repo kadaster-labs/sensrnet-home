@@ -2,32 +2,33 @@ Hieronder een overzicht van tot nu toe onderkende wildcards voor publieke e-mail
 Wildcards publieke e-mailadressen 
 
 info*@\*.\*
+
 sensor*@\*.\*
 
-beheer*@*.*
+beheer*@\*.\*
 
-privacy*@*.*
+privacy*@\*.\*
 
-kcc*@*.*
+kcc*@\*.\*
 
-service*@*.*
+service*@\*.\*
 
-klant*@*.*
+klant*@\*.\*
 
-gemeente*@*.*
+gemeente*@\*.\*
 
-support*@*.*
+support*@\*.\*
 
-help*@*.*
+help*@\*.\*
 
-ondersteuning*@*.*
+ondersteuning*@\*.\*
 
-informatie*@*.*.
+informatie*@\*.\*
 
-management*@*.*
+management*@\*.\*
 
-team*@*.*
+team*@\*.\*
 
-afdeling*@*.*
+afdeling*@\*.\*
 
-data*@*.*
+data*@\*.\*
