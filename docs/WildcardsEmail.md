@@ -1,7 +1,7 @@
 Hieronder een overzicht van tot nu toe onderkende wildcards voor publieke e-mailadressen:
-Wildcards publieke e-mailadressen 
-info*@*.*
-sensor*@*.*
+|Wildcards publieke e-mailadressen 
+|info*@*.*
+|sensor*@*.*
 beheer*@*.*
 privacy*@*.*
 kcc*@*.*
