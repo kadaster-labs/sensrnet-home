@@ -1,5 +1,4 @@
 Hieronder een overzicht van tot nu toe onderkende wildcards voor publieke e-mailadressen:
-Wildcards publieke e-mailadressen 
 
 info*@\*.\*
 
