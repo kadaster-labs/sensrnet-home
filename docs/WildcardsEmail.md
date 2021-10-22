@@ -2,7 +2,6 @@ Hieronder een overzicht van tot nu toe onderkende wildcards voor publieke e-mail
 Wildcards publieke e-mailadressen 
 
 info*@*.*
-
 sensor*@*.*
 
 beheer*@*.*
