@@ -19,5 +19,5 @@ Van de opgenomen datastream wordt de functionele classificatie vastgelegd in The
 - [Themes](Themes.md)
 
 Van de geregistreerde sensoren willen we het type weten op basis van de technische werking. Mogelijke waarden:
-- [Themes](Themes.md)
+- [SensorTypes](SensorTypes.md)
 
