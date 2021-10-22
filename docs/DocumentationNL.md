@@ -13,3 +13,4 @@ Op verzoek van gemeenten die al wat langer bezig zijn met het registreren van se
 Waardelijsten:
 
 Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen. Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. Deze lijst is hier te vinden.
+- [Wildcards](WildcardsEmail.md) 
