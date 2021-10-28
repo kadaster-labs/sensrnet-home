@@ -1,8 +1,8 @@
-# SensRNet Documentatie
+# SensRNet Gebruikersdocumentatie
 > Handleidingen, documentatie
 
 ## Inleiding
-Hieronder een overzicht van de documentatie en handleidingen 
+Hieronder een overzicht van de beschikbare gebruikersdocumentatie, handleidingen en waardelijsten.
 
 ##
 Bulk opvoer:
