@@ -14,14 +14,14 @@ Op verzoek van gemeenten die al wat langer bezig zijn met het registreren van se
 Waardelijsten:
 
 Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen. Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. 
-- [Wildcards](WildcardsEmail.md) 
+- [Wildcards](Waardelijst_Wildcards.md) 
 - [Wildcards in Excel](Waardelijst_Wildcards.xlsx)
 
 Van de opgenomen datastream wordt de functionele classificatie vastgelegd in Theme/Thema. Mogelijke waarden:
-- [Themes](Themes.md)
+- [Themes](Waardelijst_Thema.md)
 - [Themas in Excel](Waardelijst_Thema.xlsx)
 
 Van de geregistreerde sensoren willen we het type weten op basis van de technische werking. Mogelijke waarden:
-- [SensorTypes](SensorTypes.md)
+- [SensorTypes](Waardelijst_SensorTypes.md)
 - [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
 
