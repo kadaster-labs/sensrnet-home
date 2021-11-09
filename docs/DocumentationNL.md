@@ -15,6 +15,7 @@ Waardelijsten:
 
 Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen. Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. 
 - [Wildcards](WildcardsEmail.md) 
+- [Wildcards in Excel](Waardelijst_Wildcards.xlsx)
 
 Van de opgenomen datastream wordt de functionele classificatie vastgelegd in Theme/Thema. Mogelijke waarden:
 - [Themes](Themes.md)
