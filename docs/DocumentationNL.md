@@ -18,6 +18,7 @@ Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privéperso
 
 Van de opgenomen datastream wordt de functionele classificatie vastgelegd in Theme/Thema. Mogelijke waarden:
 - [Themes](Themes.md)
+- [Themas in Excel](Waardelijst_Thema.xlsx)
 
 Van de geregistreerde sensoren willen we het type weten op basis van de technische werking. Mogelijke waarden:
 - [SensorTypes](SensorTypes.md)
