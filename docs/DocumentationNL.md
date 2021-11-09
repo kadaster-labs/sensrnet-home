@@ -23,5 +23,5 @@ Van de opgenomen datastream wordt de functionele classificatie vastgelegd in The
 
 Van de geregistreerde sensoren willen we het type weten op basis van de technische werking. Mogelijke waarden:
 - [SensorTypes](SensorTypes.md)
-- [Waardelijst in Excel](Waardelijst_Sensortypes.xlsx)
+- [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
 
