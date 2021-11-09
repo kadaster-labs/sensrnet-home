@@ -1,3 +1,7 @@
 .md-header {
     background-color: var(--md-accent-fg-color);
 }
+
+.md-grid {
+    max-width: 71rem;
+}
