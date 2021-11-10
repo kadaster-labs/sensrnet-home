@@ -59,4 +59,18 @@ Voor de business pilots zijn de volgende zaken relevant:
 
 ## Transparantie pilot
 
-// TODO
+Voor de transparantie pilot kan gebruik gemaakt worden van de demo omgeving. Deze heeft ondertussen ook een openbaar toegankelijke viewer. Beide worden door Kadaster gehost (voor dit moment) naar best-effort beschikbaarheid.
+
+- [Central Viewer](https://demo.sensorenregister.nl/viewer/)
+- [Registry Node](https://demo.sensorenregister.nl/)
+
+## Opschalingsanalyse vragen
+
+Groot doel van de pilots is input verzamelen tbv de vragen van de VNG Opschalingsanalyse. Om die input gemakkelijk te verzamelen, is per vraag een 'discussion' aangemaakt:
+
+1. [Wat wijzigt er in de werkwijze van de gemeente door het sensorenregister?](https://github.com/kadaster-labs/sensrnet-home/discussions/251)
+2. [Wat betekenen deze veranderingen voor de gemeentelijk organisatie?](https://github.com/kadaster-labs/sensrnet-home/discussions/252)
+3. [Is de gemeente voldoende toegerust voor een doeltreffende uitvoering?](https://github.com/kadaster-labs/sensrnet-home/discussions/253)
+4. [Welke kosten en besparingen voor de gemeentelijke uitvoering zijn aan het sensorenregister verbonden?](https://github.com/kadaster-labs/sensrnet-home/discussions/254)
+5. [Wat zijn de verwachte effecten van het sensorenregister?](https://github.com/kadaster-labs/sensrnet-home/discussions/256)
+6. [Hoe kan het sensorenregister worden geïmplementeerd en wat zijn de randvoorwaarden en risico’s?](https://github.com/kadaster-labs/sensrnet-home/discussions/257)
