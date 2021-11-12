@@ -3,14 +3,14 @@ SensRNet Gebruikersdocumentatie
 > Handleidingen, documentatie
 
 - [Inleiding](#Inleiding)
-- [Bulk opvoer](#Bulk opvoer)
+- [Bulk opvoer](#Bulkopvoer)
 - [Waardelijsten](#Waardelijsten)
 
 Inleiding
 ============
 Hieronder een overzicht van de beschikbare gebruikersdocumentatie, handleidingen en waardelijsten.
 
-Bulk opvoer
+Bulkopvoer
 ===========
 Op verzoek van gemeenten die al wat langer bezig zijn met het registreren van sensoren en voor wie het teveel werk zou zijn deze opnieuw online aan te melden, volgt hieronder een template, dat gebruikt kan worden voor bulkopvoer.
 
