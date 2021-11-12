@@ -1,7 +1,12 @@
-# SensRNet Gebruikersdocumentatie
+SensRNet Gebruikersdocumentatie
+-------------------------------
 > Handleidingen, documentatie
 
-## Inleiding
+- [Inleiding](#Inleiding0
+- [Waardelijsten](#Waardelijsten)
+
+Inleiding
+============
 Hieronder een overzicht van de beschikbare gebruikersdocumentatie, handleidingen en waardelijsten.
 
 ##
