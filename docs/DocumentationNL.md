@@ -8,7 +8,9 @@ SensRNet Gebruikersdocumentatie
 
 Inleiding
 ============
-Hieronder een overzicht van de beschikbare gebruikersdocumentatie, handleidingen en waardelijsten.
+Voor het registreren van sensoren in SensRNet is de volgende gebruikersdocumentatie beschikbaar. Nuttige informatie is ook te vinden in:
+- [datamodel](model.md)
+- [datadefinities](definitions.rst)
 
 Bulkopvoer
 ===========
