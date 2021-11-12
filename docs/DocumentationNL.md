@@ -2,21 +2,23 @@ SensRNet Gebruikersdocumentatie
 -------------------------------
 > Handleidingen, documentatie
 
-- [Inleiding](#Inleiding0
+- [Inleiding](#Inleiding)
+- [Bulk opvoer](#Bulk opvoer)
 - [Waardelijsten](#Waardelijsten)
 
 Inleiding
 ============
 Hieronder een overzicht van de beschikbare gebruikersdocumentatie, handleidingen en waardelijsten.
 
-##
-Bulk opvoer:
+Bulk opvoer
+===========
 Op verzoek van gemeenten die al wat langer bezig zijn met het registreren van sensoren en voor wie het teveel werk zou zijn deze opnieuw online aan te melden, volgt hieronder een template, dat gebruikt kan worden voor bulkopvoer.
 
 - [SensorenregisterInventarisatieLeeg_Concept.xlsx](SensorenregisterInventarisatieLeeg_Concept.xlsx)
 - 
 
-Waardelijsten:
+Waardelijsten
+=============
 
 Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen. Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. 
 - [Wildcards](Waardelijst_Wildcards.md) 
