@@ -31,5 +31,3 @@ team*@\*.\*
 afdeling*@\*.\*
 
 data*@\*.\*
-
-hallo
