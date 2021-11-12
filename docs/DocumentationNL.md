@@ -30,7 +30,7 @@ Van de opgenomen datastream wordt de functionele classificatie vastgelegd in The
 - [Themes](Waardelijst_Thema.md)
 - [Themas in Excel](Waardelijst_Thema.xlsx)
 
-Van de geregistreerde sensoren willen we het type weten op basis van de technische werking. Mogelijke waarden:
+Van de geregistreerde sensoren willen we het type weten op basis van de technische werking (wat meet het?). Mogelijke waarden volgen de opsomming op [Wikipedia] (https://en.wikipedia.org/wiki/List_of_sensors)  :
 - [SensorTypes](Waardelijst_SensorTypes.md)
 - [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
 
