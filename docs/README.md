@@ -1,18 +1,24 @@
 # Home of the SensRNet
 
+SensRNet - The Dutch National Sensor Registry Network
+
+> **Hot news!**
+>
+> Lees onze [eerste nieuwsbrief](SensRNet-Nieuwsbrief-2021-1.pdf)!
+
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ---
 
 <img src="img/SensRNet-logo.png" width="300" align="right">
 
-SensRNet - The Dutch National Sensor Registry Network
-
 | Omgeving                           | Links                                                                                                                 |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | Productie                          | **[Central Viewer](https://viewer.sensorenregister.nl/)**                                                             |
-| Demo<br>&nbsp;                     | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)       |
-| Test (*Kadaster intern*)<br>&nbsp; | [Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/) |
+| Demo<br>&nbsp;                     | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)      |
+| Test (_Kadaster intern_)<br>&nbsp; | [Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/) |
+
+---
 
 Read more:
 
@@ -49,7 +55,7 @@ Read more:
 **Miscellaneous**
 
 - We published a conference paper on SensRNet: <br>
-    [Sensor Registry As A Base Layer For Smart Cities](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLVI-4-W1-2021/115/2021/)
+  [Sensor Registry As A Base Layer For Smart Cities](https://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XLVI-4-W1-2021/115/2021/)
 - [SensRNet Plain PowerPoint template](2021-SensRNet-plain-PowerPoint-template.potx) ;)
 
 ## Connect
@@ -62,7 +68,7 @@ Contact [FAB](FAB.md): sensrnet@kadaster.nl
 
 ## Find Us
 
-* [GitHub](https://github.com/kadaster-labs/sensrnet-home)
+- [GitHub](https://github.com/kadaster-labs/sensrnet-home)
 
 ## Contributing
 
