@@ -2,7 +2,7 @@ SensRNet Gebruikersdocumentatie
 -------------------------------
 Voor het registreren van sensoren in SensRNet is de volgende gebruikersdocumentatie beschikbaar.
 
-- [Starten](#Starten)
+- [Aan de slag](#Starten)
 - [Opvoeren sensoren](#Sensoren)
 
 - [Waardelijsten](#Waardelijsten)
@@ -15,14 +15,15 @@ Starten
  
  Opvoeren organisatie
  
- Opvoeren user account
+ Aanmaken user account
  
  Koppelen user account aan organisatie
  Alleen een gebruiker met rol Admin kan een gebruiker koppelen aan een organisatie.
 
 Sensoren
 ========
-Een sensor is een instrument voor de meting van een fysieke grootheid (bijv. temperatuur, licht, druk, elektriciteit) en is gemonteerd in een apparaat (device). Om een sensor te registreren is het nodig eerst een apparaat te registreren. Definities van de invulvelden vind je op de pagina met [Definities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst), mogelijke keuzes voor de dropdown boxes vind je hieronder bij [Waardelijsten](#Waardelijsten).  
+Een sensor is een instrument voor de meting van een fysieke eigenschap (bijv. temperatuur, licht, druk, elektriciteit) en is gemonteerd in een apparaat (device). Om een sensor te registreren is het nodig eerst een apparaat te registreren. 
+Definities van de invulvelden vind je op de pagina met [Definities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst), mogelijke keuzes voor de dropdown boxes vind je hieronder bij [Waardelijsten](#Waardelijsten).  
 
 In het hoofdscherm klik je op Menu, waarna je alle appraten van jouw organisatie ziet. Om een apparaat toe te voegen, klik je op de button Registreer apparaat. Je kan vervolgens informatie invullen over het betreffende apparaat. Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
 
