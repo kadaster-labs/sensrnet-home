@@ -30,6 +30,10 @@ In het hoofdscherm klik je op Menu, waarna je alle appraten van jouw organisatie
 Om sensoren aan het apparaat te koppelen klik je vanuit dit scherm op Volgende. In het vervolgscherm klik je op Voeg sensor toe. 
 In het volgende scherm kun je gegevens van de sensor invullen. Voeg alle sensoren toe die bij het apparaat horen en vul de bijbehorende velden in. Wanneer je alles hebt ingevuld, kun je de sensor(en) opslaan door te klikken op “Opslaan”.
 
+Een datastroom bestaat uit het resultaat van de waarneming door een sensor. Dit zijn bijvoorbeeld geluidsmetingen, snelheidsmetingen etc. Om een of meerdere datastromen toe te voegen bij elke sensor, klik je vanuit het invulscherm voor de sensor op “Volgende” (5).
+Klik op “Datastroom toevoegen” bij een sensor naar keuze. Vul de gegevens van de datastgroom in en klik op Opslaan.
+
+
 Waardelijsten
 =============
 
