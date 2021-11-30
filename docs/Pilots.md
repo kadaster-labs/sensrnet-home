@@ -22,7 +22,7 @@ In de tweede helft van 2021 worden er een aantal pilots gestart. Pilots kunnen v
 | Hilversum        | -                              | :raised_hand: (gewenst)   |                                | :raised_hand:  | :raised_hand:                                              | Ingediend       |                                                                 |
 | 's Hertogenbosch | -                              | -                         | :raised_hand:                  | :raised_hand:  | -                                                          | Ingediend       |                                                                 |
 | Tilburg          | :white_check_mark:             | -                         |                                | :raised_hand:  | -                                                          | Ingediend       |                                                                 |
-| Utrecht          | :raised_hand: (okt/nov'21)     | -                         |                                | :raised_hand:  | :raised_hand:                                              | Ingediend       |                                                                 |
+| Utrecht          | :white_check_mark:             | -                         |                                | :raised_hand:  | :raised_hand:                                              | Ingediend       |                                                                 |
 | Zwolle           | -                              | :question:                |                                | :question:     | :raised_hand:                                              | Ingediend       |                                                                 |
 | ------           | ------------------------------ | ------------------------- | ------------------------------ | -------------- | -------------------                                        | --------------- | ---------------                                                 |
 | Apeldoorn        | -                              | -                         |                                | -              | -                                                          | Onbevestigd     |                                                                 |
@@ -56,6 +56,7 @@ Voor de business pilots zijn de volgende zaken relevant:
 
 - [SensRNet Functional Advisory Board](FAB.md)
 - Nieuwe wensen en Q&A volgens [Contibution Guide](https://github.com/kadaster-labs/sensrnet-home/blob/main/CONTRIBUTING.md)
+- Gebruikershandleiding is in de maak; zie [#160](https://github.com/kadaster-labs/sensrnet-home/issues/160), [#263](https://github.com/kadaster-labs/sensrnet-home/issues/263) en [#176](https://github.com/kadaster-labs/sensrnet-home/issues/176)
 
 ## Transparantie pilot
 
