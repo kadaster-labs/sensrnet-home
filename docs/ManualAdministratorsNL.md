@@ -5,9 +5,58 @@
 > _LET OP: dit betreft dus niet per definitie alle functionaliteiten van de tool en de API, puur de onderdelen relevant voor het beheer van de vakinhoudelijke gegevens. 
 Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sensrnet-home/)._
 
-> _De initiële versie van dit documenbt is gemaakt door de gemeente Eindhoven. Opmerkingen of vragen over deze handleiding? Mail data@eindhoven.nl._
+> _De initiële versie van dit document is gemaakt door de gemeente Eindhoven. Opmerkingen of vragen over deze handleiding? Mail data@eindhoven.nl._
 
-> _LET OP: dit is een CONCEPT versie dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
+> _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
+
+
+Inhoudsopgave
+- In de tool
+- Lid worden van de organisatie (eenmalige actie)
+- Gegevens opvoeren met de tool
+- Observatiedoelen
+- Gegevens bewerken met de tool
+- Observatiedoelen
+- Gegevens verwijderen met de tool
+- Observatiedoelen
+- Met de API
+- Access token
+- Basis URL
+- Gegevens opvoeren met de API
+- Mogelijke methodiek 1:n opvoer gegevens
+- Instructie gebruik FME script opvoer gegevens
+- Gebruikte URL’s voor opvoer gegevens
+- Gegevens bewerken met de API
+- Gebruikte URL’s voor bewerken gegevens
+- Gegevens verwijderen met de API
+- Methodiek verwijderen gegevens
+- Instructie gebruik FME script verwijderen gegevens
+- Gebruikte URL’s voor verwijderen gegevens
+- Overige opties API
+- Resultaat
+
+## In de tool
+
+Dit is de applicatie van het sensorenregister (SensRNet):
+
+![SensRNet-Applicatie](img/SensRNet-Applicatie.png)
+
+#### Lid worden van de organisatie (eenmalige actie)
+
+Binnen de applicatie dien je eerst onderdeel te worden van een organisatie.
+Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
