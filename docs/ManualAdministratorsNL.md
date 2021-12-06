@@ -39,7 +39,7 @@ Inhoudsopgave
 
 Dit is de applicatie van het sensorenregister (SensRNet):
 
-![SensRNet-Applicatie](img/SensRNet-Applicatie.png)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet-Appl0.png)
 
 #### Lid worden van de organisatie (eenmalige actie)
 
