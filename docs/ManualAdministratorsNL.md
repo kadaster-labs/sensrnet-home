@@ -5,7 +5,7 @@
 > _LET OP: dit betreft dus niet per definitie alle functionaliteiten van de tool en de API, puur de onderdelen relevant voor het beheer van de vakinhoudelijke gegevens. 
 Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sensrnet-home/)._
 
-> _De initiële versie van dit document is gemaakt door de gemeente Eindhoven. Opmerkingen of vragen over deze handleiding? Mail data@eindhoven.nl._
+> _De initiële versie van dit document is gemaakt door de [gemeente Eindhoven](https://www.eindhoven.nl/). Opmerkingen of vragen over deze handleiding? Mail data@eindhoven.nl._
 
 > _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
 
