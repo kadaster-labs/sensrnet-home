@@ -1,4 +1,4 @@
 Waardelijst voor SensorType (bron: [Wikipedia](https://en.wikipedia.org/wiki/List_of_sensors))
 
 
-![image](docs/img/WaardelijstSensorType.png)
+![image](img/WaardelijstSensorType.png)
