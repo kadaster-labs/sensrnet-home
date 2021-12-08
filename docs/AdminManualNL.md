@@ -11,7 +11,7 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 # Inhoudsopgave
 
-1. [In de tool](/#In)
+1. [In de tool](#In)
 
     - Lid worden van de organisatie (eenmalige actie)
   
@@ -21,7 +21,7 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
     
     - Gegevens verwijderen met de tool
 
-2. [Met de API](#Met_de_API)
+2. [Met de API](#Met)
 
     - Access token
 
