@@ -37,6 +37,8 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 3. [Resultaat](#Resultaat)
 
+---
+
 ## In de tool <a name="paragraaf1"></a>
 
 Dit is de applicatie van het sensorenregister (SensRNet):
