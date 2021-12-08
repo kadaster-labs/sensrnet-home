@@ -9,7 +9,7 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 > _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
 
-
+***************
 Inhoudsopgave
 - In de tool
 - Lid worden van de organisatie (eenmalige actie)
@@ -34,6 +34,8 @@ Inhoudsopgave
 - Gebruikte URL’s voor verwijderen gegevens
 - Overige opties API
 - Resultaat
+***************
+
 
 ## In de tool
 
@@ -99,8 +101,7 @@ Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), e
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren8.png)
 
-### Observatiedoelen
-
+#### Observatiedoelen
 _Datastromen kunnen elk een of meerdere observatiedoelen hebben._
 
 Klik in het “Menu” op “Observatiedoelen” (1) om een observatie doel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
@@ -132,7 +133,62 @@ Bij de velden van een datastroom kan je in het attribuut “Observatiedoelen” 
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren15.png)
 
+### Gegevens bewerken met de tool
 
+Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2), en klik je op “Uitgebreid Bewerken” (3).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken1.png)
+
+Als alternatief kan je via de kaart (met de knop “Locatie” (4)) ook apparaten selecteren om te bewerken (5).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken2.png)
+
+Je komt via “Uitgebreid bewerken” of “Bewerken” uit bij een overzicht met de velden van het apparaat. Deze kan je aanpassen waar nodig. Klik op “Volgende” (6) voor de bijbehorende sensor(en).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken3.png)
+
+In het overzicht van de sensoren kan je de velden bewerken waar nodig. Klik vervolgens op “Volgende” (7) voor de velden voor de bijbehorende datastroom/datastromen.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken4.png)
+
+In het overzicht van de datastromen kan je de velden bewerken waar nodig. De resultaten sla je op door te klikken op “Opslaan” (8).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken5.png)
+
+#### Observatiedoelen
+
+Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen organisatie bewerken door op het potloodje te klikken (2).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken6.png)
+
+### Gegevens verwijderen met de tool
+
+Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2). Als je het hele apparaat (inclusief sensoren en datastromen) wilt verwijderen, klik je op “Verwijderen” (3).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen1.png)
+
+Als alternatief kan je via de kaart (met de knop “Locatie” (5)) ook apparaten selecteren om te verwijderen (6).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen2.png)
+
+Wil je alleen sensoren of datastromen verwijderen en niet het apparaat, dan kies je voor “Uitgebreid bewerken” (7) of “Bewerken” (6). Je komt dan uit bij een overzicht met de velden van het apparaat. Klik op “Volgende” (8) voor de bijbehorende sensor(en).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen3.png)
+
+In het overzicht van de sensoren kan je deze verwijderen door op het kruisje te klikken (9). Wil je alleen datastromen verwijderen? Dan klik je op “Volgende” (10) voor de velden voor de bijbehorende datastroom/datastromen.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen4.png)
+
+De datastromen kan je wederom verwijderen door op het kruisje te klikken (11). Observatiedoelen kan je ontkoppelen van een datastroom door op het kruisje de klikken binnen het tabje (12).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen5.png)
+
+#### Observatiedoelen
+_Observatiedoelen kan je ontkoppelen bij de datastroom (7, zie boven), maar kan je ook op zichzelf verwijderen._
+
+Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen organisatie verwijderen door op het afvalbakje te klikken (2).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen6.png)
 
 
 
