@@ -42,8 +42,8 @@ Dit is de applicatie van het sensorenregister (SensRNet):
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl0.png)
 
 #### Lid worden van de organisatie (eenmalige actie)
+_Binnen de applicatie dien je eerst onderdeel te worden van een organisatie._
 
-Binnen de applicatie dien je eerst onderdeel te worden van een organisatie.
 Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl1.png)
@@ -60,6 +60,81 @@ Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met
 Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of op “Menu” linksboven op de pagina (5b). Vervolgens zie je de sensoren van jouw organisatie op de kaart:
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl5.png)
+
+#### Gegevens opvoeren met de tool
+_Binnen het register begin je steeds met het registreren van een apparaat. Dit is een topografisch object waar een of meerdere sensoren aan kunnen hangen. Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer een of meerdere observatiedoelen._
+
+Om gegevens op te voeren, klik je op “Menu” linksboven op de pagina (1).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren1.png)
+
+Je komt dan automatisch in een overzicht met de apparaten binnen jouw organisatie:
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren2.png)
+
+Klik op “Registreer Apparaat” (2).
+Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op deze pagina. Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren3.png)
+
+Om sensor(en) toe te voegen bij dit apparaat, klik je op “Volgende” (3).
+Klik op “Voeg sensor toe” (4).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren4.png)
+
+Voeg alle sensoren toe die bij het apparaat horen, en vul de bijbehorende velden in. Wanneer je alles hebt ingevuld, kun je de sensor(en) opslaan door te klikken op “Opslaan”.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren5.png)
+
+Om een of meerdere datastromen toe te voegen bij elke sensor, klik je op “Volgende” (5).
+Klik op “Datastroom toevoegen” bij een sensor naar keuze (6) _(In het voorbeeld zijn er twee sensoren toegevoegd bij één apparaat. Deze kunnen elk weer verschillende datastromen hebben)_
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren6.png)
+
+Voeg alle datastromen toe die bij de sensor(en) horen, en vul de bijbehorende velden in. Wanneer je alles hebt ingevuld, kun je de datastroom opslaan door te klikken op “Opslaan” (7).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren7.png)
+
+Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), en datastroom/datastromen nalopen. Als je op “Apparaten” klikt (8), ga je terug naar het algemene overzicht waar jouw nieuw opgevoerde apparaat nu bovenaan staat:
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren8.png)
+
+**Observatiedoelen**
+_Datastromen kunnen elk een of meerdere observatiedoelen hebben._
+
+Klik in het “Menu” op “Observatiedoelen” (1) om een observatie doel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren9.png)
+
+Vul de velden, en klik op “Registreer” (3) om het Observatie Doel op te voeren.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren10.png)
+
+Observatiedoel(en) kan je vervolgens koppelen aan een datastroom.
+Hiervoor ga je naar het tabblad “Apparaten” (4). Hier selecteer je het apparaat waaraan je een datastroom wilt koppelen (5), en klik je op “Uitgebreid Bewerken” (6).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren10.png)
+
+Als alternatief kan je via de kaart (met de knop “Locatie” (7)) ook apparaten selecteren om te bewerken (8).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren11.png)
+
+Je komt via “Uitgebreid bewerken” of “Bewerken” uit bij een overzicht met de velden van het apparaat. Klik op “Volgende” (9) voor de bijbehorende sensor(en).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren12.png)
+
+Klik weer op “Volgende” (10) voor de bijbehorende datastroom/datastromen.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren13.png)
+
+Bij de velden van een datastroom kan je in het attribuut “Observatiedoelen” (11) een of meerdere doelen koppelen uit de lijst. De resultaten sla je op via “Opslaan” (12).
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren14.png)
+
+
+
+
+
 
 
 
