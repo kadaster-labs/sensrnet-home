@@ -13,27 +13,27 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 1. [In de tool](#paragraaf1)
 
-    - Lid worden van de organisatie (eenmalige actie)
+    - [Lid worden van de organisatie (eenmalige actie)](#sub1-1)
   
-    - Gegevens opvoeren met de tool
+    - [Gegevens opvoeren met de tool](#sub1-2)
     
-    - Gegevens bewerken met de tool
+    - [Gegevens bewerken met de tool](#sub1-3)
     
-    - Gegevens verwijderen met de tool
+    - [Gegevens verwijderen met de tool](#sub1-4)
 
-2. [Met de API](#Met)
+2. [Met de API](#paragraaf2)
 
-    - Access token
+    - [Access token](#sub2-1)
 
-    - Basis URL
+    - [Basis URL](#sub2-2)
   
-    - Gegevens opvoeren met de API
+    - [Gegevens opvoeren met de API](#sub2-3)
   
-    - Gegevens bewerken met de API
+    - [Gegevens bewerken met de API](#sub2-4)
   
-    - Gegevens verwijderen met de API
+    - [Gegevens verwijderen met de API](#sub2-5)
   
-    - Overige opties API
+    - [Overige opties API](#sub2-6)
 
 3. [Resultaat](#Resultaat)
 
@@ -43,7 +43,7 @@ Dit is de applicatie van het sensorenregister (SensRNet):
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl0.png)
 
-### Lid worden van de organisatie (eenmalige actie)
+### Lid worden van de organisatie (eenmalige actie) <a name="sub1-1"></a>
 _Binnen de applicatie dien je eerst onderdeel te worden van een organisatie._
 
 Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
@@ -63,7 +63,7 @@ Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of 
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl4.png)
 
-### Gegevens opvoeren met de tool
+### Gegevens opvoeren met de tool <a name="sub1-2"></a>
 _Binnen het register begin je steeds met het registreren van een apparaat. Dit is een topografisch object waar een of meerdere sensoren aan kunnen hangen. Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer een of meerdere observatiedoelen._
 
 Om gegevens op te voeren, klik je op “Menu” linksboven op de pagina (1).
@@ -133,7 +133,7 @@ Bij de velden van een datastroom kan je in het attribuut “Observatiedoelen” 
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren15.png)
 
-### Gegevens bewerken met de tool
+### Gegevens bewerken met de tool <a name="sub1-3"></a>
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2), en klik je op “Uitgebreid Bewerken” (3).
 
@@ -161,7 +161,7 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken6.png)
 
-### Gegevens verwijderen met de tool
+### Gegevens verwijderen met de tool <a name="sub1-4"></a>
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2). Als je het hele apparaat (inclusief sensoren en datastromen) wilt verwijderen, klik je op “Verwijderen” (3).
 
@@ -190,7 +190,7 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen6.png)
 
-## Met de API
+## Met de API <a name="paragraaf2"></a>
 
 Om apparaten, sensoren, datastromen, en observatiedoelen in bulk op te voeren, te bewerken, of te verwijderen is gebruik van de API efficiënt.
 
