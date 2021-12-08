@@ -9,33 +9,33 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 > _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
 
-***************
-Inhoudsopgave
-- In de tool
-- Lid worden van de organisatie (eenmalige actie)
-- Gegevens opvoeren met de tool
-- Observatiedoelen
-- Gegevens bewerken met de tool
-- Observatiedoelen
-- Gegevens verwijderen met de tool
-- Observatiedoelen
-- Met de API
-- Access token
-- Basis URL
-- Gegevens opvoeren met de API
-- Mogelijke methodiek 1:n opvoer gegevens
-- Instructie gebruik FME script opvoer gegevens
-- Gebruikte URL’s voor opvoer gegevens
-- Gegevens bewerken met de API
-- Gebruikte URL’s voor bewerken gegevens
-- Gegevens verwijderen met de API
-- Methodiek verwijderen gegevens
-- Instructie gebruik FME script verwijderen gegevens
-- Gebruikte URL’s voor verwijderen gegevens
-- Overige opties API
-- Resultaat
-***************
+## Inhoudsopgave
 
+- In de tool
+
+  - Lid worden van de organisatie (eenmalige actie)
+  
+  - Gegevens opvoeren met de tool
+    
+  - Gegevens bewerken met de tool
+    
+  - Gegevens verwijderen met de tool
+
+- Met de API
+
+  - Access token
+
+  - Basis URL
+  
+  - Gegevens opvoeren met de API
+  
+  - Gegevens bewerken met de API
+  
+  - Gegevens verwijderen met de API
+  
+  - Overige opties API
+
+- Resultaat
 
 ## In de tool
 
