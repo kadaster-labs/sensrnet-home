@@ -190,9 +190,21 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen6.png)
 
+## Met de API
 
+Om apparaten, sensoren, datastromen, en observatiedoelen in bulk op te voeren, te bewerken, of te verwijderen is gebruik van de API efficiënt.
 
+### Access Token
 
+Om de API te kunnen gebruiken, heb je een “access token” nodig. Deze kan je vinden door in het viewerscherm je rechtermuisknop te klikken. Daar kies je voor “Inspecteren”. Onder het tabblad “Application” kan je vervolgens het benodigde token kopiëren.
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API1.png)
+
+(Afhankelijk van welke browser je gebruikt, zal het scherm en de opties iets afwijken van bovenstaande beschrijving)
+
+Je access token dien je dagelijks te actualiseren.
+
+### Basis URL
 
 
 
