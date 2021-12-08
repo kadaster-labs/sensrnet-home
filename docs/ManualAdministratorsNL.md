@@ -206,86 +206,95 @@ Je access token dien je dagelijks te actualiseren.
 
 ### Basis URL
 
+De API werkt op basis van verschillende URL’s (linkjes). Je vult steeds dezelfde basis URL aan met specifieke toevoegingen voor de verschillende opties. De demo omgeving en de productie omgeving hebben elk hun eigen basis URL:
 
+  > [Demo omgeving](https://demo.sensorenregister.nl/api/#/)
 
+  > [Productie omgeving](https://viewer.sensorenregister.nl/api/#/)
 
+De relevante aanvullingen op de basis URL’s voor het opvoeren, wijzigen, en verwijderen van apparaten, sensoren, datastromen, en observatiedoelen, zijn in deze handleiding terug te vinden in onderstaande secties.
 
+### Gegevens opvoeren met de API
+_Binnen het register kan een apparaat (topografisch object), een of meerdere sensoren hebben (1:n). Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer geen, een, of meerdere observatiedoelen._
 
+**Mogelijke methodiek 1:n opvoer gegevens**
 
-Deze architectuur is gebaseerd op een aantal [Key Concepts](KeyConcepts.md).
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API2.png)
 
-De architectuur van SensRNet heeft een holistische benadering van het beheer van sensoren op nationaal niveau:
+**Instructie gebruik FME script opvoer gegevens**
 
-![Holistische benadering](img/SensRNet-holistische-benadering.png)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API3.png)
 
-De 'solution' is dan ook een netwerk van deelnemers, nodes in een netwerk, waarin elk bevoegd gezag een node is met eigen applicatie en infrastructuur om het beheer van sensoren uit te voeren. Onderdeel van die infrastructuur is het standaard [Component Sync](#component-sync) dat er voor zorgt dat data gedeeld wordt in het netwerk, met alle andere nodes.
+Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
-![Solution](img/SensRNet-Solution.png)
-
-## Walking skeleton
-
-De realisatie van het SensRNet, het Nederlandse nationale sensorenregister, wordt in stappen, plateaus aangepakt. Daarbij wordt getracht zoveel mogelijk hergebruik te doen van bestaande software en systemen en is de uitvoering gericht op samenwerking. Zo wordt eerst de focus gelegd op het aantonen van het totaal in een 'zeer dunne uitvoering', een zogenaamde ['walking skeleton'](https://wiki.c2.com/?WalkingSkeleton).
-
-## Componenten
-
-![Components](img/SensRNet-componenten.png)
-
-SensRNet bestaat uit een aantal componenten:
-
-1. Registry Graphical User Interface (GUI) / frontend / webapp
-1. Registry backend
-1. Sync
-1. Centrale voorziening van alle sensoren op de kaart / centrale viewer
-
-In een 'Registry Node' worden de componenten 1 en 2 uitgevoerd en component 4 bevindt zich alleen in de centrale voorziening. Component 3 draait in elke node en voorziet in de synchronisatie van data en directe koppelingen tussen alle nodes.
-
-### Component Registry
-
-Het beheer van sensoren, de 'registry', bestaat uit twee componenten die nauw samenwerken: een frontend en backend. De backend biedt APIs aan de frontend. Voor de (geo-services) WMS/WFS is een aparte server aan dezelfde database gekoppeld.
-
-![SensRNet Registry Components](img/SensRNet-Registry-components.png)
-
-Er kunnen meerdere varianten bestaan voor de verschillende componenten voor de verschillende behoeftes van de diverse bevoegde gezagen.
-
-Voor de basis van en/of als voorbeeld van deze twee componenten, wordt gekeken naar:
-
-1. [Slimme apparaten](https://slimmeapparaten.amsterdam.nl/) van [Gemeente Amsterdam](https://www.amsterdam.nl/) (en ook [Persoonsgegevensverwerking in de openbare ruimte](https://maps.amsterdam.nl/privacy/))
-1. [SensorPilot](https://www.binnenlandsbestuur.nl/ruimte-en-milieu/kennispartners/kadaster/wat-kan-en-mag-met-sensoren-in-de-openbare-ruimte.9601501.lynkx), uitgevoerd PoC in 2018 door [Gemeente Eindhoven](https://www.eindhoven.nl/) en [Kadaster](https://www.kadaster.nl/)
-
-
-### Component Sync
-
-![SensRNet Sync](img/SensRNet-component-sync.png)
-
-**Sync** is de synchronisatie van alle 'shared data' in het netwerk. Daarnaast biedt deze component APIs voor directe calls tussen specifieke nodes.
-
-![SensRNet Sync](img/SensRNet-Sync-component.png)
-
-1. **Synchronisatie van events van elke node met alle nodes**
+ 	> De input is conform TemplateOpvoerAPI.xlsx. Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij. Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn. Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
    
-   Events zijn de ‘**core API**’ in het netwerk; alle ‘**shared data**’ is gemodelleerd als events. De huidige situatie kan worden afgeleid door alle events ‘af te spelen’ tot nu. Alle events vormen samen de sensorenregistratie in het netwerk. Dit heeft grote overeenkomsten met een ‘event store’ in een event-sourced systeem of transacties in een distributed ledger (DLT/blockchain). Volgorde van ontstaan en het **samenvoegen van de events** vanuit de verschillende nodes is onderdeel van de functionaliteit.
+   > Het script controleert niét of de betreffende apparaten en sensoren al eerder zijn opgevoerd. Controleer dit dus zelf. Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
+
+  > Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben. 
+
+  > Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij? Dan moet deze zowel in het input template, als het script handmatig worden toegevoegd.
    
-   Events zijn (oa) `EigenaarGeregistreerd`, `SensorToegevoegd`, `SensorVerwijderd`, `SensorInfoGewijzigd`, `SensorVerplaatst` (geo-locatie) voor de sensorenregistratie, maar mogelijk ook ‘netwerk administratie’ events als `NodeToegevoegd`, `NodeVerwijderd`, `NodeAdresGewijzigd`.
+**LET OP:** Het script betreft géén productie versie. Mogelijke fouten of afwijkingen van bovenstaande aannames worden niet afgevangen. Blijft dus kritisch bij gebruik.
 
+**Gebruikte URL’s voor opvoer gegevens**
 
-   **implementatie**: [MultiChain](SyncMultiChainEN.md)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API4.png)
 
-1. **Directe API calls voor specifieke acties voor of data van een specifieke node**
+### Gegevens bewerken met de API
 
-   Voor extra informatie over een bepaalde sensor of eigenaar, kan een specifieke API aangeroepen worden op de node waar die sensor of eigenaar geregistreerd is. Voor de functionaliteit ‘_contact opnemen met eigenaar_’ wordt het bericht naar de node gestuurd – via een API call op die node – waar meer (private) details bekend zijn van de eigenaar van de betreffende sensor.
+_[stappen nog te beschrijven, script nog niet af]_
 
-## Environments
+**Gebruikte URL’s voor bewerken gegevens**
 
-Een omgeving (environment) bestaat uit meerdere containers die samen een node vormen.
-Om deze in samenhang te kunnen draaien en om de operatie (Operations) gemakkelijk te maken, is gebruik van [Kubernetes](https://kubernetes.io/) als uitgangspunt genomen voor SensRNet en omgevingen (environments).
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API5.png)
 
-![SensRNet Environments & Containers](img/SensRNet-EnvsAndContainers.png)
+### Gegevens verwijderen met de API
 
+Verwijder je een apparaat, dan verdwijnen de onderliggende sensoren en datastromen. Verwijder je een sensor, dan verdwijnen onderliggende datastromen. Je kan ook een datastroom op zichzelf verwijderen. Observatiedoelen kan je ontkoppelen of verwijderen. Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
 
-Details van de [deployment](Deployment.md) (uitrollen) van de componenten is apart beschreven.
+Methodiek verwijderen gegevens:
 
-### Test environments
+  > Apparaat verwijderen: met het ID van het apparaat. Hiermee verdwijnen ook de onderliggende sensoren en datastromen.
 
-Voor het testen wordt gebruik gemaakt van Kadaster infrastructuur in Azure/KadasterLabs. Daarin worden twee 'Registry nodes' opgezet die twee verschillende gemeenten simuleren. Daarnaast natuurlijk de 'Publishing node' die standaard bij Kadaster blijft draaien.
+  > Sensor verwijderen: met de ID’s van het apparaat en de betreffende sensor. Hiermee verdwijnen ook de onderliggende datastromen.
 
-![SensRNet Test Environments](img/SensRNet-TestEnvs.png)
+  > Datastroom verwijderen: met de ID’s van het apparaat, de sensor, en de betreffende datastroom.
+
+  > Observatiedoelen kan je ontkoppelen of verwijderen:
+
+      o Observatiedoel ontkoppelen: met de ID’s van het device, sensor, datastroom, en observatiedoel.
+      
+      o Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen. Het observatiedoel verdwijnt dan bij alle datastromen.
+      
+ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg hierover volgt nog bij “gegevens bewerken met de API”)._
+
+Instructie gebruik FME script verwijderen gegevens:
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API6.png)
+
+LET OP: Het script betreft géén afgewerkte productie versie. Mogelijk bevat het script fouten, of ontstaan er fouten wanneer wordt afgeweken van bovenstaande procedure. Blijft dus kritisch bij gebruik.
+
+Gebruikte URL’s voor verwijderen gegevens
+
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API7.png)
+      
+### Overige opties API
+
+Toevoegen, updaten, en verwijderen van Gebruikers (User) en Organisaties (LegalEntity) kan ook met behulp van de API. 
+Voor deze toepassingen zijn bulk actie uitgevoerd door beheerders van sensoren minder voor de hand liggend en kan (waarschijnlijk) efficiënter de tool of eigen brondata gebruikt worden.
+
+Bovenstaande toepassingen vallen dan ook buiten de scope van deze handleiding. Wil je meer informatie? Bekijk dan de documentatie van de API:
+
+  > [Demo omgeving](https://demo.sensorenregister.nl/api/#/)
+  
+  > [Productie omgeving](https://viewer.sensorenregister.nl/api/#/)
+  
+## Resultaat
+
+Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor gebruikers uit? Zij kunnen publieke sensoren bekijken in de viewers:
+
+  > [Demo omgeving: Viewer](https://demo.sensorenregister.nl/viewer)
+   
+  > [Productie omgeving: Central Viewer](https://viewer.sensorenregister.nl)
+
