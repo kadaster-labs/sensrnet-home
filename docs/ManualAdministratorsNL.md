@@ -46,13 +46,20 @@ Dit is de applicatie van het sensorenregister (SensRNet):
 Binnen de applicatie dien je eerst onderdeel te worden van een organisatie.
 Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
 
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet-Appl1.png)
 
+Vervolgens klik je op “Organisatie” (2), vink je de gewenste organisatie aan (3), en klik je op “Toetreden” (4).
 
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet-Appl3.png)
 
+Je krijgt na het toetreden een scherm te zien met details over jouw organisatie:
 
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet-Appl4.png)
 
+Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met gebruikers van jouw organisatie staat. 
+Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of op “Menu” linksboven op de pagina (5b). Vervolgens zie je de sensoren van jouw organisatie op de kaart:
 
-
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet-Appl5.png)
 
 
 
