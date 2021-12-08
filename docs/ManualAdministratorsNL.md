@@ -50,16 +50,16 @@ Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
 
 Vervolgens klik je op “Organisatie” (2), vink je de gewenste organisatie aan (3), en klik je op “Toetreden” (4).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl3.png)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl2.png)
 
 Je krijgt na het toetreden een scherm te zien met details over jouw organisatie:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl4.png)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl3.png)
 
 Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met gebruikers van jouw organisatie staat. 
 Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of op “Menu” linksboven op de pagina (5b). Vervolgens zie je de sensoren van jouw organisatie op de kaart:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl5.png)
+![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl4.png)
 
 #### Gegevens opvoeren met de tool
 _Binnen het register begin je steeds met het registreren van een apparaat. Dit is een topografisch object waar een of meerdere sensoren aan kunnen hangen. Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer een of meerdere observatiedoelen._
