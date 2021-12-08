@@ -194,7 +194,7 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 Om apparaten, sensoren, datastromen, en observatiedoelen in bulk op te voeren, te bewerken, of te verwijderen is gebruik van de API efficiënt.
 
-### Access Token
+### Access Token <a name="sub2-1"></a>
 
 Om de API te kunnen gebruiken, heb je een “access token” nodig. Deze kan je vinden door in het viewerscherm je rechtermuisknop te klikken. Daar kies je voor “Inspecteren”. Onder het tabblad “Application” kan je vervolgens het benodigde token kopiëren.
 
@@ -204,7 +204,7 @@ Om de API te kunnen gebruiken, heb je een “access token” nodig. Deze kan je 
 
 Je access token dien je dagelijks te actualiseren.
 
-### Basis URL
+### Basis URL <a name="sub2-2"></a>
 
 De API werkt op basis van verschillende URL’s (linkjes). Je vult steeds dezelfde basis URL aan met specifieke toevoegingen voor de verschillende opties. De demo omgeving en de productie omgeving hebben elk hun eigen basis URL:
 
@@ -214,7 +214,7 @@ De API werkt op basis van verschillende URL’s (linkjes). Je vult steeds dezelf
 
 De relevante aanvullingen op de basis URL’s voor het opvoeren, wijzigen, en verwijderen van apparaten, sensoren, datastromen, en observatiedoelen, zijn in deze handleiding terug te vinden in onderstaande secties.
 
-### Gegevens opvoeren met de API
+### Gegevens opvoeren met de API <a name="sub2-3"></a>
 _Binnen het register kan een apparaat (topografisch object), een of meerdere sensoren hebben (1:n). Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer geen, een, of meerdere observatiedoelen._
 
 **Mogelijke methodiek 1:n opvoer gegevens**
@@ -241,7 +241,7 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API4.png)
 
-### Gegevens bewerken met de API
+### Gegevens bewerken met de API <a name="sub2-4"></a>
 
 _[stappen nog te beschrijven, script nog niet af]_
 
@@ -249,7 +249,7 @@ _[stappen nog te beschrijven, script nog niet af]_
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API5.png)
 
-### Gegevens verwijderen met de API
+### Gegevens verwijderen met de API <a name="sub2-5"></a>
 
 Verwijder je een apparaat, dan verdwijnen de onderliggende sensoren en datastromen. Verwijder je een sensor, dan verdwijnen onderliggende datastromen. Je kan ook een datastroom op zichzelf verwijderen. Observatiedoelen kan je ontkoppelen of verwijderen. Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
 
@@ -279,7 +279,7 @@ Gebruikte URL’s voor verwijderen gegevens
 
 ![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API7.png)
       
-### Overige opties API
+### Overige opties API <a name="sub2-6"></a>
 
 Toevoegen, updaten, en verwijderen van Gebruikers (User) en Organisaties (LegalEntity) kan ook met behulp van de API. 
 Voor deze toepassingen zijn bulk actie uitgevoerd door beheerders van sensoren minder voor de hand liggend en kan (waarschijnlijk) efficiënter de tool of eigen brondata gebruikt worden.
