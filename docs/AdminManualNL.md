@@ -9,33 +9,33 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 > _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
 
-## Inhoudsopgave
+# Inhoudsopgave
 
-- In de tool
+1. [In de tool](/#In)
 
-  - Lid worden van de organisatie (eenmalige actie)
+    - Lid worden van de organisatie (eenmalige actie)
   
-  - Gegevens opvoeren met de tool
+    - Gegevens opvoeren met de tool
     
-  - Gegevens bewerken met de tool
+    - Gegevens bewerken met de tool
     
-  - Gegevens verwijderen met de tool
+    - Gegevens verwijderen met de tool
 
-- Met de API
+2. [Met de API](#Met_de_API)
 
-  - Access token
+    - Access token
 
-  - Basis URL
+    - Basis URL
   
-  - Gegevens opvoeren met de API
+    - Gegevens opvoeren met de API
   
-  - Gegevens bewerken met de API
+    - Gegevens bewerken met de API
   
-  - Gegevens verwijderen met de API
+    - Gegevens verwijderen met de API
   
-  - Overige opties API
+    - Overige opties API
 
-- Resultaat
+3. [Resultaat](#Resultaat)
 
 ## In de tool
 
