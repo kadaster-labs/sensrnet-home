@@ -1,13 +1,13 @@
-# Handleiding Beheerders SensRNet (Concept) <img src="/img/AdminManualNL/EindhovenLogo.png" width="80" align="right">
+# Handleiding Beheerders SensRNet (Concept) <img src="./img/AdminManualNL/EindhovenLogo.png" width="80" align="right">
 
 > _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister (SensRNet)? Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, updaten en verwijderen van gegevens in SensRNet._
 
 > _LET OP: dit betreft dus niet per definitie alle functionaliteiten van de tool en de API, puur de onderdelen relevant voor het beheer van de vakinhoudelijke gegevens. 
 Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sensrnet-home/)._
 
-> _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](https://kadaster-labs.github.io/sensrnet-home/Pilots/)._ 
+> _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](Pilots.md)._ 
 
-> _De initiële versie van dit document is gemaakt door de [gemeente Eindhoven](https://www.eindhoven.nl/). Opmerkingen of vragen over deze handleiding? Mail data@eindhoven.nl._
+> _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_
 
 
 ## In de tool
