@@ -11,7 +11,7 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 # Inhoudsopgave
 
-1. [In de tool](#paragraaf1)
+1. [In de tool](#in-de-tool)
 
     - [Lid worden van de organisatie (eenmalige actie)](#sub1-1)
   
@@ -39,7 +39,7 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 ---
 
-## In de tool <a name="paragraaf1"></a>
+## In de tool
 
 Dit is de applicatie van het sensorenregister (SensRNet):
 
