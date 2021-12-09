@@ -259,14 +259,10 @@ Voor deze toepassingen zijn bulk actie uitgevoerd door beheerders van sensoren m
 
 Bovenstaande toepassingen vallen dan ook buiten de scope van deze handleiding. Wil je meer informatie? Bekijk dan de documentatie van de API:
 
-  > [Demo omgeving](https://demo.sensorenregister.nl/api/#/)
+  > [Registry Node API (demo)](https://demo.sensorenregister.nl/api/#/)
   
-  > [Productie omgeving](https://viewer.sensorenregister.nl/api/#/)
-  
-## Resultaat
+## Publicatie
 
-Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor gebruikers uit? Zij kunnen publieke sensoren bekijken in de viewers:
+Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor de burgers uit? Zij kunnen publieke sensoren bekijken in de viewers:
 
-  > [Demo omgeving: Viewer](https://demo.sensorenregister.nl/viewer)
-   
-  > [Productie omgeving: Central Viewer](https://viewer.sensorenregister.nl)
+  > [Centrale Viewer (productie)](https://viewer.sensorenregister.nl) | [Centrale Viewer (demo)](https://demo.sensorenregister.nl/viewer)
