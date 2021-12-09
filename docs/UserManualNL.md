@@ -1,4 +1,4 @@
-# Handleiding Beheerders SensRNet (Concept) <img src="./img/AdminManualNL/EindhovenLogo.png" width="80" align="right">
+# Handleiding Beheerders SensRNet (Concept) <img src="./img/UserManualNL/EindhovenLogo.png" width="80" align="right">
 
 > _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister (SensRNet)? Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, updaten en verwijderen van gegevens in SensRNet._
 
@@ -14,154 +14,154 @@ Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sen
 
 Dit is de applicatie van het sensorenregister (SensRNet):
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl0.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl0.png)
 
 ### Lid worden van de organisatie (eenmalige actie)
 _Binnen de applicatie dien je eerst onderdeel te worden van een organisatie._
 
 Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl1.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl1.png)
 
 Vervolgens klik je op “Organisatie” (2), vink je de gewenste organisatie aan (3), en klik je op “Toetreden” (4).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl2.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl2.png)
 
 Je krijgt na het toetreden een scherm te zien met details over jouw organisatie:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl3.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl3.png)
 
 Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met gebruikers van jouw organisatie staat. 
 Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of op “Menu” linksboven op de pagina (5b). Vervolgens zie je de sensoren van jouw organisatie op de kaart:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl4.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl4.png)
 
 ### Gegevens opvoeren met de tool
 _Binnen het register begin je steeds met het registreren van een apparaat. Dit is een topografisch object waar een of meerdere sensoren aan kunnen hangen. Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer een of meerdere observatiedoelen._
 
 Om gegevens op te voeren, klik je op “Menu” linksboven op de pagina (1).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren1.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren1.png)
 
 Je komt dan automatisch in een overzicht met de apparaten binnen jouw organisatie:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren2.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren2.png)
 
 Klik op “Registreer Apparaat” (2).
 Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op deze pagina. Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren3.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren3.png)
 
 Om sensor(en) toe te voegen bij dit apparaat, klik je op “Volgende” (3).
 Klik op “Voeg sensor toe” (4).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren4.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren4.png)
 
 Voeg alle sensoren toe die bij het apparaat horen, en vul de bijbehorende velden in. Wanneer je alles hebt ingevuld, kun je de sensor(en) opslaan door te klikken op “Opslaan”.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren5.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren5.png)
 
 Om een of meerdere datastromen toe te voegen bij elke sensor, klik je op “Volgende” (5).
 Klik op “Datastroom toevoegen” bij een sensor naar keuze (6) _(In het voorbeeld zijn er twee sensoren toegevoegd bij één apparaat. Deze kunnen elk weer verschillende datastromen hebben)_
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren6.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren6.png)
 
 Voeg alle datastromen toe die bij de sensor(en) horen, en vul de bijbehorende velden in. Wanneer je alles hebt ingevuld, kun je de datastroom opslaan door te klikken op “Opslaan” (7).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren7.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren7.png)
 
 Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), en datastroom/datastromen nalopen. Als je op “Apparaten” klikt (8), ga je terug naar het algemene overzicht waar jouw nieuw opgevoerde apparaat nu bovenaan staat:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren8.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren8.png)
 
 #### Observatiedoelen
 _Datastromen kunnen elk een of meerdere observatiedoelen hebben._
 
 Klik in het “Menu” op “Observatiedoelen” (1) om een observatie doel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren9.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren9.png)
 
 Vul de velden, en klik op “Registreer” (3) om het Observatie Doel op te voeren.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren10.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren10.png)
 
 Observatiedoel(en) kan je vervolgens koppelen aan een datastroom.
 Hiervoor ga je naar het tabblad “Apparaten” (4). Hier selecteer je het apparaat waaraan je een datastroom wilt koppelen (5), en klik je op “Uitgebreid Bewerken” (6).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren11.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren11.png)
 
 Als alternatief kan je via de kaart (met de knop “Locatie” (7)) ook apparaten selecteren om te bewerken (8).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren12.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren12.png)
 
 Je komt via “Uitgebreid bewerken” of “Bewerken” uit bij een overzicht met de velden van het apparaat. Klik op “Volgende” (9) voor de bijbehorende sensor(en).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren13.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren13.png)
 
 Klik weer op “Volgende” (10) voor de bijbehorende datastroom/datastromen.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren14.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren14.png)
 
 Bij de velden van een datastroom kan je in het attribuut “Observatiedoelen” (11) een of meerdere doelen koppelen uit de lijst. De resultaten sla je op via “Opslaan” (12).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Opvoeren15.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren15.png)
 
 ### Gegevens bewerken met de tool
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2), en klik je op “Uitgebreid Bewerken” (3).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken1.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken1.png)
 
 Als alternatief kan je via de kaart (met de knop “Locatie” (4)) ook apparaten selecteren om te bewerken (5).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken2.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken2.png)
 
 Je komt via “Uitgebreid bewerken” of “Bewerken” uit bij een overzicht met de velden van het apparaat. Deze kan je aanpassen waar nodig. Klik op “Volgende” (6) voor de bijbehorende sensor(en).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken3.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken3.png)
 
 In het overzicht van de sensoren kan je de velden bewerken waar nodig. Klik vervolgens op “Volgende” (7) voor de velden voor de bijbehorende datastroom/datastromen.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken4.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken4.png)
 
 In het overzicht van de datastromen kan je de velden bewerken waar nodig. De resultaten sla je op door te klikken op “Opslaan” (8).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken5.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken5.png)
 
 #### Observatiedoelen
 
 Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen organisatie bewerken door op het potloodje te klikken (2).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Bewerken6.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken6.png)
 
 ### Gegevens verwijderen met de tool
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2). Als je het hele apparaat (inclusief sensoren en datastromen) wilt verwijderen, klik je op “Verwijderen” (3).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen1.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen1.png)
 
 Als alternatief kan je via de kaart (met de knop “Locatie” (5)) ook apparaten selecteren om te verwijderen (6).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen2.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen2.png)
 
 Wil je alleen sensoren of datastromen verwijderen en niet het apparaat, dan kies je voor “Uitgebreid bewerken” (7) of “Bewerken” (6). Je komt dan uit bij een overzicht met de velden van het apparaat. Klik op “Volgende” (8) voor de bijbehorende sensor(en).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen3.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen3.png)
 
 In het overzicht van de sensoren kan je deze verwijderen door op het kruisje te klikken (9). Wil je alleen datastromen verwijderen? Dan klik je op “Volgende” (10) voor de velden voor de bijbehorende datastroom/datastromen.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen4.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen4.png)
 
 De datastromen kan je wederom verwijderen door op het kruisje te klikken (11). Observatiedoelen kan je ontkoppelen van een datastroom door op het kruisje de klikken binnen het tabje (12).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen5.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen5.png)
 
 #### Observatiedoelen
 _Observatiedoelen kan je ontkoppelen bij de datastroom (7, zie boven), maar kan je ook op zichzelf verwijderen._
 
 Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen organisatie verwijderen door op het afvalbakje te klikken (2).
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_Appl_Verwijderen6.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen6.png)
 
 ## Met de API
 
@@ -171,7 +171,7 @@ Om apparaten, sensoren, datastromen, en observatiedoelen in bulk op te voeren, t
 
 Om de API te kunnen gebruiken, heb je een “access token” nodig. Deze kan je vinden door in het viewerscherm je rechtermuisknop te klikken. Daar kies je voor “Inspecteren”. Onder het tabblad “Application” kan je vervolgens het benodigde token kopiëren.
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API1.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API1.png)
 
 (Afhankelijk van welke browser je gebruikt, zal het scherm en de opties iets afwijken van bovenstaande beschrijving)
 
@@ -192,11 +192,11 @@ _Binnen het register kan een apparaat (topografisch object), een of meerdere sen
 
 **Mogelijke methodiek 1:n opvoer gegevens**
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API2.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API2.png)
 
 **Instructie gebruik FME script opvoer gegevens**
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API3.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API3.png)
 
 Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
@@ -212,7 +212,7 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
 **Gebruikte URL’s voor opvoer gegevens**
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API4.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API4.png)
 
 ### Gegevens bewerken met de API
 
@@ -220,7 +220,7 @@ _[stappen nog te beschrijven, script nog niet af]_
 
 **Gebruikte URL’s voor bewerken gegevens**
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API5.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API5.png)
 
 ### Gegevens verwijderen met de API
 
@@ -244,13 +244,13 @@ ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand v
 
 Instructie gebruik FME script verwijderen gegevens:
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API6.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API6.png)
 
 LET OP: Het script betreft géén afgewerkte productie versie. Mogelijk bevat het script fouten, of ontstaan er fouten wanneer wordt afgeweken van bovenstaande procedure. Blijft dus kritisch bij gebruik.
 
 Gebruikte URL’s voor verwijderen gegevens
 
-![SensRNet-Applicatie](img/AdminManualNL/SensRNet_API7.png)
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API7.png)
       
 ### Overige opties API
 
