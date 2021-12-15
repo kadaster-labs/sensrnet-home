@@ -37,6 +37,7 @@ Read more:
 
 **Functional**
 
+- **[User Manual (Dutch only)](UserManualNL.md)**
 - [Use Cases (Dutch only)](UseCasesNL.md)
 - [Test Scenario's (Dutch only)](TestScenariosNL.md)
 
