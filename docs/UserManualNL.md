@@ -1,6 +1,6 @@
 # SensRNet Registry Node gebruikershandleiding
 
-> _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister. Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, updaten en verwijderen van gegevens in een SensRNet Registry Node._
+> _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister. Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, bewerken en verwijderen van gegevens in een SensRNet Registry Node._
 >
 > _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_ <img src="img/UserManualNL/EindhovenLogo.png" width="100" align="right"  style="margin: 10px">
 
@@ -44,7 +44,7 @@ Je komt dan automatisch in een overzicht met de apparaten binnen jouw organisati
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren2.png)
 
 Klik op “Registreer Apparaat” (2).
-Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op deze pagina. Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
+Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op [deze pagina](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst). Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren3.png)
 
@@ -58,7 +58,7 @@ Voeg alle sensoren toe die bij het apparaat horen, en vul de bijbehorende velden
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren5.png)
 
 Om een of meerdere datastromen toe te voegen bij elke sensor, klik je op “Volgende” (5).
-Klik op “Datastroom toevoegen” bij een sensor naar keuze (6) _(In het voorbeeld zijn er twee sensoren toegevoegd bij één apparaat. Deze kunnen elk weer verschillende datastromen hebben)_
+Klik op “Datastroom toevoegen” bij een sensor naar keuze (6) _(In het voorbeeld zijn er twee sensoren toegevoegd bij één apparaat. Deze kunnen elk weer verschillende datastromen hebben.)_
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren6.png)
 
@@ -66,7 +66,7 @@ Voeg alle datastromen toe die bij de sensor(en) horen, en vul de bijbehorende ve
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren7.png)
 
-Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), en datastroom/datastromen nalopen. Als je op “Apparaten” klikt (8), ga je terug naar het algemene overzicht waar jouw nieuw opgevoerde apparaat nu bovenaan staat:
+Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), en datastroom/datastromen nalopen. Wanneer je op “Apparaten” klikt (8), ga je terug naar het algemene overzicht waar jouw nieuw opgevoerde apparaat nu bovenaan staat:
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren8.png)
 
@@ -74,11 +74,11 @@ Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), e
 
 _Datastromen kunnen elk een of meerdere observatiedoelen hebben._
 
-Klik in het “Menu” op “Observatiedoelen” (1) om een observatie doel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
+Klik in het “Menu” op “Observatiedoelen” (1) om een observatiedoel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren9.png)
 
-Vul de velden, en klik op “Registreer” (3) om het Observatie Doel op te voeren.
+Vul de velden, en klik op “Registreer” (3) om het observatiedoel op te voeren.
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren10.png)
 
@@ -149,13 +149,12 @@ In het overzicht van de sensoren kan je deze verwijderen door op het kruisje te 
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen4.png)
 
-De datastromen kan je wederom verwijderen door op het kruisje te klikken (11). Observatiedoelen kan je ontkoppelen van een datastroom door op het kruisje de klikken binnen het tabje (12).
+De datastromen kan je wederom verwijderen door op het kruisje te klikken (11). Observatiedoelen kan je ontkoppelen van een datastroom door op het kruisje de klikken binnen het tabje van het betreffende doel (12).
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen5.png)
 
 #### Observatiedoelen
-
-_Observatiedoelen kan je ontkoppelen bij de datastroom (7, zie boven), maar kan je ook op zichzelf verwijderen._
+_Observatiedoelen kan je ontkoppelen bij de datastroom (12, zie boven), maar kan je ook op zichzelf verwijderen._
 
 Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen organisatie verwijderen door op het afvalbakje te klikken (2).
 
@@ -171,7 +170,7 @@ Om de API te kunnen gebruiken, heb je een “access token” nodig. Deze kan je 
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API1.png)
 
-(Afhankelijk van welke browser je gebruikt, zal het scherm en de opties iets afwijken van bovenstaande beschrijving)
+(Afhankelijk van welke browser je gebruikt, zal het scherm en de opties iets afwijken van bovenstaande beschrijving.)
 
 Je access token dien je dagelijks te actualiseren.
 
@@ -215,7 +214,7 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
   Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
 - Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben.
 - Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij?
-  Dan moet deze zowel in het input template, als het script handmatig worden toegevoegd.
+  Dan moet deze wijziging zowel in het input template, als het script handmatig worden doorgevoerd.
 
 **LET OP:** Het script betreft géén productie versie. Mogelijke fouten of afwijkingen van bovenstaande aannames worden niet afgevangen. Blijft dus kritisch bij gebruik.
 
@@ -239,27 +238,26 @@ Je kan ook een datastroom op zichzelf verwijderen.
 Observatiedoelen kan je ontkoppelen of verwijderen.
 Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
 
-Methodiek verwijderen gegevens:
+**Mogelijke methodiek verwijderen gegevens**
 
 - Apparaat verwijderen: met het ID van het apparaat.
   Hiermee verdwijnen ook de onderliggende sensoren en datastromen.
 - Sensor verwijderen: met de ID’s van het apparaat en de betreffende sensor.
   Hiermee verdwijnen ook de onderliggende datastromen.
 - Datastroom verwijderen: met de ID’s van het apparaat, de sensor, en de betreffende datastroom.
-- Observatiedoelen kan je ontkoppelen of verwijderen:
-    - Observatiedoel ontkoppelen: met de ID’s van het device, sensor, datastroom, en observatiedoel.
-    - Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen.
-      Het observatiedoel verdwijnt dan bij alle datastromen.
+- Observatiedoel ontkoppelen: met de ID’s van het device, sensor, datastroom, en observatiedoel.
+- Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen.
+  Het observatiedoel verdwijnt dan bij alle datastromen.
 
 ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg staat bij [API/Gegevens bewerken](#gegevens-bewerken_1))._
 
-Instructie gebruik FME script verwijderen gegevens:
+**Instructie gebruik FME script verwijderen gegevens**
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API6.png)
 
-LET OP: Het script betreft géén afgewerkte productie versie. Mogelijk bevat het script fouten, of ontstaan er fouten wanneer wordt afgeweken van bovenstaande procedure. Blijft dus kritisch bij gebruik.
+**LET OP:** Het script betreft géén afgewerkte productie versie. Mogelijk bevat het script fouten, of ontstaan er fouten wanneer wordt afgeweken van bovenstaande procedure. Blijft dus kritisch bij gebruik.
 
-Gebruikte URL’s voor verwijderen gegevens
+**Gebruikte URL’s voor verwijderen gegevens**
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API7.png)
 
