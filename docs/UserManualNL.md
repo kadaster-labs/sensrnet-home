@@ -1,22 +1,17 @@
-# Handleiding Beheerders SensRNet (Concept) <img src="./img/UserManualNL/EindhovenLogo.png" width="80" align="right">
+# SensRNet Registry Node gebruikershandleiding
 
-> _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister (SensRNet)? Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, bewerken, en verwijderen van gegevens in SensRNet._
+> _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister. Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, bewerken en verwijderen van gegevens in een SensRNet Registry Node._
+>
+> _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_ <img src="img/UserManualNL/EindhovenLogo.png" width="100" align="right"  style="margin: 10px">
 
-> _LET OP: dit betreft dus niet per definitie alle functionaliteiten van de tool en de API, puur de onderdelen relevant voor het beheer van de vakinhoudelijke gegevens. 
-Meer informatie over SensRNet lees je [hier](https://kadaster-labs.github.io/sensrnet-home/)._
-
-> _LET OP: dit is een CONCEPT document dat zal worden aangevuld op basis van de resultaten van de [pilots](Pilots.md)._ 
-
-> _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_
-
-
-## In de tool
+## Handmatig
 
 Dit is de applicatie van het sensorenregister (SensRNet):
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl0.png)
 
 ### Lid worden van de organisatie (eenmalige actie)
+
 _Binnen de applicatie dien je eerst onderdeel te worden van een organisatie._
 
 Je doet dit door op “Menu” te klikken linksboven op de pagina (1).
@@ -31,12 +26,13 @@ Je krijgt na het toetreden een scherm te zien met details over jouw organisatie:
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl3.png)
 
-Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met gebruikers van jouw organisatie staat. 
+Onder “Organisatie Gebruikers” (5a) kan je controleren of je in de lijst met gebruikers van jouw organisatie staat.
 Om terug te gaan naar de homepage, klik je op “SensRNet Registratie App” of op “Menu” linksboven op de pagina (5b). Vervolgens zie je de sensoren van jouw organisatie op de kaart:
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl4.png)
 
-### Gegevens opvoeren met de tool
+### Gegevens opvoeren
+
 _Binnen het register begin je steeds met het registreren van een apparaat. Dit is een topografisch object waar een of meerdere sensoren aan kunnen hangen. Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer een of meerdere observatiedoelen._
 
 Om gegevens op te voeren, klik je op “Menu” linksboven op de pagina (1).
@@ -75,6 +71,7 @@ Door op “Vorige” te klikken kan je de velden van het apparaat, sensor(en), e
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren8.png)
 
 #### Observatiedoelen
+
 _Datastromen kunnen elk een of meerdere observatiedoelen hebben._
 
 Klik in het “Menu” op “Observatiedoelen” (1) om een observatiedoel toe te voegen en/of te koppelen. Je klikt hiervoor op “Registreer Observatie Doel” (2).
@@ -106,7 +103,7 @@ Bij de velden van een datastroom kan je in het attribuut “Observatiedoelen” 
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren15.png)
 
-### Gegevens bewerken met de tool
+### Gegevens bewerken
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2), en klik je op “Uitgebreid Bewerken” (3).
 
@@ -134,7 +131,7 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Bewerken6.png)
 
-### Gegevens verwijderen met de tool
+### Gegevens verwijderen
 
 Om gegevens te bewerken ga je naar het tabblad “Apparaten” (1). Hier selecteer je het apparaat waar wijzigingen bij nodig zijn (2). Als je het hele apparaat (inclusief sensoren en datastromen) wilt verwijderen, klik je op “Verwijderen” (3).
 
@@ -163,7 +160,7 @@ Klik in het “Menu” op “Observatiedoelen” (1). Je kan doelen van je eigen
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Verwijderen6.png)
 
-## Met de API
+## API
 
 Om apparaten, sensoren, datastromen, en observatiedoelen in bulk op te voeren, te bewerken, of te verwijderen is gebruik van de API efficiënt.
 
@@ -181,13 +178,19 @@ Je access token dien je dagelijks te actualiseren.
 
 De API werkt op basis van verschillende URL’s (linkjes). Je vult steeds dezelfde basis URL aan met specifieke toevoegingen voor de verschillende opties. De demo omgeving en de productie omgeving hebben elk hun eigen basis URL:
 
-  > [Demo omgeving - https://demo.sensorenregister.nl/api/#/](https://demo.sensorenregister.nl/api/#/)
-
-  > [Productie omgeving - ://viewer.sensorenregister.nl/api/#/](https://viewer.sensorenregister.nl/api/#/)
+| Demo                                                       |
+| ---------------------------------------------------------- |
+| [Registry Node API](https://demo.sensorenregister.nl/api/) |
 
 De relevante aanvullingen op de basis URL’s voor het opvoeren, wijzigen, en verwijderen van apparaten, sensoren, datastromen, en observatiedoelen, zijn in deze handleiding terug te vinden in onderstaande secties.
 
-### Gegevens opvoeren met de API
+### Script
+
+Om gemakkelijk en geautomatiseerd gebruik te maken van de API is er een FME script beschikbaar (incl. data templates in MS Excel formaat).
+Dit script is [hier](FME.scripts.bulk.Opvoer.en.Verwijderen.zip) te downloaden (incl. templates voor de data).
+
+### Gegevens opvoeren
+
 _Binnen het register kan een apparaat (topografisch object), een of meerdere sensoren hebben (1:n). Deze sensoren kunnen elk een of meerdere datastromen hebben, met elk weer geen, een, of meerdere observatiedoelen._
 
 **Mogelijke methodiek 1:n opvoer gegevens**
@@ -196,25 +199,30 @@ _Binnen het register kan een apparaat (topografisch object), een of meerdere sen
 
 **Instructie gebruik FME script opvoer gegevens**
 
+Bovenstaande zijn de losse stappen die in een script zijn geautomatiseerd.
+
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API3.png)
 
 Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
-   > De input is conform TemplateOpvoerAPI.xlsx. Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij. Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn. Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
-   
-   > Het script controleert niét of de betreffende apparaten en sensoren al eerder zijn opgevoerd. Controleer dit dus zelf. Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
+- De input is conform `TemplateOpvoerAPI.xlsx` (te vinden in de zip file van het script of met deze [directe link](TemplateOpvoerAPI.xlsx)).
+  Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij.
+  Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn.
+  Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
+- Het script controleert niét of de betreffende apparaten en sensoren al eerder zijn opgevoerd.
+  Controleer dit dus zelf.
+  Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
+- Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben.
+- Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij?
+  Dan moet deze wijziging zowel in het input template, als het script handmatig worden doorgevoerd.
 
-  > Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben. 
-
-  > Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij? Dan moet deze wijziging zowel in het input template, als het script handmatig worden doorgevoerd.
-   
 **LET OP:** Het script betreft géén productie versie. Mogelijke fouten of afwijkingen van bovenstaande aannames worden niet afgevangen. Blijft dus kritisch bij gebruik.
 
 **Gebruikte URL’s voor opvoer gegevens**
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API4.png)
 
-### Gegevens bewerken met de API
+### Gegevens bewerken
 
 _[stappen nog te beschrijven, script nog niet af]_
 
@@ -222,23 +230,26 @@ _[stappen nog te beschrijven, script nog niet af]_
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API5.png)
 
-### Gegevens verwijderen met de API
+### Gegevens verwijderen
 
-Verwijder je een apparaat, dan verdwijnen de onderliggende sensoren en datastromen. Verwijder je een sensor, dan verdwijnen onderliggende datastromen. Je kan ook een datastroom op zichzelf verwijderen. Observatiedoelen kan je ontkoppelen of verwijderen. Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
+Verwijder je een apparaat, dan verdwijnen de onderliggende sensoren en datastromen.
+Verwijder je een sensor, dan verdwijnen onderliggende datastromen.
+Je kan ook een datastroom op zichzelf verwijderen.
+Observatiedoelen kan je ontkoppelen of verwijderen.
+Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
 
 **Mogelijke methodiek verwijderen gegevens**
 
-  > Apparaat verwijderen: met het ID van het apparaat. Hiermee verdwijnen ook de onderliggende sensoren en datastromen.
+- Apparaat verwijderen: met het ID van het apparaat.
+  Hiermee verdwijnen ook de onderliggende sensoren en datastromen.
+- Sensor verwijderen: met de ID’s van het apparaat en de betreffende sensor.
+  Hiermee verdwijnen ook de onderliggende datastromen.
+- Datastroom verwijderen: met de ID’s van het apparaat, de sensor, en de betreffende datastroom.
+- Observatiedoel ontkoppelen: met de ID’s van het device, sensor, datastroom, en observatiedoel.
+- Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen.
+  Het observatiedoel verdwijnt dan bij alle datastromen.
 
-  > Sensor verwijderen: met de ID’s van het apparaat en de betreffende sensor. Hiermee verdwijnen ook de onderliggende datastromen.
-
-  > Datastroom verwijderen: met de ID’s van het apparaat, de sensor, en de betreffende datastroom.
-
-  > Observatiedoel ontkoppelen: met de ID’s van het device, sensor, datastroom, en observatiedoel.
-  
-  > Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen. Het observatiedoel verdwijnt dan bij alle datastromen.
-      
-ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg hierover volgt nog bij “gegevens bewerken met de API”)._
+ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg staat bij [API/Gegevens bewerken](#gegevens-bewerken_1))._
 
 **Instructie gebruik FME script verwijderen gegevens**
 
@@ -249,18 +260,23 @@ ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand v
 **Gebruikte URL’s voor verwijderen gegevens**
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API7.png)
-      
+
 ### Overige opties API
 
-Toevoegen, updaten, en verwijderen van Gebruikers (User) en Organisaties (LegalEntity) kan ook met behulp van de API. 
+Toevoegen, updaten, en verwijderen van Gebruikers (User) en Organisaties (LegalEntity) kan ook met behulp van de API.
 Voor deze toepassingen zijn bulk actie uitgevoerd door beheerders van sensoren minder voor de hand liggend en kan (waarschijnlijk) efficiënter de tool of eigen brondata gebruikt worden.
 
 Bovenstaande toepassingen vallen dan ook buiten de scope van deze handleiding. Wil je meer informatie? Bekijk dan de documentatie van de API:
 
-  > [Registry Node API (productie)](https://viewer.sensorenregister.nl/api/#/) | [Registry Node API (demo)](https://demo.sensorenregister.nl/api/#/) 
-  
-## Publicatie
+| Demo                                                       |
+| ---------------------------------------------------------- |
+| [Registry Node API](https://demo.sensorenregister.nl/api/) |
+
+## Publicatie in Central Viewer
 
 Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor de burgers uit? Zij kunnen publieke sensoren bekijken in de viewers:
 
-  > [Centrale Viewer (productie)](https://viewer.sensorenregister.nl) | [Centrale Viewer (demo)](https://demo.sensorenregister.nl/viewer)
+| Productie                                            | Demo                                                      |
+| ---------------------------------------------------- | --------------------------------------------------------- |
+| [Central Viewer](https://viewer.sensorenregister.nl) | [Central Viewer](https://demo.sensorenregister.nl/viewer) |
+| [API](https://viewer.sensorenregister.nl/api/)       |                                                           |
