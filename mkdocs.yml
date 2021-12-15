@@ -19,6 +19,7 @@ nav:
       # - Definitions.rst
       - Blockchain.md
     - 'Functional':
+      - User Manual (NL): UserManualNL.md
       - Use Cases (NL): UseCasesNL.md
       - TestScenariosNL.md
     - 'Technical':
