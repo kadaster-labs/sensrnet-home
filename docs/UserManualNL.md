@@ -2,7 +2,7 @@
 
 > _Hoe beheer je apparaten, sensoren, en datastromen in het sensorenregister. Deze handleiding is bedoeld om beheerders van sensoren te ondersteunen bij het opvoeren, updaten en verwijderen van gegevens in een SensRNet Registry Node._
 >
-> _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_ <img src="../img/UserManualNL/EindhovenLogo.png" width="100" align="right" style="margin: 10px;">
+> _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](../CONTRIBUTING.md)_ <img src="img/UserManualNL/EindhovenLogo.png" width="100" align="right"  style="margin: 10px">
 
 ## Handmatig
 
