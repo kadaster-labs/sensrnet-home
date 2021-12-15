@@ -206,7 +206,7 @@ Bovenstaande zijn de losse stappen die in een script zijn geautomatiseerd.
 
 Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
-- De input is conform `TemplateOpvoerAPI.xlsx`.
+- De input is conform `TemplateOpvoerAPI.xlsx` (te vinden in de zip file van het script of met deze [directe link](TemplateOpvoerAPI.xlsx)).
   Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij.
   Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn.
   Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
