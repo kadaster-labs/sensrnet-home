@@ -178,9 +178,9 @@ Je access token dien je dagelijks te actualiseren.
 
 De API werkt op basis van verschillende URL’s (linkjes). Je vult steeds dezelfde basis URL aan met specifieke toevoegingen voor de verschillende opties. De demo omgeving en de productie omgeving hebben elk hun eigen basis URL:
 
-| Demo                                                       |
-| ---------------------------------------------------------- |
-| [Registry Node API](https://demo.sensorenregister.nl/api/) |
+| Productie                                                                     | Demo                                                                             |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
+| [https://viewer.sensorenregister.nl/api/](https://viewer.sensorenregister.nl) | [https://demo.sensorenregister.nl/api/](https://demo.sensorenregister.nl/viewer) |
 
 De relevante aanvullingen op de basis URL’s voor het opvoeren, wijzigen, en verwijderen van apparaten, sensoren, datastromen, en observatiedoelen, zijn in deze handleiding terug te vinden in onderstaande secties.
 
@@ -268,9 +268,9 @@ Voor deze toepassingen zijn bulk actie uitgevoerd door beheerders van sensoren m
 
 Bovenstaande toepassingen vallen dan ook buiten de scope van deze handleiding. Wil je meer informatie? Bekijk dan de documentatie van de API:
 
-| Demo                                                       |
-| ---------------------------------------------------------- |
-| [Registry Node API](https://demo.sensorenregister.nl/api/) |
+| Productie                                 | Demo                                           |
+| ----------------------------------------- | ---------------------------------------------- |
+| [API](https://viewer.sensorenregister.nl) | [API](https://demo.sensorenregister.nl/viewer) |
 
 ## Publicatie in Central Viewer
 
@@ -278,5 +278,4 @@ Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor de burgers uit? Zij ku
 
 | Productie                                            | Demo                                                      |
 | ---------------------------------------------------- | --------------------------------------------------------- |
-| [Central Viewer](https://viewer.sensorenregister.nl) | [Central Viewer](https://demo.sensorenregister.nl/viewer) |
-| [API](https://viewer.sensorenregister.nl/api/)       |                                                           |
+| [Central Viewer](https://viewer.sensorenregister.nl) | [Central Viewer](https://demo.sensorenregister.nl/viewer) |                                                         |
