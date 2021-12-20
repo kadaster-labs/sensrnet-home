@@ -4,6 +4,30 @@
 >
 > _Met dank aan de [gemeente Eindhoven](https://www.eindhoven.nl/) voor de eerste opzet van deze handleiding. Feedback en/of verbeteringen zijn altijd welkom. Zie onze [SensRNet Contribution Guide](https://github.com/kadaster-labs/sensrnet-home/blob/main/CONTRIBUTING.md)_ <img src="../img/UserManualNL/EindhovenLogo.png" width="100" align="right"  style="margin: 10px">
 
+## Sensoren
+
+Een sensor is een instrument voor de meting van een fysieke eigenschap (bijv. temperatuur, licht, druk, elektriciteit) en is gemonteerd in een apparaat (device).
+Om een sensor te registreren is het nodig eerst een apparaat te registreren.
+Definities van de invulvelden vind je op de pagina met [Definities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst), mogelijke keuzes voor de dropdown boxes vind je hieronder bij [Waardelijsten](#Waardelijsten).
+
+In het hoofdscherm klik je op Menu, waarna je alle appraten van jouw organisatie ziet.
+Om een apparaat toe te voegen, klik je op de button Registreer apparaat.
+Je kan vervolgens informatie invullen over het betreffende apparaat.
+Je selecteert een locatie door in de kaart te klikken.
+Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
+
+Om sensoren aan het apparaat te koppelen klik je vanuit dit scherm op Volgende.
+In het vervolgscherm klik je op Voeg sensor toe. 
+In het volgende scherm kun je gegevens van de sensor invullen.
+Voeg alle sensoren toe die bij het apparaat horen en vul de bijbehorende velden in.
+Wanneer je alles hebt ingevuld, kun je de sensor(en) opslaan door te klikken op “Opslaan”.
+
+Een datastroom bestaat uit het resultaat van de waarneming door een sensor.
+Dit zijn bijvoorbeeld geluidsmetingen, snelheidsmetingen etc.
+Om een of meerdere datastromen toe te voegen bij elke sensor, klik je vanuit het invulscherm voor de sensor op “Volgende” (5).
+Klik op “Datastroom toevoegen” bij een sensor naar keuze.
+Vul de gegevens van de datastgroom in en klik op Opslaan.
+
 ## Handmatig
 
 Dit is de applicatie van het sensorenregister (SensRNet):
@@ -280,3 +304,25 @@ Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor de burgers uit? Zij ku
 | ---------------------------------------------------- | --------------------------------------------------------- |
 | [Central Viewer](https://viewer.sensorenregister.nl) | [Central Viewer](https://demo.sensorenregister.nl/viewer) |
 | [API](https://viewer.sensorenregister.nl/api/)       |                                                           |
+
+
+## Waardelijsten
+
+Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen.
+Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. 
+- [Wildcards](Waardelijst_Wildcards.md) 
+- [Wildcards in Excel](Waardelijst_Wildcards.xlsx)
+
+Van de opgenomen datastream wordt de functionele classificatie vastgelegd in Theme/Thema.
+Mogelijke waarden:
+- [Themes](Waardelijst_Thema.md)
+- [Themas in Excel](Waardelijst_Thema.xlsx)
+
+Van de geregistreerde sensoren willen we het type weten op basis van de technische werking (wat meet het?).
+Mogelijke waarden volgen de opsomming op [Wikipedia](https://en.wikipedia.org/wiki/List_of_sensors):
+- [SensorTypes](Waardelijst_SensorTypes.md)
+- [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
+
+Nuttige informatie is ook te vinden in:
+- [datamodel](model.md)
+- [datadefinities](definitions.rst)
