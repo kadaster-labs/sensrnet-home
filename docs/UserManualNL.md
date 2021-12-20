@@ -324,5 +324,5 @@ Mogelijke waarden volgen de opsomming op [Wikipedia](https://en.wikipedia.org/wi
 - [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
 
 Nuttige informatie is ook te vinden in:
-- [datamodel](model.md)
-- [datadefinities](definitions.rst)
+- [Datamodel](Model.md)
+- [Datadefinities](Definitions.rst)
