@@ -310,17 +310,17 @@ Zo. Je sensoren zijn opgevoerd. Maar hoe ziet dit er voor de burgers uit? Zij ku
 
 Vanuit privacy-overwegingen is het onwenselijk om e-mailadressen van privépersonen vast te leggen.
 Voor de publieke contactgegevens rondom sensoren is een lijst opgesteld met mogelijke wildcards, waaraan de opgegeven e-mailadressen worden getoetst. 
-- [Wildcards](Waardelijst_Wildcards.md) 
-- [Wildcards in Excel](Waardelijst_Wildcards.xlsx)
+- [Wildcards](/img/UserManulaNL/SensRNet_Waardelijst_Public_E-mail-mask.png) 
+- [Wildcards in Excel](Waardelijst_Public_E-mail-mask.xlsx)
 
 Van de opgenomen datastream wordt de functionele classificatie vastgelegd in Theme/Thema.
 Mogelijke waarden:
-- [Themes](Waardelijst_Thema.md)
-- [Themas in Excel](Waardelijst_Thema.xlsx)
+- [Themes](/img/UserManulaNL/SensRNet_Waardelijst_Datastreams_Themes.png)
+- [Themas in Excel](Waardelijst_Datastreams_Themes.xlsx)
 
 Van de geregistreerde sensoren willen we het type weten op basis van de technische werking (wat meet het?).
 Mogelijke waarden volgen de opsomming op [Wikipedia](https://en.wikipedia.org/wiki/List_of_sensors):
-- [SensorTypes](Waardelijst_SensorTypes.md)
+- [SensorTypes](/img/UserManulaNL/SensRNet_Waardelijst_Sensortypes.png)
 - [Sensortypes in Excel](Waardelijst_Sensortypes.xlsx)
 
 Nuttige informatie is ook te vinden in:
