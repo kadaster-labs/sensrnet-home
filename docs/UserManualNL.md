@@ -187,7 +187,7 @@ De relevante aanvullingen op de basis URL’s voor het opvoeren, wijzigen, en ve
 ### Script
 
 Om gemakkelijk en geautomatiseerd gebruik te maken van de API is er een FME script beschikbaar (incl. data templates in MS Excel formaat).
-Dit script is [hier](FME.scripts.bulk.Opvoer.en.Verwijderen.zip) te downloaden (incl. templates voor de data).
+Dit script is [hier](./SensRNet-RegistryNode-FME-Scripts.zip) te downloaden (incl. templates voor de data).
 
 ### Gegevens opvoeren
 
