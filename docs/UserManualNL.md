@@ -209,9 +209,10 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
   Elke unieke combinatie van apparaten, sensoren, datastromen, en observatiedoelen heeft in de lijst een eigen rij.
   Een apparaat komt dus meerdere keren in de input lijst voor wanneer er bijvoorbeeld meerdere sensoren zijn.
   Een sensor en het bijbehorende apparaat komen meerdere keren voor bij meerdere datastromen, etc.
-- Het script controleert niét of de betreffende apparaten en sensoren al eerder zijn opgevoerd.
+- Het script controleert niét of de betreffende apparaten, sensoren, en datastromen al eerder zijn opgevoerd.
   Controleer dit dus zelf.
   Voor een toevoeging van een sensor aan een bestaande device, en/of een toevoeging van een bestaande datastroom is dit script (nog) niet geschikt.
+- Het script volgt de aanname dat unieke sensoren te onderscheiden zijn door in verschil in attributen (bijvoorbeeld door een andere naam). 
 - Het script volgt de aanname dat datastromen met precies dezelfde velden ook dezelfde observatiedoelen hebben.
 - Wijzigt de wijze waarop een veld aangeleverd moet worden (lijst in plaats van een string bijvoorbeeld), of komt er bijvoorbeeld een nieuw veld bij?
   Dan moet deze wijziging zowel in het input template, als het script handmatig worden doorgevoerd.
@@ -223,13 +224,32 @@ Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API4.png)
 
 ### Gegevens bewerken
+Voordat je gegevens kan bewerken, wil je natuurlijk weten wat de huidige stand van zaken is. Om de actuele stand van jouw organisatie (LegalEntity) op te halen, heb je het attribuut LegalEntity_id nodig. Deze kan je ophalen met de GET request: {basis URL}/api/legalentity. Vervolgens haal je met {basis URL}/api/device alle attributen van apparaten, sensoren, datastromen, en ID's van observatiedoelen van jouw organisatie op. Door de structuur van de response en de ID's kan je deze aan elkaar relateren.
 
-_[stappen nog te beschrijven, script nog niet af]_
+**Mogelijke methodiek bewerken gegevens**
+
+TODO [afbeelding 1 hier]
+
+**Instructie gebruik FME script bewerken gegevens**
+
+TODO [afbeelding 2 hier]
+
+Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
+
+- Wil je een nieuwe sensor koppelen aan een bestaande device, of een nieuwe datastroom aan een bestaande sensor, dan kan je hiervoor ook ActueleStand.xlsx gebruiken. 
+  Laat je het veld voor de ID’s van de datastroom en / of sensor leeg, dan herkent het script dat het om een nieuwe opvoer gaat.
+- De attributen van ObservationGoals zijn niet in bulk aan te passen met het FME script *Bewerken_ SensorenAPI.fmw*. 
+  De aanname is namelijk dat het bulk bewerken van deze gevallen niet of nauwelijks van toegevoegde waarde is. Dit is efficiënt handmatig te volbrengen in de tool. 
+- Wel zijn er nieuwe doelen te linken aan datastromen op basis van ID’s, door nieuwe ID’s toe te voegen in de lijst. 
+  Gebruik {basis URL}/api/observationgoal op de ID’s van bestaande observatiedoelen te achterhalen, zodat deze in bulk aan datastromen gekoppeld kunnen worden.
+- Met het ontkoppelen van observatiedoelen is in het huidige script geen rekening gehouden.
+  
+**LET OP:** Het script betreft géén afgewerkte productie versie. Mogelijk bevat het script fouten, of ontstaan er fouten wanneer wordt afgeweken van bovenstaande procedure. Blijft dus kritisch bij gebruik.
 
 **Gebruikte URL’s voor bewerken gegevens**
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_API5.png)
-
+  
 ### Gegevens verwijderen
 
 Verwijder je een apparaat, dan verdwijnen de onderliggende sensoren en datastromen.
@@ -249,7 +269,7 @@ Wanneer je een observatiedoel verwijderd, verdwijnt deze bij alle datastromen.
 - Observatiedoel verwijderen: met het ID van het observatiedoel dat je wilt verwijderen.
   Het observatiedoel verdwijnt dan bij alle datastromen.
 
-ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg staat bij [API/Gegevens bewerken](#gegevens-bewerken_1))._
+ID’s kan je achterhalen als response bij de opvoer, of door de huidige stand van jouw organisatie op te halen via de API _(uitleg hierover staat bij [API/Gegevens bewerken](#gegevens-bewerken_1))._
 
 **Instructie gebruik FME script verwijderen gegevens**
 
