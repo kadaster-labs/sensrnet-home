@@ -228,11 +228,11 @@ Voordat je gegevens kan bewerken, wil je natuurlijk weten wat de huidige stand v
 
 **Mogelijke methodiek bewerken gegevens**
 
-TODO [afbeelding 1 hier]
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API8.png)
 
 **Instructie gebruik FME script bewerken gegevens**
 
-TODO [afbeelding 2 hier]
+![SensRNet-Applicatie](img/UserManualNL/SensRNet_API9.png)
 
 Houd rekening met de volgende aannames om onverwachtste resultaten te voorkomen:
 
