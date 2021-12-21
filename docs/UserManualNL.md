@@ -24,9 +24,9 @@ Wanneer je alles hebt ingevuld, kun je de sensor(en) opslaan door te klikken op 
 
 Een datastroom bestaat uit het resultaat van de waarneming door een sensor.
 Dit zijn bijvoorbeeld geluidsmetingen, snelheidsmetingen etc.
-Om een of meerdere datastromen toe te voegen bij elke sensor, klik je vanuit het invulscherm voor de sensor op “Volgende” (5).
+Om een of meerdere datastromen toe te voegen bij elke sensor, klik je vanuit het invulscherm voor de sensor op “Volgende”.
 Klik op “Datastroom toevoegen” bij een sensor naar keuze.
-Vul de gegevens van de datastgroom in en klik op Opslaan.
+Vul de gegevens van de datastroom in en klik op Opslaan.
 
 ## Handmatig
 
