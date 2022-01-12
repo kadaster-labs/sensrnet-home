@@ -28,6 +28,11 @@ Om een of meerdere datastromen toe te voegen bij elke sensor, klik je vanuit het
 Klik op “Datastroom toevoegen” bij een sensor naar keuze.
 Vul de gegevens van de datastroom in en klik op Opslaan.
 
+## Instructievideo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CvgTUXexfT4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
 ## Handmatig
 
 Dit is de applicatie van het sensorenregister (SensRNet):
