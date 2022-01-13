@@ -10,7 +10,7 @@ Laten we eerst blockchain 'ontraadselen' (demystify) en vervolgens de techniek i
 
 **Blockchain als trend** pretendeert een oplossing te zijn om een vertrouwde derde partij te kunnen vervangen door techniek ... maar dat is tot nu toe vooral belofte, toekomstvisie en droom. 
 In werkelijkheid is een vertrouwde derde juist voorwaarde om blockchain (goed) te kunnen toepassen.
-Er zijn wel uitzonderingen zoals Bitcoin ... maar dat daar er niet veel van en ook daar zijn twijfels of een vertrouwde derde wel ontbreekt.
+Er zijn wel uitzonderingen zoals Bitcoin ... maar ook daar zijn twijfels of een vertrouwde derde wel ontbreekt.
 Op dit moment zijn er drie grote partijen die de 'mining' van Bitcoin doen en doordat zij een 'track record' hebben dat betrouwbaar te doen, worden deze min of meer beschouwd als de vertrouwde derde partij.
 
 ---
