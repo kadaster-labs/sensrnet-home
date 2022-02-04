@@ -191,4 +191,4 @@ These definitions of fields are part of the SensRNet datamodel_
 .. _98: https://github.com/kadaster-labs/sensrnet-home/issues/98
 .. _110: https://github.com/kadaster-labs/sensrnet-home/issues/110
 
-.. _sensortype: Waardelijst_Sensortypes.xslx
+.. _sensortype: Waardelijst_Sensortypes.xlsx
