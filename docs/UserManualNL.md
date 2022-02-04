@@ -8,7 +8,7 @@
 
 Een sensor is een instrument voor de meting van een fysieke eigenschap (bijv. temperatuur, licht, druk, elektriciteit) en is gemonteerd in een apparaat (device).
 Om een device te registreren is het nodig eerst een apparaat te registreren.
-Definities van de invulvelden vind je op de pagina met [Definities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.md), mogelijke keuzes voor de dropdown boxes vind je hieronder bij [Waardelijsten](#waardelijsten).
+Definities van de invulvelden vind je op de pagina met [Definities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst), mogelijke keuzes voor de dropdown boxes vind je hieronder bij [Waardelijsten](#waardelijsten).
 
 In het hoofdscherm klik je op Menu, waarna je alle appraten van jouw organisatie ziet.
 Om een apparaat toe te voegen, klik je op de button Registreer apparaat.
@@ -73,7 +73,7 @@ Je komt dan automatisch in een overzicht met de apparaten binnen jouw organisati
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren2.png)
 
 Klik op “Registreer Apparaat” (2).
-Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op [deze pagina](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.md). Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
+Je kan vervolgens informatie invullen over het betreffende apparaat. Definities van de velden vind je op [deze pagina](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst). Je selecteert een locatie door in de kaart te klikken. Wanneer je alles hebt ingevuld, kun je je apparaat opslaan door te klikken op “Opslaan”.
 
 ![SensRNet-Applicatie](img/UserManualNL/SensRNet_Appl_Opvoeren3.png)
 
@@ -354,4 +354,4 @@ Mogelijke waarden volgen de opsomming op [Wikipedia](https://en.wikipedia.org/wi
 Nuttige informatie is ook te vinden in:
 
 - [SensRNet Datamodel](Model.md)
-- [SensRNet Datadefinities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.md)
+- [SensRNet Datadefinities](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst)
