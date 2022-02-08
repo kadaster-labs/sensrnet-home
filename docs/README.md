@@ -32,7 +32,7 @@ Read more:
 - [Key Concepts](KeyConcepts.md)
 - [Architecture](Architecture.md)
 - [Network](Network.md)
-- [Model](Model.md) and Definitions (publication is under construction; [source](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.rst))
+- [Model](Model.md) and Definitions [source](https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/Definitions.md)
 - [Blockchain](Blockchain.md)
 
 **Functional**
