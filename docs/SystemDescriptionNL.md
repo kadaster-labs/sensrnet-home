@@ -35,9 +35,9 @@ Deze Publishing Node heeft wel extra functies zoals bijvoorbeeld terugmelding en
 Dit is geen gedeelde data, maar wordt via de synchronisatie component bij de specifieke node afgeleverd waarin de sensor is geregistreerd.
 Op deze manier blijft private data bij de node waar deze is vastgelegd en is wel centrale publicatie mogelijk.
 
-Voor meer informatie lees onze [documentatie](https://github.com/kadaster-labs/sensrnet-home):
+Voor meer informatie lees onze [documentatie](https://kadaster-labs.github.io/sensrnet-home/):
 
-- [Product Vision (EN)](ProductVision.md)
+- [Product Vision (NL)](ProductVisionNL.md)
 - [Key Concepts (EN)](KeyConcepts.md)
-- [Architecture (EN)](Architecture.md)
+- [Architecture (NL)](Architecture.md)
 - [Use Cases (NL)](UseCasesNL.md)
