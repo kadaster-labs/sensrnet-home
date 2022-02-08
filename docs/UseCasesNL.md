@@ -1,5 +1,7 @@
 # Use Cases (NL)
 
+> Sterk verouderd ... en misschien nog steeds actueel. Deze pagina moet worden gecontroleerd en bijgewerkt.
+
 ## UC1.01 Eigenaar kan zich registeren
 
 ![must have](img/prio-badge-must.svg)
