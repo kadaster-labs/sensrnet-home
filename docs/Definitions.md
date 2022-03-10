@@ -494,7 +494,7 @@ These definitions of fields are part of the SensRNet [datamodel](Model.md). If a
 
 </details>
 
-### Entity: MobileLocation 🟧
+### Entity: MobileLocation
 
 <details>
   <summary title="not (yet) implemented">Details 🟧</summary>
