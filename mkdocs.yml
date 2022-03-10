@@ -16,7 +16,7 @@ nav:
       - Architectural Decision Records (ARDs): adr/index.md
       - Network.md
       - Model.md
-      # - Definitions.rst
+      - Definitions.md
       - Blockchain.md
     - 'Functional':
       - User Manual (NL): UserManualNL.md
