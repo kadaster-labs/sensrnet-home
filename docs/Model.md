@@ -15,7 +15,7 @@ This can be indicated as 'datastream' and could be described as the general conc
 
 ## Definitions
 
-The definitions are put in a seperate table (in reStructuredText format): [Definitions](Definitions.rst)
+The definitions are put in a seperate table: [Definitions](Definitions.md)
 
 
 ## Views
