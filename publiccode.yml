@@ -1,0 +1,78 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+name: sensrnet-home
+applicationSuite: sensrnet
+url: 'https://github.com/kadaster-labs/sensrnet-home.git'
+landingURL: 'https://kadaster-labs.github.io/sensrnet-home/'
+softwareVersion: 0.1.0
+releaseDate: '2022-03-17'
+developmentStatus: development
+roadmap: "https://github.com/kadaster-labs/sensrnet-home/blob/main/docs/ProductVision.md"
+softwareType: standalone/other
+
+description:
+  nl:
+    documentation: 'https://kadaster-labs.github.io/sensrnet-home/'
+    features:
+      - maintain metadata of sensors
+      - share metadata of sensors
+      - publish metadata of sensors
+    genericName: sensorenregister
+    longDescription: |
+       SensRNet is de software en de community om sensoren te registreren in
+       Nederland. SensRNet gaat uit van een netwerk van nodes waarin registratie
+       plaatsvindt. Deze nodes worden Registry Nodes genoemd. Elke node is
+       autonoom, staat dus op zichzelf en kan ook een eigen implementatie zijn om
+       lokaal sensoren te registreren. Middels een distributed ledger worden de
+       wijzigingen in de registratie in het netwerk gedeeld en kan daar op andere
+       nodes gebruik van worden gemaakt. Een node is aangewezen om publicatie van
+       (publieke) sensoren op de kaart te doen: de Publishing Node. 
+    shortDescription: 'SensRNet, de software en community rondom het registreren van sensoren'
+    videos:
+      - https://youtu.be/0L6a2F_GpOg
+
+categories:
+  - digital-asset-management
+  - government-registry
+
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Kadaster
+  repoOwner: Kadaster
+  authorsFile: MAINTAINERS.md
+
+maintenance:
+  type: internal
+  contractors:
+    - name: Kadaster
+      until: '2022-03-31'
+      website: 'https://www.kadaster.nl'
+  contacts:
+    - affiliation: Kadaster
+      email: marc.vanandel@kadaster.nl
+      name: Marc van Andel
+
+intendedAudience:
+  countries:
+    - nl
+localisation:
+  localisationReady: yes
+  availableLanguages:
+    - nl
+    - en
+
+platforms:
+  - web
+  - haven
+  - commonground
+
+usedBy:
+  - Kadaster
+  - VNG
+  - MinBZK
+  - Gemeente Tilburg
+  - Gemeente Utrecht
+  
