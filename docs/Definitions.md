@@ -236,7 +236,7 @@ These definitions of fields are part of the SensRNet [datamodel](Model.md). If a
   <li><i>Definition (EN)</i>: The technical qualification of the Sensor entity. </li>
   <li><i>Definitie (NL)</i>: Een typering van de sensor op basis van technische mogelijkheden van de sensor. </li>
   <li><i>NL</i>: Sensortype </li>
-  <li><i>More info</i>: Conform <a href="../Waardelijst_Sensortypes.xlsx">Sensortypes (Excel)</a></li>
+  <li><i>More info</i>: Conform <a href="#value-lists">Sensortypes (Excel)</a></li>
   </ul>
 
 </details>
@@ -325,7 +325,7 @@ These definitions of fields are part of the SensRNet [datamodel](Model.md). If a
   <li><i>Definition (EN)</i>: A functional classification of the datastream </li>
   <li><i>Definitie (NL)</i>: Een functionele classificatie van de datastroom. </li>
   <li><i>NL</i>: Thema </li>
-  <li><i>More info</i>: Conform TOP 1.1, zie <a href="../Waardelijst_Datastreams_Themes.xlsx">Themes (Excel)</a>, <a href="https://github.com/kadaster-labs/sensrnet-home/issues/97">home#97</a>, <a href="https://github.com/kadaster-labs/sensrnet-home/issues/187">home#187</a></li>
+  <li><i>More info</i>: Conform TOP 1.1, zie <a href="#waardelijsten">Themes</a>, <a href="https://github.com/kadaster-labs/sensrnet-home/issues/97">home#97</a>, <a href="https://github.com/kadaster-labs/sensrnet-home/issues/187">home#187</a></li>
   </ul>
 
 </details>
@@ -656,7 +656,7 @@ These definitions of fields are part of the SensRNet [datamodel](Model.md). If a
   <li><i>Definition (EN)</i>: The e-mail address by which the legal entity can be contacted. </li>
   <li><i>Definitie (NL)</i>: Het e-mailadres van de rechtspersoon waarmee contact gelegd kan worden. </li>
   <li><i>NL</i>: E-mail </li>
-  <li><i>More info</i>: For privacy reasons this should conform this <a href="../Waardelijst_Public_E-mail-mask.xlsx">mask (Excel)</a> </li>
+  <li><i>More info</i>: For privacy reasons this should conform this <a href="#waardelijsten">mask</a> </li>
   </ul>
 
 </details>
@@ -734,3 +734,11 @@ These definitions of fields are part of the SensRNet [datamodel](Model.md). If a
   </ul>
 
 </details>
+
+## Value lists
+
+_(Dutch: Waardelijsten)_
+
+- [Sensortypes (Excel)](../Waardelijst_Sensortypes.xlsx)
+- [Themes (Excel)](../Waardelijst_Datastreams_Themes.xlsx)
+- [Email mask (Excel)](../Waardelijst_Public_E-mail-mask.xlsx)
