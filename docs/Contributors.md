@@ -1,8 +1,6 @@
 # Contributors
 
-## Committors
-
-Parties with commitment to the code, the documentation and the community
+## Initiatiefnemers
 
 <div style="display: flex; flex-wrap: wrap; -webkit-box-align: center; align-items: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
     <a href="https://brabantstad.nl" target="_blank" rel="noopener noreferrer">
@@ -16,9 +14,7 @@ Parties with commitment to the code, the documentation and the community
     </a>
 </div>
 
-## Contributors
-
-Parties with contributions to the code, the documentation and the community
+## Community
 
 <div style="display: flex; flex-wrap: wrap; -webkit-box-align: center; align-items: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
     <a href="https://brabant.nl" target="_blank" rel="noopener noreferrer">
@@ -45,16 +41,12 @@ Parties with contributions to the code, the documentation and the community
     <a href="https://www.s-hertogenbosch.nl/" target="_blank" rel="noopener noreferrer">
         <img alt="'s-Hertogenbosch" src="../img/logos/logo-den-bosch.jpeg" width="140" style="margin: 10px;">
     </a>
+    <a href="https://vng.nl/" target="_blank" rel="noopener noreferrer">
+        <img alt="VNG" src="../img/logos/vng.png" width="120" style="margin: 10px;">
+    </a>
     <a href="https://amsterdam.nl/" target="_blank" rel="noopener noreferrer">
         <img alt="Amsterdam" src="../img/logos/amsterdam.png" width="120" style="margin: 10px;">
     </a>
-</div>
-
-## Community
-
-Parties connected and participating in the community
-
-<div style="display: flex; flex-wrap: wrap; -webkit-box-align: center; align-items: center; margin-top: 1.5rem; margin-bottom: 1.5rem;">
     <a href="https://hilversum.nl" target="_blank" rel="noopener noreferrer">
         <img alt="Hilversum" src="../img/logos/hilversum.jpg" width="120" style="margin: 10px;">
     </a>
