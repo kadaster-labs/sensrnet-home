@@ -26,6 +26,9 @@
     <a href="https://tilburg.nl" target="_blank" rel="noopener noreferrer">
         <img alt="Tilburg" src="../img/logos/Gemeente-Tilburg.png" width="125" style="margin: 10px;">
     </a>
+    <a href="https://apeldoorn.nl" target="_blank" rel="noopener noreferrer">
+        <img alt="Apeldoorn" src="../img/logos/gemeente-apeldoorn.png" width="100" style="margin: 10px;">
+    </a>
     <a href="https://nijmegen.nl" target="_blank" rel="noopener noreferrer">
         <img alt="Nijmegen" src="../img/logos/Logo_Nijmegen.png" width="100" style="margin: 10px;">
     </a>
@@ -46,6 +49,15 @@
     </a>
     <a href="https://amsterdam.nl/" target="_blank" rel="noopener noreferrer">
         <img alt="Amsterdam" src="../img/logos/amsterdam.png" width="120" style="margin: 10px;">
+    </a>
+    <a href="https://rotterdam.nl/" target="_blank" rel="noopener noreferrer">
+        <img alt="Rotterdam" src="../img/logos/Gemeente-Rotterdam-Logo-2021.png" width="120" style="margin: 10px;">
+    </a>
+    <a href="https://denhaag.nl/" target="_blank" rel="noopener noreferrer">
+        <img alt="Den Haag" src="../img/logos/1200px-Compact_Logo_gemeente_Den_Haag.svg.png" width="120" style="margin: 10px;">
+    </a>
+    <a href="https://Groningen.nl/" target="_blank" rel="noopener noreferrer">
+        <img alt="Groningen" src="../img/logos/groningen.svg" width="120" style="margin: 10px;">
     </a>
     <a href="https://hilversum.nl" target="_blank" rel="noopener noreferrer">
         <img alt="Hilversum" src="../img/logos/hilversum.jpg" width="120" style="margin: 10px;">
