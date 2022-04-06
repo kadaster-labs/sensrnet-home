@@ -2,9 +2,13 @@
 
 SensRNet - The Dutch National Sensor Registry Network
 
-> **Hot news!**
+> **Status**
 >
-> Lees onze [eerste nieuwsbrief](SensRNet-Nieuwsbrief-2021-1.pdf)!
+> De MVP+-fase is op 1 april 2022 beëindigd.
+> In mei vindt er met alle stakeholders een 'ateliersessie' plaats om te kijken of en hoe de ontwikkeling van SensRNet verder vormgegeven kan worden.
+> Zaken als rolverdeling, financiering, juridische mogelijkheden/beperkingen en governance komen daar aan de orde.
+> De opschalingsanalyse van de VNG zal in de discussie worden meegenomen.
+> Tussen 1 april en 1 juli 2022 zal het centrale deel van SensRNet nog gehost worden, waardoor bestaande bronhouders het MVP inclusief de landelijke viewer kunnen blijven gebruiken.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -12,11 +16,11 @@ SensRNet - The Dutch National Sensor Registry Network
 
 <img src="img/SensRNet-logo.png" width="300" align="right">
 
-| Omgeving                           | Links                                                                                                                 |
-| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Productie                          | **[Central Viewer](https://viewer.sensorenregister.nl/)**                                                             |
-| Demo<br>&nbsp;                     | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)      |
-| Test (_Kadaster intern_)<br>&nbsp; | [Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/) |
+| Omgeving                        | Links                                                                                                                        |
+| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Productie                       | **[Central Viewer](https://viewer.sensorenregister.nl/)**                                                                    |
+| Demo<br>&nbsp;                  | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)             |
+| <s>Test (_Kadaster intern_)</s> | <s>[Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/)</s> |
 
 ---
 
