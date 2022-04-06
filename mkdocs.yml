@@ -7,6 +7,7 @@ edit_uri: edit/main/docs/
 nav:
     - 'General':
       - Overview: README.md
+      - Contributors: Contributors.md
       - ProductVision.md
       - ProductVisionNL.md
       - SystemDescriptionNL.md

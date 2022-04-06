@@ -73,6 +73,8 @@ Contact [FAB](FAB.md): sensrnet@kadaster.nl
 
 ## Contributing
 
+To find out who's involved and contributes to this project check out the [Contributors](Contributors.md).
+
 Please read [CONTRIBUTING.md](https://github.com/kadaster-labs/sensrnet-home/blob/main/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## Maintainers <a name="maintainers"></a>
