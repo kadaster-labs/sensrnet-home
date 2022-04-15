@@ -28,6 +28,7 @@ _All published notes can be found below_
 - [Notes 12-01-2022](2022-01-12-FAB-notes.md)
 - [Notes 09-02-2022](2022-02-09-FAB-notes.md)
 - [Notes 09-03-2022](2022-03-09-FAB-notes.md)
+- [Notes 06-04-2022](2022-04-06-FAB-notes.md)
 
 ## Users Group Notes
 
