@@ -2,9 +2,9 @@
 
 SensRNet - The Dutch National Sensor Registry Network
 
-> **Hot news!**
+> **Sad news!**
 >
-> Lees onze [eerste nieuwsbrief](SensRNet-Nieuwsbrief-2021-1.pdf)!
+> Helaas is actieve ontwikkeling gepauzeerd. Achter de schermen wordt wel gewerkt aan vervolg / doorontwikkeling ... 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0L6a2F_GpOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

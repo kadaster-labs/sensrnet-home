@@ -6,6 +6,8 @@ SensRNet - The Dutch National Sensor Registry Network
 
 Publication of documentation: https://kadaster-labs.github.io/sensrnet-home/
 
+> Dit project ligt (hopelijk tijdelijk) stil :cry:
+
 ## Build & Publication
 
 The publication of the documentation is based on [Squidfunk Mkdocs Material](https://squidfunk.github.io/mkdocs-material/)
