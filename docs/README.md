@@ -12,11 +12,13 @@ SensRNet - The Dutch National Sensor Registry Network
 
 <img src="img/SensRNet-logo.png" width="300" align="right">
 
+> Omgevingen zijn niet meer beschikbaar :cry:
+
 | Omgeving                           | Links                                                                                                                 |
 | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| Productie                          | **[Central Viewer](https://viewer.sensorenregister.nl/)**                                                             |
-| Demo<br>&nbsp;                     | [Central Viewer](https://demo.sensorenregister.nl/viewer/)<br>[Registry Node](https://demo.sensorenregister.nl/)      |
-| Test (_Kadaster intern_)<br>&nbsp; | [Central Viewer](https://viewer.test.sensorenregister.nl/)<br>[Registry Node](https://demo.test.sensorenregister.nl/) |
+| Productie                          | <s>**[Central Viewer](https://viewer.sensorenregister.nl/)**</s>                                                             |
+| Demo<br>&nbsp;                     | <s>[Central Viewer](https://demo.sensorenregister.nl/viewer/)</s><br><s>[Registry Node](https://demo.sensorenregister.nl/)</s>      |
+| Test (_Kadaster intern_)<br>&nbsp; | <s>[Central Viewer](https://viewer.test.sensorenregister.nl/)<br><s>[Registry Node](https://demo.test.sensorenregister.nl/)</s> |
 
 ---
 
