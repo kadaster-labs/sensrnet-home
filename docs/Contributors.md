@@ -9,6 +9,9 @@
     <a href="https://kadaster.nl" target="_blank" rel="noopener noreferrer">
         <img alt="Kadaster" src="../img/logos/Logo-kadaster.jpg" width="120" style="margin: 10px;">
     </a>
+    <a href="https://www.g40stedennetwerk.nl/" target="_blank" rel="noopener noreferrer">
+        <img alt="G40 Stedennetwerk" src="../img/logos/G40-logo.svg" width="120" style="margin: 10px;">
+    </a>
     <a href="https://www.rijksoverheid.nl/ministeries/ministerie-van-binnenlandse-zaken-en-koninkrijksrelaties" target="_blank" rel="noopener noreferrer">
         <img alt="MinBZK" src="../img/logos/MinBZK.png" width="175" style="margin: 10px;">
     </a>
