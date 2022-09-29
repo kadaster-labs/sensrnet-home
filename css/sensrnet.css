@@ -1,0 +1,12 @@
+.md-header {
+    background-color: var(--md-accent-fg-color);
+}
+
+.md-grid {
+    max-width: 71rem;
+}
+
+blockquote {
+    background-color: #FFF1C7;
+    border: 1px solid #FFBF00;
+}
