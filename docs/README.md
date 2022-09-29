@@ -2,7 +2,7 @@
 
 SensRNet - The Dutch National Sensor Registry Network
 
-> **Sad news!**
+> **Status**
 >
 > Helaas is actieve ontwikkeling gepauzeerd. Achter de schermen wordt wel gewerkt aan vervolg / doorontwikkeling ... 
 
